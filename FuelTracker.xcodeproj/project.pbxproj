@@ -12,20 +12,22 @@
 		3007B9F02175EA31002C4BEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3007B9EE2175EA31002C4BEB /* Main.storyboard */; };
 		3007B9F22175EA35002C4BEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3007B9F12175EA34002C4BEB /* Assets.xcassets */; };
 		3007B9F52175EA35002C4BEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3007B9F32175EA35002C4BEB /* LaunchScreen.storyboard */; };
-		3007BA002175EA35002C4BEB /* FuelTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3007B9FF2175EA35002C4BEB /* FuelTrackerTests.swift */; };
 		3007BA0B2175EA35002C4BEB /* FuelTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3007BA0A2175EA35002C4BEB /* FuelTrackerUITests.swift */; };
 		3075AD8121762C4E00025C2A /* AddFuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3075AD8021762C4E00025C2A /* AddFuelViewController.swift */; };
+		30C9555A217665D2008BBC51 /* Fuel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C95559217665D2008BBC51 /* Fuel.swift */; };
+		30C9557D217669C2008BBC51 /* FuelTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C9557C217669C2008BBC51 /* FuelTrackerTests.swift */; };
+		30C9557F217669EF008BBC51 /* FuelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C9557E217669EF008BBC51 /* FuelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3007B9FC2175EA35002C4BEB /* PBXContainerItemProxy */ = {
+		3007BA072175EA35002C4BEB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3007B9DF2175EA31002C4BEB /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3007B9E62175EA31002C4BEB;
 			remoteInfo = FuelTracker;
 		};
-		3007BA072175EA35002C4BEB /* PBXContainerItemProxy */ = {
+		30C9557621766991008BBC51 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3007B9DF2175EA31002C4BEB /* Project object */;
 			proxyType = 1;
@@ -42,24 +44,19 @@
 		3007B9F12175EA34002C4BEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3007B9F42175EA35002C4BEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3007B9F62175EA35002C4BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3007B9FB2175EA35002C4BEB /* FuelTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuelTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3007B9FF2175EA35002C4BEB /* FuelTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTrackerTests.swift; sourceTree = "<group>"; };
-		3007BA012175EA35002C4BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3007BA062175EA35002C4BEB /* FuelTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuelTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3007BA0A2175EA35002C4BEB /* FuelTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTrackerUITests.swift; sourceTree = "<group>"; };
 		3007BA0C2175EA35002C4BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3075AD8021762C4E00025C2A /* AddFuelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFuelViewController.swift; sourceTree = "<group>"; };
+		30C95559217665D2008BBC51 /* Fuel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel.swift; sourceTree = "<group>"; };
+		30C9557121766991008BBC51 /* FuelTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuelTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30C9557521766991008BBC51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30C9557C217669C2008BBC51 /* FuelTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTrackerTests.swift; sourceTree = "<group>"; };
+		30C9557E217669EF008BBC51 /* FuelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3007B9E42175EA31002C4BEB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3007B9F82175EA35002C4BEB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,6 +70,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		30C9556E21766991008BBC51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,8 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				3007B9E92175EA31002C4BEB /* FuelTracker */,
-				3007B9FE2175EA35002C4BEB /* FuelTrackerTests */,
 				3007BA092175EA35002C4BEB /* FuelTrackerUITests */,
+				30C9557221766991008BBC51 /* FuelTrackerTests */,
 				3007B9E82175EA31002C4BEB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,8 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				3007B9E72175EA31002C4BEB /* FuelTracker.app */,
-				3007B9FB2175EA35002C4BEB /* FuelTrackerTests.xctest */,
 				3007BA062175EA35002C4BEB /* FuelTrackerUITests.xctest */,
+				30C9557121766991008BBC51 /* FuelTrackerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,21 +106,13 @@
 				3007B9EA2175EA31002C4BEB /* AppDelegate.swift */,
 				3007B9EC2175EA31002C4BEB /* FuelRegisterViewController.swift */,
 				3075AD8021762C4E00025C2A /* AddFuelViewController.swift */,
+				30C95559217665D2008BBC51 /* Fuel.swift */,
 				3007B9EE2175EA31002C4BEB /* Main.storyboard */,
 				3007B9F12175EA34002C4BEB /* Assets.xcassets */,
 				3007B9F32175EA35002C4BEB /* LaunchScreen.storyboard */,
 				3007B9F62175EA35002C4BEB /* Info.plist */,
 			);
 			path = FuelTracker;
-			sourceTree = "<group>";
-		};
-		3007B9FE2175EA35002C4BEB /* FuelTrackerTests */ = {
-			isa = PBXGroup;
-			children = (
-				3007B9FF2175EA35002C4BEB /* FuelTrackerTests.swift */,
-				3007BA012175EA35002C4BEB /* Info.plist */,
-			);
-			path = FuelTrackerTests;
 			sourceTree = "<group>";
 		};
 		3007BA092175EA35002C4BEB /* FuelTrackerUITests */ = {
@@ -126,6 +122,16 @@
 				3007BA0C2175EA35002C4BEB /* Info.plist */,
 			);
 			path = FuelTrackerUITests;
+			sourceTree = "<group>";
+		};
+		30C9557221766991008BBC51 /* FuelTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				30C9557521766991008BBC51 /* Info.plist */,
+				30C9557C217669C2008BBC51 /* FuelTrackerTests.swift */,
+				30C9557E217669EF008BBC51 /* FuelTests.swift */,
+			);
+			path = FuelTrackerTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,24 +154,6 @@
 			productReference = 3007B9E72175EA31002C4BEB /* FuelTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3007B9FA2175EA35002C4BEB /* FuelTrackerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3007BA122175EA35002C4BEB /* Build configuration list for PBXNativeTarget "FuelTrackerTests" */;
-			buildPhases = (
-				3007B9F72175EA35002C4BEB /* Sources */,
-				3007B9F82175EA35002C4BEB /* Frameworks */,
-				3007B9F92175EA35002C4BEB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3007B9FD2175EA35002C4BEB /* PBXTargetDependency */,
-			);
-			name = FuelTrackerTests;
-			productName = FuelTrackerTests;
-			productReference = 3007B9FB2175EA35002C4BEB /* FuelTrackerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		3007BA052175EA35002C4BEB /* FuelTrackerUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3007BA152175EA35002C4BEB /* Build configuration list for PBXNativeTarget "FuelTrackerUITests" */;
@@ -184,6 +172,24 @@
 			productReference = 3007BA062175EA35002C4BEB /* FuelTrackerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		30C9557021766991008BBC51 /* FuelTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30C9557821766991008BBC51 /* Build configuration list for PBXNativeTarget "FuelTrackerTests" */;
+			buildPhases = (
+				30C9556D21766991008BBC51 /* Sources */,
+				30C9556E21766991008BBC51 /* Frameworks */,
+				30C9556F21766991008BBC51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30C9557721766991008BBC51 /* PBXTargetDependency */,
+			);
+			name = FuelTrackerTests;
+			productName = FuelTrackerTests;
+			productReference = 30C9557121766991008BBC51 /* FuelTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,12 +203,13 @@
 					3007B9E62175EA31002C4BEB = {
 						CreatedOnToolsVersion = 10.0;
 					};
-					3007B9FA2175EA35002C4BEB = {
+					3007BA052175EA35002C4BEB = {
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = 3007B9E62175EA31002C4BEB;
 					};
-					3007BA052175EA35002C4BEB = {
+					30C9557021766991008BBC51 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 						TestTargetID = 3007B9E62175EA31002C4BEB;
 					};
 				};
@@ -221,8 +228,8 @@
 			projectRoot = "";
 			targets = (
 				3007B9E62175EA31002C4BEB /* FuelTracker */,
-				3007B9FA2175EA35002C4BEB /* FuelTrackerTests */,
 				3007BA052175EA35002C4BEB /* FuelTrackerUITests */,
+				30C9557021766991008BBC51 /* FuelTrackerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,14 +245,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3007B9F92175EA35002C4BEB /* Resources */ = {
+		3007BA042175EA35002C4BEB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3007BA042175EA35002C4BEB /* Resources */ = {
+		30C9556F21766991008BBC51 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -260,16 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3075AD8121762C4E00025C2A /* AddFuelViewController.swift in Sources */,
+				30C9555A217665D2008BBC51 /* Fuel.swift in Sources */,
 				3007B9ED2175EA31002C4BEB /* FuelRegisterViewController.swift in Sources */,
 				3007B9EB2175EA31002C4BEB /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3007B9F72175EA35002C4BEB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3007BA002175EA35002C4BEB /* FuelTrackerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,18 +281,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		30C9556D21766991008BBC51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C9557D217669C2008BBC51 /* FuelTrackerTests.swift in Sources */,
+				30C9557F217669EF008BBC51 /* FuelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3007B9FD2175EA35002C4BEB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3007B9E62175EA31002C4BEB /* FuelTracker */;
-			targetProxy = 3007B9FC2175EA35002C4BEB /* PBXContainerItemProxy */;
-		};
 		3007BA082175EA35002C4BEB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3007B9E62175EA31002C4BEB /* FuelTracker */;
 			targetProxy = 3007BA072175EA35002C4BEB /* PBXContainerItemProxy */;
+		};
+		30C9557721766991008BBC51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3007B9E62175EA31002C4BEB /* FuelTracker */;
+			targetProxy = 30C9557621766991008BBC51 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -468,48 +477,6 @@
 			};
 			name = Release;
 		};
-		3007BA132175EA35002C4BEB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZAN22F267Y;
-				INFOPLIST_FILE = FuelTrackerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DanielZanchi.FuelTrackerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FuelTracker.app/FuelTracker";
-			};
-			name = Debug;
-		};
-		3007BA142175EA35002C4BEB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZAN22F267Y;
-				INFOPLIST_FILE = FuelTrackerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DanielZanchi.FuelTrackerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FuelTracker.app/FuelTracker";
-			};
-			name = Release;
-		};
 		3007BA162175EA35002C4BEB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -550,6 +517,51 @@
 			};
 			name = Release;
 		};
+		30C9557921766991008BBC51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZAN22F267Y;
+				INFOPLIST_FILE = FuelTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DanielZanchi.FuelTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FuelTrackerTests/FuelTrackerTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FuelTracker.app/FuelTracker";
+			};
+			name = Debug;
+		};
+		30C9557A21766991008BBC51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZAN22F267Y;
+				INFOPLIST_FILE = FuelTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DanielZanchi.FuelTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FuelTrackerTests/FuelTrackerTests-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FuelTracker.app/FuelTracker";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -571,20 +583,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3007BA122175EA35002C4BEB /* Build configuration list for PBXNativeTarget "FuelTrackerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3007BA132175EA35002C4BEB /* Debug */,
-				3007BA142175EA35002C4BEB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		3007BA152175EA35002C4BEB /* Build configuration list for PBXNativeTarget "FuelTrackerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3007BA162175EA35002C4BEB /* Debug */,
 				3007BA172175EA35002C4BEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30C9557821766991008BBC51 /* Build configuration list for PBXNativeTarget "FuelTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C9557921766991008BBC51 /* Debug */,
+				30C9557A21766991008BBC51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
