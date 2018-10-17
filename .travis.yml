@@ -12,13 +12,7 @@ env:
 
 script:
   - set -o pipefail
-  - sonar-scanner
   - xcodebuild -workspace "$WORKSPACE" -scheme "$APP_SCHEME" -destination "$DESTINATION" -enableCodeCoverage YES -configuration Debug ONLY_ACTIVE_ARCH=NO test | xcpretty
 
- addons:
-   sonarcloud:
-     organization: "danny182-github"
-     token:
-       secure: 1b2b30159db26517177c9889f3812ba3a47968ae
 after_success:
   - bash <(curl -s https://codecov.io/bash) -J 'FuelTracker'
