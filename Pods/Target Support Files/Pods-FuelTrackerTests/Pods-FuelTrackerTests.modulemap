@@ -1,0 +1,6 @@
+framework module Pods_FuelTrackerTests {
+  umbrella header "Pods-FuelTrackerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
