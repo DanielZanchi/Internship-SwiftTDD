@@ -21,3 +21,5 @@ script:
   - xcodebuild -showsdks
 
   - travis_retry xcodebuild -workspace "$WORKSPACE" -scheme "$APP_SCHEME" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO test | xcpretty;
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
