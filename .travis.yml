@@ -13,7 +13,7 @@ env:
   - APP_SCHEME="FuelTracker"
   matrix:
 
-    - DESTINATION="OS=12.0,name=iPad Pro (9.7-inch)"     SCHEME="$APP_SCHEME"
+    - DESTINATION="OS=12.0,name=iPhone XS"     SCHEME="$APP_SCHEME"
 
 script:
   - set -o pipefail
