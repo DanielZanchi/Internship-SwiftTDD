@@ -1,12 +1,11 @@
 language: swift
-os: osx
 osx_image: xcode10
 
 before_script:
   - gem install xcpretty
 
 script:
-  - swift package generate-xcodeproj
+  - swift package generate-xcworkspace
   - set -o pipefail && xcodebuild -scheme FuelTracker-Package clean build test | xcpretty
 
 after_success:
