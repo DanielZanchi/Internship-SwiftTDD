@@ -11,30 +11,31 @@ import XCTest
 
 class FuelTests: XCTestCase {
 
-    var fuel: Fuel!
+    var myFuel: Fuel!
+    var myFuelViewModel: FuelViewModel!
     
     override func setUp() {
-        
+        super.setUp()
+        myFuel = Fuel(id: 0, quantity: 100, pricePerUnit: 1, date: Date(timeIntervalSince1970: 0)) //should return date as 01/01/1970
+        myFuelViewModel = FuelViewModel(fuel: myFuel)
     }
 
     override func tearDown() {
-        fuel = nil
+        super.tearDown()
+        myFuelViewModel = nil
+        myFuel = nil
     }
     
     func testFuel() {
-        fuel = Fuel()
-        XCTAssertNotNil(fuel)
-    }
-
-    func testQuantitySetterGetter() {
-        fuel = Fuel()
-        fuel.setQuantity(quantity: 10)
-        XCTAssertEqual(10, fuel.getQuantity())
+        XCTAssertNotNil(myFuel)
     }
     
-    func testCompleteConstructor() {
-        fuel = Fuel(quantity: 10)
-        XCTAssertEqual(10, fuel.getQuantity())
+    func testFuelViewModel() {
+        XCTAssertNotNil(myFuelViewModel)
     }
-
+    
+    func testName() {
+        XCTAssertEqual("01/01/1970", myFuelViewModel.name)
+    }
+    
 }

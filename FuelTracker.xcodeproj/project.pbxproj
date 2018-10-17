@@ -15,6 +15,7 @@
 		3007B9F22175EA35002C4BEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3007B9F12175EA34002C4BEB /* Assets.xcassets */; };
 		3007B9F52175EA35002C4BEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3007B9F32175EA35002C4BEB /* LaunchScreen.storyboard */; };
 		3007BA0B2175EA35002C4BEB /* FuelTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3007BA0A2175EA35002C4BEB /* FuelTrackerUITests.swift */; };
+		303CAAF421778F8700202E44 /* FuelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303CAAF321778F8700202E44 /* FuelViewModel.swift */; };
 		3075AD8121762C4E00025C2A /* AddFuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3075AD8021762C4E00025C2A /* AddFuelViewController.swift */; };
 		30C9555A217665D2008BBC51 /* Fuel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C95559217665D2008BBC51 /* Fuel.swift */; };
 		30C9557D217669C2008BBC51 /* FuelTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C9557C217669C2008BBC51 /* FuelTrackerTests.swift */; };
@@ -51,6 +52,7 @@
 		3007BA062175EA35002C4BEB /* FuelTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuelTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3007BA0A2175EA35002C4BEB /* FuelTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTrackerUITests.swift; sourceTree = "<group>"; };
 		3007BA0C2175EA35002C4BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		303CAAF321778F8700202E44 /* FuelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelViewModel.swift; sourceTree = "<group>"; };
 		3075AD8021762C4E00025C2A /* AddFuelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFuelViewController.swift; sourceTree = "<group>"; };
 		30C95559217665D2008BBC51 /* Fuel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel.swift; sourceTree = "<group>"; };
 		30C9557121766991008BBC51 /* FuelTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuelTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,9 +123,9 @@
 			isa = PBXGroup;
 			children = (
 				3007B9EA2175EA31002C4BEB /* AppDelegate.swift */,
-				3007B9EC2175EA31002C4BEB /* FuelRegisterViewController.swift */,
-				3075AD8021762C4E00025C2A /* AddFuelViewController.swift */,
-				30C95559217665D2008BBC51 /* Fuel.swift */,
+				303CAAF221778F6900202E44 /* Model */,
+				303CAAF521778F8B00202E44 /* ViewModel */,
+				303CAAF82177991800202E44 /* Controller */,
 				3007B9EE2175EA31002C4BEB /* Main.storyboard */,
 				3007B9F12175EA34002C4BEB /* Assets.xcassets */,
 				3007B9F32175EA35002C4BEB /* LaunchScreen.storyboard */,
@@ -139,6 +141,31 @@
 				3007BA0C2175EA35002C4BEB /* Info.plist */,
 			);
 			path = FuelTrackerUITests;
+			sourceTree = "<group>";
+		};
+		303CAAF221778F6900202E44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30C95559217665D2008BBC51 /* Fuel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		303CAAF521778F8B00202E44 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				303CAAF321778F8700202E44 /* FuelViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		303CAAF82177991800202E44 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3007B9EC2175EA31002C4BEB /* FuelRegisterViewController.swift */,
+				3075AD8021762C4E00025C2A /* AddFuelViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		30C9557221766991008BBC51 /* FuelTrackerTests */ = {
@@ -388,6 +415,7 @@
 				30C9555A217665D2008BBC51 /* Fuel.swift in Sources */,
 				3007B9ED2175EA31002C4BEB /* FuelRegisterViewController.swift in Sources */,
 				3007B9EB2175EA31002C4BEB /* AppDelegate.swift in Sources */,
+				303CAAF421778F8700202E44 /* FuelViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
