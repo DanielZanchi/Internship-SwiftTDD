@@ -26,4 +26,5 @@ class Fuel {
     func getQuantity() -> Double {
         return self.quantity
     }
+    
 }
