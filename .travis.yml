@@ -1,0 +1,6 @@
+language: objective-c
+osx_image: xcode10
+
+xcode_project: FuelTracker.xcodeproj
+xcode_scheme: FuelTracker
+xcode_destination: platform=iOS Simulator,OS=12.0,name=iPhone X
