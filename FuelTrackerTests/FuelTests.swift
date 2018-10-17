@@ -26,9 +26,14 @@ class FuelTests: XCTestCase {
         XCTAssertNotNil(fuel)
     }
 
-    func testQuantity() {
+    func testQuantitySetterGetter() {
         fuel = Fuel()
         fuel.setQuantity(quantity: 10)
+        XCTAssertEqual(10, fuel.getQuantity())
+    }
+    
+    func testCompleteConstructor() {
+        fuel = Fuel(quantity: 10)
         XCTAssertEqual(10, fuel.getQuantity())
     }
 
