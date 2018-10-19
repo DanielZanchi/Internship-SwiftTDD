@@ -13,4 +13,5 @@ struct Fuel {
     let quantity: Double!
     let pricePerUnit: Double!
     let date: Date!
+    let mileage: UInt!
 }
