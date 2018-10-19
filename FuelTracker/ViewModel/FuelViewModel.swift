@@ -28,4 +28,5 @@ class FuelViewModel {
         formatter.dateFormat = "dd/MM/YYYY"
         return formatter.string(from: date)
     }
+    
 }
