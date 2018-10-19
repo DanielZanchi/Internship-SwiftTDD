@@ -20,6 +20,7 @@ class FuelTrackerUITests: XCTestCase {
 
     override func tearDown() {
         super.tearDown()
+        app = nil
     }
 
     func testTitle() {

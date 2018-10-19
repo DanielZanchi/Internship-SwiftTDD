@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="39Y-Sy-SB1">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,7 +14,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="FuelRegisterViewController" customModule="FuelTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -36,18 +36,155 @@
             <objects>
                 <viewController id="OCe-mt-ks4" customClass="AddFuelViewController" customModule="FuelTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c9W-qO-IaE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0ie-9R-KBi" userLabel="Form Stack View">
+                                <rect key="frame" x="41.666666666666657" y="100" width="291.66666666666674" height="128"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TUV-T5-VNq" userLabel="Mileage Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="291.66666666666669" height="26"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mileage:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3w8-HK-CxN">
+                                                <rect key="frame" x="0.0" y="0.0" width="106.33333333333333" height="26"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hWO-gO-WkH">
+                                                <rect key="frame" x="114.33333333333334" y="0.0" width="90" height="26"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="mileageTextField"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="26" id="eNQ-G8-LB4"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" returnKeyType="next"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Km (ODO)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laX-oW-kss">
+                                                <rect key="frame" x="212.33333333333334" y="0.0" width="79.333333333333343" height="26"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vE0-A1-6NX" userLabel="Quantity Stack View">
+                                        <rect key="frame" x="0.0" y="34" width="291.66666666666669" height="26"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kx-8N-Ixt">
+                                                <rect key="frame" x="0.0" y="0.0" width="106.33333333333333" height="26"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jIT-Do-PQO">
+                                                <rect key="frame" x="114.33333333333334" y="0.0" width="90" height="26"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="quantityTextField"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="26" id="7bJ-FY-s4S"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32U-n5-Ch0">
+                                                <rect key="frame" x="212.33333333333334" y="0.0" width="79.333333333333343" height="26"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pYV-I6-24Q" userLabel="Total Stack View">
+                                        <rect key="frame" x="0.0" y="68" width="291.66666666666669" height="26"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKZ-ve-lKc">
+                                                <rect key="frame" x="0.0" y="0.0" width="106.33333333333333" height="26"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hj1-9L-Aze">
+                                                <rect key="frame" x="114.33333333333334" y="0.0" width="90" height="26"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="totalAmountTextField"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="26" id="Lp7-b5-76o"/>
+                                                    <constraint firstAttribute="width" constant="90" id="jQq-hV-g11"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYs-XE-j3A">
+                                                <rect key="frame" x="212.33333333333334" y="0.0" width="79.333333333333343" height="26"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="c2D-qc-evO" userLabel="PricePL Stack View">
+                                        <rect key="frame" x="0.0" y="102" width="291.66666666666669" height="26"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhr-kW-aQk">
+                                                <rect key="frame" x="0.0" y="0.0" width="106.33333333333333" height="26"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EKp-jA-cmM">
+                                                <rect key="frame" x="114.33333333333334" y="0.0" width="90" height="26"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="priceTextField"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="26" id="uMQ-X6-mvZ"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€/Liter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4Z-6R-JRQ">
+                                                <rect key="frame" x="212.33333333333334" y="0.0" width="79.333333333333343" height="26"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="jIT-Do-PQO" firstAttribute="width" secondItem="hj1-9L-Aze" secondAttribute="width" id="6Uj-u6-Vpn"/>
+                                    <constraint firstItem="EKp-jA-cmM" firstAttribute="width" secondItem="hj1-9L-Aze" secondAttribute="width" id="DSy-sQ-a8C"/>
+                                    <constraint firstItem="M4Z-6R-JRQ" firstAttribute="width" secondItem="qYs-XE-j3A" secondAttribute="width" id="N8K-VL-sfv"/>
+                                    <constraint firstItem="hWO-gO-WkH" firstAttribute="width" secondItem="hj1-9L-Aze" secondAttribute="width" id="T5Z-Qp-VOx"/>
+                                    <constraint firstItem="qYs-XE-j3A" firstAttribute="width" secondItem="32U-n5-Ch0" secondAttribute="width" id="sq3-Gs-ebM"/>
+                                    <constraint firstItem="32U-n5-Ch0" firstAttribute="width" secondItem="laX-oW-kss" secondAttribute="width" id="w44-pY-qEr"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" identifier="view">
+                            <bool key="isElement" value="NO"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstItem="0ie-9R-KBi" firstAttribute="centerX" secondItem="c9W-qO-IaE" secondAttribute="centerX" id="W9B-wM-cZs"/>
+                            <constraint firstItem="0ie-9R-KBi" firstAttribute="top" secondItem="rS1-3V-HGQ" secondAttribute="top" constant="12" id="cKD-yR-tki"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rS1-3V-HGQ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Fuel" id="K8w-fY-750">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="deC-gM-hUS"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mileageTextField" destination="hWO-gO-WkH" id="GHg-59-CRX"/>
+                        <outlet property="priceTextField" destination="EKp-jA-cmM" id="381-5F-jNN"/>
+                        <outlet property="quantityTextField" destination="jIT-Do-PQO" id="30b-Av-Hfl"/>
+                        <outlet property="totalAmountTextField" destination="hj1-9L-Aze" id="rP8-Au-bpA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HfT-5F-enO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2086" y="95"/>
+            <point key="canvasLocation" x="2085.5999999999999" y="94.902548725637189"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Lt8-mG-KMp">
@@ -55,7 +192,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="39Y-Sy-SB1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OSZ-cT-zb1">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

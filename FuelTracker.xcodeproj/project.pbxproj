@@ -17,6 +17,7 @@
 		3007BA0B2175EA35002C4BEB /* FuelTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3007BA0A2175EA35002C4BEB /* FuelTrackerUITests.swift */; };
 		303CAAF421778F8700202E44 /* FuelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303CAAF321778F8700202E44 /* FuelViewModel.swift */; };
 		3075AD8121762C4E00025C2A /* AddFuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3075AD8021762C4E00025C2A /* AddFuelViewController.swift */; };
+		30C4D78C217A4183006F0085 /* AddFuelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C4D78B217A4183006F0085 /* AddFuelUITests.swift */; };
 		30C9555A217665D2008BBC51 /* Fuel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C95559217665D2008BBC51 /* Fuel.swift */; };
 		30C9557D217669C2008BBC51 /* FuelTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C9557C217669C2008BBC51 /* FuelTrackerTests.swift */; };
 		30C9557F217669EF008BBC51 /* FuelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C9557E217669EF008BBC51 /* FuelTests.swift */; };
@@ -54,6 +55,7 @@
 		3007BA0C2175EA35002C4BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		303CAAF321778F8700202E44 /* FuelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelViewModel.swift; sourceTree = "<group>"; };
 		3075AD8021762C4E00025C2A /* AddFuelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFuelViewController.swift; sourceTree = "<group>"; };
+		30C4D78B217A4183006F0085 /* AddFuelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFuelUITests.swift; sourceTree = "<group>"; };
 		30C95559217665D2008BBC51 /* Fuel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel.swift; sourceTree = "<group>"; };
 		30C9557121766991008BBC51 /* FuelTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuelTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C9557521766991008BBC51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				3007BA0A2175EA35002C4BEB /* FuelTrackerUITests.swift */,
+				30C4D78B217A4183006F0085 /* AddFuelUITests.swift */,
 				3007BA0C2175EA35002C4BEB /* Info.plist */,
 			);
 			path = FuelTrackerUITests;
@@ -424,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3007BA0B2175EA35002C4BEB /* FuelTrackerUITests.swift in Sources */,
+				30C4D78C217A4183006F0085 /* AddFuelUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
