@@ -26,4 +26,15 @@ class AddFuelViewController: UIViewController {
         view.endEditing(true)
     }
 
+    @IBAction func totalAmountTextFieldChanged(_ sender: UITextField) {
+        let totalAmount: Double = sender.text?.doubleValue ?? 0
+        let quantity: Double = (quantityTextField.text)?.doubleValue ?? 0
+        let pricePerUnit =  totalAmount / quantity
+        priceTextField.text = pricePerUnit.stringValue
+    }
+    
+    @IBAction func priceTextFieldChanged(_ sender: UITextField) {
+    
+    }
+
 }
