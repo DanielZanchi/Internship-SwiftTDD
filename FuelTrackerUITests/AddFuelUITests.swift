@@ -41,5 +41,9 @@ class AddFuelUITests: XCTestCase {
         app.otherElements["view"].tap()
         XCTAssertEqual(app.keyboards.count, 0)
     }
+    
+//    func testTotalAmount() {
+//        app.textFields["quantityTextField"].
+//    }
 
 }
