@@ -46,7 +46,7 @@ class AddFuelUITests: XCTestCase {
         inputText(textFieldID: "quantityTextField", text: "50")
         inputText(textFieldID: "totalAmountTextField", text: "100")
         let pricePerUnitTextField = app.textFields["priceTextField"]
-        XCTAssertEqual(pricePerUnitTextField.value as! String, "2.00")
+        XCTAssertEqual(pricePerUnitTextField.value as! String, "2.000")
     }
     
     func testPricePerUnitZero() {
