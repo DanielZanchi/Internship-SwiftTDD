@@ -20,24 +20,55 @@ class AddFuelViewController: UIViewController {
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(AddFuelViewController.dismissKeyboard))
         self.view.addGestureRecognizer(tap)
+        
+        didEnterQuantity(false)
     }
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
+    
+    func didEnterQuantity(_ entered: Bool) {
+        totalAmountTextField.isEnabled = entered
+        priceTextField.isEnabled = entered
+    }
+    
+    func calculatePricePerUnit() -> String {
+        let totalAmount: Double = (totalAmountTextField.text?.doubleValue)!
+        let quantity: Double = ((quantityTextField.text)?.doubleValue)!
+        if quantity == 0 || totalAmount == 0 {
+            return "0.00"
+        }
+        return (totalAmount / quantity).stringValue
+    }
+    
+    func calculateTotalAmount() -> String {
+        let pricePerUnit: Double = (priceTextField.text?.doubleValue)!
+        let quantity: Double = (quantityTextField.text?.doubleValue)!
+        return (pricePerUnit * quantity).stringValue
+    }
+    
+    // MARK: IBActions
+    
+    @IBAction func quantityTextFieldChanged(_ sender: UITextField) {
+        if sender.text?.doubleValue != 0.00 {
+            didEnterQuantity(true)
+        } else {
+            didEnterQuantity(false)
+            totalAmountTextField.text = ""
+            priceTextField.text = ""
+        }
+    }
 
     @IBAction func totalAmountTextFieldChanged(_ sender: UITextField) {
-        let totalAmount: Double = sender.text?.doubleValue ?? 0
-        let quantity: Double = (quantityTextField.text)?.doubleValue ?? 0
-        let pricePerUnit =  totalAmount / quantity
-        priceTextField.text = pricePerUnit.stringValue
+        priceTextField.text = calculatePricePerUnit()
     }
     
     @IBAction func priceTextFieldChanged(_ sender: UITextField) {
-        let pricePerUnit: Double = sender.text?.doubleValue ?? 0
-        let quantity: Double = quantityTextField.text?.doubleValue ?? 0
-        let totalAmount = pricePerUnit * quantity
-        priceTextField.text = totalAmount.stringValue
+        totalAmountTextField.text = calculateTotalAmount()
     }
 
 }
+
+
+

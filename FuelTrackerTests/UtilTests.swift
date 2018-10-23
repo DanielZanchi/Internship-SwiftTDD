@@ -34,4 +34,12 @@ class UtilTests: XCTestCase {
         double = Double()
         XCTAssertEqual(double.stringValue, "0.00")
     }
+    
+    func testDisabledTextFieldColor() {
+        let textField = UITextField()
+        textField.isEnabled = true
+        XCTAssertEqual(textField.backgroundColor, UIColor.white)
+        textField.isEnabled = false
+        XCTAssertEqual(textField.backgroundColor, UIColor(red: 201/255, green: 193/255, blue: 195/255, alpha: 1.0))
+    }
 }

@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "FuelTrackerTests/UtilTests.swift"
-            timestampString = "561896167.421906"
+            filePath = "FuelTracker/Controller/AddFuelViewController.swift"
+            timestampString = "561982843.4699121"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "testStringToDouble()"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "priceTextFieldChanged(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
