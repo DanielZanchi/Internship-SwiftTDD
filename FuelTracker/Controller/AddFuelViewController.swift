@@ -39,13 +39,13 @@ class AddFuelViewController: UIViewController {
         if quantity == 0 || totalAmount == 0 {
             return "0.00"
         }
-        return (totalAmount / quantity).stringValue
+        return (totalAmount / quantity).toString(decimals: 3)
     }
     
     func calculateTotalAmount() -> String {
         let pricePerUnit: Double = (priceTextField.text?.doubleValue)!
         let quantity: Double = (quantityTextField.text?.doubleValue)!
-        return (pricePerUnit * quantity).stringValue
+        return (pricePerUnit * quantity).toString(decimals: 2)
     }
     
     // MARK: IBActions

@@ -9,9 +9,9 @@
 import Foundation
 
 extension Double {
-    // return string value froma a double with two decimals 
-    var stringValue: String {
-        return (String(format: "%.2f", self))
+    // return string value from a double with decimals
+    func toString(decimals: UInt) -> String {
+        return String(format: "%.\(decimals)f", self)
     }
     
 }

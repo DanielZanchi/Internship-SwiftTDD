@@ -17,10 +17,10 @@ class FuelViewModel {
     
     init(fuel: Fuel) {
         self.name = getDate(date: fuel.date)
-        self.quantity = fuel.quantity.stringValue
+        self.quantity = fuel.quantity.toString(decimals: 2)
         self.mileage = fuel.mileage
-        self.pricePerUnit = fuel.pricePerUnit.stringValue
-        self.price = (fuel.pricePerUnit * fuel.quantity).stringValue
+        self.pricePerUnit = fuel.pricePerUnit.toString(decimals: 3)
+        self.price = (fuel.pricePerUnit * fuel.quantity).toString(decimals: 2)
     }
     
     private func getDate(date: Date) -> String {

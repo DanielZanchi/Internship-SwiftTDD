@@ -27,12 +27,12 @@ class UtilTests: XCTestCase {
     }
     
     func testDoubleToString() {
-        var double: Double = 314.25
-        XCTAssertEqual(double.stringValue, "314.25")
+        var double: Double = 314.256
+        XCTAssertEqual(double.toString(decimals: 3), "314.256")
         double = 314.259
-        XCTAssertEqual(double.stringValue, "314.26")
+        XCTAssertEqual(double.toString(decimals: 2), "314.26")
         double = Double()
-        XCTAssertEqual(double.stringValue, "0.00")
+        XCTAssertEqual(double.toString(decimals: 0), "0")
     }
     
     func testDisabledTextFieldColor() {
