@@ -47,7 +47,7 @@ class FuelTests: XCTestCase {
     }
 
     func testPricePerUnit() {
-        XCTAssertEqual("2.00", myFuelViewModel.pricePerUnit)
+        XCTAssertEqual("2.000", myFuelViewModel.pricePerUnit)
     }
 
     func testPrice() {
