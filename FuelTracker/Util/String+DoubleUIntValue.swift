@@ -13,6 +13,9 @@ extension String {
     var doubleValue: Double {
         return Double(self) ?? 0
     }
-
+    
+    var UIntValue: UInt {
+        return UInt(self) ?? 0
+    }
 }
 

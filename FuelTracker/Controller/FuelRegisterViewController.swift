@@ -16,4 +16,11 @@ class FuelRegisterViewController: UIViewController {
         
     }
     
+    @IBAction func unwindToFuelRegister(sender: UIStoryboardSegue) {
+        print("action unwindo")
+        if let sourceViewController = sender.source as? AddFuelViewController, let fuel = sourceViewController.fuel {
+            print("save fuel")
+        }
+    }
+    
 }

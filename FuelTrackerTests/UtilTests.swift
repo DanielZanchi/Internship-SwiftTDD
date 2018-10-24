@@ -26,6 +26,13 @@ class UtilTests: XCTestCase {
         XCTAssertEqual(string.doubleValue, 0.0)
     }
     
+    func testStringToUInt() {
+        var string: String = "314" 
+        XCTAssertEqual(string.UIntValue, 314)
+        string = String()
+        XCTAssertEqual(string.UIntValue, 0)
+    }
+    
     func testDoubleToString() {
         var double: Double = 314.256
         XCTAssertEqual(double.toString(decimals: 3), "314.256")

@@ -16,7 +16,7 @@ class FuelTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        myFuel = Fuel(id: 0, quantity: 100, pricePerUnit: 2, date: Date(timeIntervalSince1970: 0), mileage: 3450) // should return date as 01/01/1970
+        myFuel = Fuel(date: Date(timeIntervalSince1970: 0), mileage: 3450, quantity: 100, pricePerUnit: 2) // should return date as 01/01/1970
         myFuelViewModel = FuelViewModel(fuel: myFuel)
     }
 

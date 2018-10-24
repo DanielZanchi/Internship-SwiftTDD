@@ -60,6 +60,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" returnKeyType="next"/>
+                                                <connections>
+                                                    <action selector="mileageTextFieldChanged:" destination="OCe-mt-ks4" eventType="editingChanged" id="tJT-QM-LFr"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Km (ODO)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laX-oW-kss">
                                                 <rect key="frame" x="212.33333333333334" y="0.0" width="79.333333333333343" height="28"/>
@@ -182,16 +185,22 @@
                         <viewLayoutGuide key="safeArea" id="rS1-3V-HGQ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Fuel" id="K8w-fY-750">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="deC-gM-hUS"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="deC-gM-hUS">
+                            <connections>
+                                <segue destination="vNq-oU-Lpp" kind="unwind" unwindAction="unwindToFuelRegisterWithSender:" id="53Y-uU-MzN"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="mileageTextField" destination="hWO-gO-WkH" id="GHg-59-CRX"/>
                         <outlet property="priceTextField" destination="EKp-jA-cmM" id="381-5F-jNN"/>
                         <outlet property="quantityTextField" destination="jIT-Do-PQO" id="30b-Av-Hfl"/>
+                        <outlet property="saveButton" destination="deC-gM-hUS" id="Qp1-MX-f76"/>
                         <outlet property="totalAmountTextField" destination="hj1-9L-Aze" id="rP8-Au-bpA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HfT-5F-enO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="vNq-oU-Lpp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2085.5999999999999" y="94.902548725637189"/>
         </scene>

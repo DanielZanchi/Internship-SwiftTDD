@@ -9,9 +9,8 @@
 import Foundation
 
 struct Fuel {
-    let id: Int!
-    let quantity: Double!
-    let pricePerUnit: Double!
     let date: Date!
     let mileage: UInt!
+    let quantity: Double!
+    let pricePerUnit: Double!
 }

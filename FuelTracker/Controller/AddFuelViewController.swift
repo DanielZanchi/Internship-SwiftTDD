@@ -9,11 +9,15 @@
 import UIKit
 
 class AddFuelViewController: UIViewController {
-
+    
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    
     @IBOutlet weak var mileageTextField: UITextField!
     @IBOutlet weak var quantityTextField: UITextField!
     @IBOutlet weak var totalAmountTextField: UITextField!
     @IBOutlet weak var priceTextField: UITextField!
+    
+    var fuel: Fuel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,16 +28,27 @@ class AddFuelViewController: UIViewController {
         didEnterQuantity(false)
     }
     
-    @objc func dismissKeyboard() {
+    @objc private func dismissKeyboard() {
         view.endEditing(true)
     }
     
-    func didEnterQuantity(_ entered: Bool) {
+    private func checkTextFieldsContent() {
+        if quantityTextField.text?.doubleValue != 0.00 && mileageTextField.text?.doubleValue != 0.00 {
+            didEnterQuantity(true)
+        } else {
+            didEnterQuantity(false)
+            totalAmountTextField.text = ""
+            priceTextField.text = ""
+        }
+    }
+    
+    private func didEnterQuantity(_ entered: Bool) {
+        saveButton.isEnabled = entered
         totalAmountTextField.isEnabled = entered
         priceTextField.isEnabled = entered
     }
     
-    func calculatePricePerUnit() -> String {
+    private func calculatePricePerUnit() -> String {
         let totalAmount: Double = (totalAmountTextField.text?.doubleValue)!
         let quantity: Double = ((quantityTextField.text)?.doubleValue)!
         if quantity == 0 || totalAmount == 0 {
@@ -42,22 +57,31 @@ class AddFuelViewController: UIViewController {
         return (totalAmount / quantity).toString(decimals: 3)
     }
     
-    func calculateTotalAmount() -> String {
+    private func calculateTotalAmount() -> String {
         let pricePerUnit: Double = (priceTextField.text?.doubleValue)!
         let quantity: Double = (quantityTextField.text?.doubleValue)!
         return (pricePerUnit * quantity).toString(decimals: 2)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+                
+        let date: Date = Date()
+        let mileage: UInt = (mileageTextField.text?.UIntValue)!
+        let quantity: Double = (quantityTextField.text?.doubleValue)!
+        let pricePerUnit: Double = (priceTextField.text?.doubleValue)!
+
+        fuel = Fuel(date: date, mileage: mileage, quantity: quantity, pricePerUnit: pricePerUnit)
+    }
+    
     // MARK: IBActions
     
     @IBAction func quantityTextFieldChanged(_ sender: UITextField) {
-        if sender.text?.doubleValue != 0.00 {
-            didEnterQuantity(true)
-        } else {
-            didEnterQuantity(false)
-            totalAmountTextField.text = ""
-            priceTextField.text = ""
-        }
+        checkTextFieldsContent()
+    }
+    
+    @IBAction func mileageTextFieldChanged(_ sender: UITextField) {
+        checkTextFieldsContent()
     }
 
     @IBAction func totalAmountTextFieldChanged(_ sender: UITextField) {
@@ -67,8 +91,5 @@ class AddFuelViewController: UIViewController {
     @IBAction func priceTextFieldChanged(_ sender: UITextField) {
         totalAmountTextField.text = calculateTotalAmount()
     }
-
+    
 }
-
-
-
