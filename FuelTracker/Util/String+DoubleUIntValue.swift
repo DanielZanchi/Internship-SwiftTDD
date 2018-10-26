@@ -14,8 +14,8 @@ extension String {
         return Double(self) ?? 0
     }
     
-    var UIntValue: UInt {
-        return UInt(self) ?? 0
+    var intValue: Int {
+        return Int(self) ?? 0
     }
 }
 

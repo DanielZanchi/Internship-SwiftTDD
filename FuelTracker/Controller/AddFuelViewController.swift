@@ -67,7 +67,7 @@ class AddFuelViewController: UIViewController {
         super.prepare(for: segue, sender: sender)
                 
         let date: Date = Date()
-        let mileage: UInt = (mileageTextField.text?.UIntValue)!
+        let mileage: Int = (mileageTextField.text?.intValue)!
         let quantity: Double = (quantityTextField.text?.doubleValue)!
         let pricePerUnit: Double = (priceTextField.text?.doubleValue)!
 

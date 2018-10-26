@@ -11,7 +11,7 @@ import Foundation
 class FuelViewModel {
     var name: String!
     var quantity: String!
-    var mileage: UInt!
+    var mileage: Int!
     var pricePerUnit: String!
     var price: String!
     

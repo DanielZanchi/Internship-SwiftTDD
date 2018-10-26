@@ -8,6 +8,7 @@ target 'FuelTracker' do
   # Pods for FuelTracker
 	pod 'SwiftLint'
 	pod 'SQLite.swift', '~> 0.11.5'
+	pod 'SwiftyMocky'
 
   target 'FuelTrackerTests' do
     inherit! :search_paths

@@ -10,7 +10,7 @@ import Foundation
 
 struct Fuel {
     let date: Date!
-    let mileage: UInt!
+    let mileage: Int!
     let quantity: Double!
     let pricePerUnit: Double!
 }

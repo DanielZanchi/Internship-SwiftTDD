@@ -1,22 +1,32 @@
 PODS:
+  - Sourcery (0.15.0)
   - SQLite.swift (0.11.5):
     - SQLite.swift/standard (= 0.11.5)
   - SQLite.swift/standard (0.11.5)
   - SwiftLint (0.26.0)
+  - SwiftyMocky (3.0.0):
+    - SwiftyMocky/Core (= 3.0.0)
+  - SwiftyMocky/Core (3.0.0):
+    - Sourcery
 
 DEPENDENCIES:
   - SQLite.swift (~> 0.11.5)
   - SwiftLint
+  - SwiftyMocky
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Sourcery
     - SQLite.swift
     - SwiftLint
+    - SwiftyMocky
 
 SPEC CHECKSUMS:
+  Sourcery: 5895672cae353cdbfa95f3f4aaeb75a664d76f6a
   SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
   SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
+  SwiftyMocky: b3580655f96a5835a802bbfd8da9570cda0c285e
 
-PODFILE CHECKSUM: 5b6594c8fc4729258ca24c9ecc9270aa7deea53f
+PODFILE CHECKSUM: d7dcf7fd6cab776b522dcb1f5fa82e228b27c79d
 
 COCOAPODS: 1.5.3

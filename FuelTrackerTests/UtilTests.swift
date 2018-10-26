@@ -28,9 +28,9 @@ class UtilTests: XCTestCase {
     
     func testStringToUInt() {
         var string: String = "314" 
-        XCTAssertEqual(string.UIntValue, 314)
+        XCTAssertEqual(string.intValue, 314)
         string = String()
-        XCTAssertEqual(string.UIntValue, 0)
+        XCTAssertEqual(string.intValue, 0)
     }
     
     func testDoubleToString() {
