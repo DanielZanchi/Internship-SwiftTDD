@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -130,7 +130,7 @@
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5B0A5A6BECA34BEDFF17ADBA5E36D446 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
 		60C1C7F9880248765A2E996497CB5837 /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
-		6337CEA0E25C01260343880399B348E4 /* Pods_FuelTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FuelTrackerUITests.framework; path = "Pods-FuelTrackerUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6337CEA0E25C01260343880399B348E4 /* Pods_FuelTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B60A1445192FDF093A381FE9B04C0DA /* Pods-FuelTrackerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FuelTrackerUITests-frameworks.sh"; sourceTree = "<group>"; };
 		73987F20D58E4DFF39C38E172895FE1F /* Pods-FuelTrackerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FuelTrackerUITests-umbrella.h"; sourceTree = "<group>"; };
 		746154B69D92D2C54D896DD6A9A3596D /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 		8B04640E8443E9F57A1A0F3534C5FB24 /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
 		8FC3C49DF0FA6CD35B6F65A7E38061AF /* Pods-FuelTrackerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FuelTrackerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		924EBA74F819B93C71ABED1ACC6C58C2 /* Countable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Countable.swift; path = Sources/Classes/Countable.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94DF45E174C4C40AFEC706ABEB49C554 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
 		96FCF07BF387B10A9007872916C12BAD /* Parameter+Literals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Parameter+Literals.swift"; path = "Sources/Classes/Parameter+Literals.swift"; sourceTree = "<group>"; };
 		A0B3D0DB20D764178A10448832DDAC64 /* Pods-FuelTrackerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FuelTrackerUITests-dummy.m"; sourceTree = "<group>"; };
@@ -154,18 +154,18 @@
 		A8468E6B50E7AEDBF3069F318BD83C50 /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
 		A9B32D78FB945F537F6891ED2D2A8776 /* SwiftyMocky-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyMocky-umbrella.h"; sourceTree = "<group>"; };
 		B42BBCF32C88F1D4F880B62CA061CD14 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
-		B8C63A710C7DA1B05FE8DF33F2B0F8AF /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLite.framework; path = SQLite.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8C63A710C7DA1B05FE8DF33F2B0F8AF /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9A71788509952B5A066525D96CD2D02 /* Coding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coding.swift; path = Sources/SQLite/Typed/Coding.swift; sourceTree = "<group>"; };
 		BFA082B46EE0E2D10736CD51E65F16F2 /* Pods-FuelTracker-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FuelTracker-resources.sh"; sourceTree = "<group>"; };
-		C1F3B3BCC2E333A53D2A04A3D28E364B /* Pods_FuelTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FuelTracker.framework; path = "Pods-FuelTracker.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1F3B3BCC2E333A53D2A04A3D28E364B /* Pods_FuelTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2234F3697064D6D97FBF7E5CE067F47 /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
 		C45A6A27E89A63F37B72CD34A5D5BB06 /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
 		C5850C22613E4542FCC3DDED51876E40 /* SwiftyMocky-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyMocky-dummy.m"; sourceTree = "<group>"; };
 		C654F111068D8BC6EB89202319D61456 /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
 		CA648DA95E91FCAD5B63039AC7AE94A0 /* Pods-FuelTrackerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FuelTrackerTests-umbrella.h"; sourceTree = "<group>"; };
 		CEB7E2E6B45919FFAB229E7AB120ADC8 /* Pods-FuelTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FuelTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		CEDDFC708647ECD3C4736F44BD9AB8F2 /* Pods_FuelTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FuelTrackerTests.framework; path = "Pods-FuelTrackerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D009CAEC657D51A9E14B3C36586BCF59 /* SwiftyMocky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyMocky.framework; path = SwiftyMocky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDDFC708647ECD3C4736F44BD9AB8F2 /* Pods_FuelTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D009CAEC657D51A9E14B3C36586BCF59 /* SwiftyMocky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyMocky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D22A82A010A1A131EFA1E96A6EB98C21 /* SwiftyMocky.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyMocky.xcconfig; sourceTree = "<group>"; };
 		D66CEFC20FAF5D68D880173EF1E555A8 /* Policies.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Policies.swift; path = Sources/Classes/Policies.swift; sourceTree = "<group>"; };
 		DA8C3609C446DEE702516D7E2E5C799F /* Pods-FuelTrackerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FuelTrackerTests-dummy.m"; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 		EF31DC5185E6794D4F61074F85A6F95A /* Pods-FuelTrackerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FuelTrackerTests.modulemap"; sourceTree = "<group>"; };
 		F0540EC80FEE8F24BCD9C6AAA16C4531 /* MockySetup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MockySetup.h; path = Sources/Classes/MockySetup.h; sourceTree = "<group>"; };
 		F188A43F74F2655CCD657ABF792CFADF /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
-		F39460B989EC448C54A95E4B12C06DD0 /* Mock.swifttemplate */ = {isa = PBXFileReference; includeInIndex = 1; name = Mock.swifttemplate; path = Sources/Templates/Mock.swifttemplate; sourceTree = "<group>"; };
+		F39460B989EC448C54A95E4B12C06DD0 /* Mock.swifttemplate */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Mock.swifttemplate; path = Sources/Templates/Mock.swifttemplate; sourceTree = "<group>"; };
 		F3E181A80664F8815290A6C466ABCDD4 /* Pods-FuelTrackerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FuelTrackerTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		F491A71A0024D8CB7EE18597F7EF50B2 /* Pods-FuelTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FuelTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
 		F88221ABF6161291F010373FAE2FB2DA /* Mock+Assertions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Mock+Assertions.swift"; path = "Sources/Classes/Mock+Assertions.swift"; sourceTree = "<group>"; };
@@ -324,7 +324,6 @@
 				AB3D962D15B76C2C4DED597359D7B4EA /* Core */,
 				08B3125E61CE7DC2B548CA82AC96EB86 /* Support Files */,
 			);
-			name = SwiftyMocky;
 			path = SwiftyMocky;
 			sourceTree = "<group>";
 		};
@@ -332,7 +331,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = SwiftLint;
 			path = SwiftLint;
 			sourceTree = "<group>";
 		};
@@ -441,7 +439,6 @@
 				33FA785449EE6C350E290920F0939625 /* standard */,
 				0991A1996137B48606028349A12EF34A /* Support Files */,
 			);
-			name = SQLite.swift;
 			path = SQLite.swift;
 			sourceTree = "<group>";
 		};
@@ -449,7 +446,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = Sourcery;
 			path = Sourcery;
 			sourceTree = "<group>";
 		};
@@ -622,7 +618,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1010;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -790,6 +786,41 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		3FA62CA3627EFAA4771F392DC18EC76D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEB7E2E6B45919FFAB229E7AB120ADC8 /* Pods-FuelTrackerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_CODE_COVERAGE = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FuelTrackerTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FuelTrackerTests/Pods-FuelTrackerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		40B45BB3CF3EE4476259302A7FAAD78F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -845,16 +876,16 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		728F947FC4FA1867B525573ACF01663D /* Debug */ = {
+		4B3062A2CA7B12C94A133DEA36D13BB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36BFC9E49CDF92F9E610E7C1753340A5 /* Pods-FuelTrackerUITests.debug.xcconfig */;
+			baseConfigurationReference = D22A82A010A1A131EFA1E96A6EB98C21 /* SwiftyMocky.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
+				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -864,34 +895,31 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FuelTrackerUITests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyMocky/SwiftyMocky-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyMocky/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FuelTrackerUITests/Pods-FuelTrackerUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyMocky/SwiftyMocky.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyMocky;
+				PRODUCT_NAME = SwiftyMocky;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		81FD3CAACA3493D9BD855D0B58A78053 /* Debug */ = {
+		62F05108FF7494E2E392A1FC8D3A6CDB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E5A22F482C67C6D5D16299B37CD99BBA /* Pods-FuelTracker.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -905,11 +933,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-FuelTracker/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FuelTracker/Pods-FuelTracker.modulemap";
 				OTHER_LDFLAGS = "";
@@ -926,6 +950,40 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		6A2408C1D3B3FD0BAEFE485BF0229014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D22A82A010A1A131EFA1E96A6EB98C21 /* SwiftyMocky.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_CODE_COVERAGE = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyMocky/SwiftyMocky-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyMocky/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyMocky/SwiftyMocky.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyMocky;
+				PRODUCT_NAME = SwiftyMocky;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		85ED3013A635C27F8B7FAF51362B108C /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -991,10 +1049,11 @@
 			};
 			name = Debug;
 		};
-		92BE02376E37367BE4724AD7499637CA /* Release */ = {
+		9A9C3C1E76B2D667B6D9C1FFB9BF5784 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 60C1C7F9880248765A2E996497CB5837 /* SQLite.swift.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1008,70 +1067,27 @@
 				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
 				PRODUCT_MODULE_NAME = SQLite;
 				PRODUCT_NAME = SQLite;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		B52B9A3D0312871BE55D61F0D72FE8FB /* Release */ = {
+		9F84FC98D6798698AE5BBA6B60D10563 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D22A82A010A1A131EFA1E96A6EB98C21 /* SwiftyMocky.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyMocky/SwiftyMocky-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyMocky/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftyMocky/SwiftyMocky.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyMocky;
-				PRODUCT_NAME = SwiftyMocky;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B820B49CA4CAE79525323CFE511416CA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 137DB4DAAE46B3DBDA61CFE628EBAD95 /* Pods-FuelTracker.release.xcconfig */;
+			baseConfigurationReference = F491A71A0024D8CB7EE18597F7EF50B2 /* Pods-FuelTrackerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1082,16 +1098,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FuelTracker/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-FuelTrackerTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FuelTracker/Pods-FuelTracker.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-FuelTrackerTests/Pods-FuelTrackerTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1099,8 +1111,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1108,11 +1118,12 @@
 			};
 			name = Release;
 		};
-		C26FD7CFF89AD8CDA0E6B2E4D36506AC /* Release */ = {
+		A9D351904F1D5457770E5A0B524C2E7B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BB8AD3B9E35420E7AF9AE51E2C64A9D /* Pods-FuelTrackerUITests.release.xcconfig */;
+			baseConfigurationReference = 36BFC9E49CDF92F9E610E7C1753340A5 /* Pods-FuelTrackerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1126,11 +1137,42 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-FuelTrackerUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FuelTrackerUITests/Pods-FuelTrackerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BDF4D123158C80F847594E02707EFC43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BB8AD3B9E35420E7AF9AE51E2C64A9D /* Pods-FuelTrackerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_CODE_COVERAGE = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FuelTrackerUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FuelTrackerUITests/Pods-FuelTrackerUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1147,84 +1189,11 @@
 			};
 			name = Release;
 		};
-		C2D5BFA5B0D482238CA79E8E02E8C4F7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEB7E2E6B45919FFAB229E7AB120ADC8 /* Pods-FuelTrackerTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FuelTrackerTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FuelTrackerTests/Pods-FuelTrackerTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CA781109EC533546C98534C9956DE9CE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D22A82A010A1A131EFA1E96A6EB98C21 /* SwiftyMocky.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyMocky/SwiftyMocky-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyMocky/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftyMocky/SwiftyMocky.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyMocky;
-				PRODUCT_NAME = SwiftyMocky;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D5945B265C7D65EB9178409593510039 /* Debug */ = {
+		C013BF2504E68864E0A681FFA8B8D6AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 60C1C7F9880248765A2E996497CB5837 /* SQLite.swift.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1238,30 +1207,28 @@
 				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
 				PRODUCT_MODULE_NAME = SQLite;
 				PRODUCT_NAME = SQLite;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		D76C18DC41386066B3E9D39F64849B43 /* Release */ = {
+		E637DD8EDEAA7C28F7E2CD0004F0573E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F491A71A0024D8CB7EE18597F7EF50B2 /* Pods-FuelTrackerTests.release.xcconfig */;
+			baseConfigurationReference = 137DB4DAAE46B3DBDA61CFE628EBAD95 /* Pods-FuelTracker.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1272,16 +1239,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FuelTrackerTests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-FuelTracker/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FuelTrackerTests/Pods-FuelTrackerTests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-FuelTracker/Pods-FuelTracker.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1289,6 +1252,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1302,8 +1266,8 @@
 		15EF8FA9F897533D362DB8638F2EFCBC /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D5945B265C7D65EB9178409593510039 /* Debug */,
-				92BE02376E37367BE4724AD7499637CA /* Release */,
+				9A9C3C1E76B2D667B6D9C1FFB9BF5784 /* Debug */,
+				C013BF2504E68864E0A681FFA8B8D6AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1320,8 +1284,8 @@
 		7CEA656EFF98CFD27BD8024CD6EBF5C8 /* Build configuration list for PBXNativeTarget "Pods-FuelTrackerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C2D5BFA5B0D482238CA79E8E02E8C4F7 /* Debug */,
-				D76C18DC41386066B3E9D39F64849B43 /* Release */,
+				3FA62CA3627EFAA4771F392DC18EC76D /* Debug */,
+				9F84FC98D6798698AE5BBA6B60D10563 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1329,8 +1293,8 @@
 		99339EF524BEC97F624ABF4748A2D4D7 /* Build configuration list for PBXNativeTarget "SwiftyMocky" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA781109EC533546C98534C9956DE9CE /* Debug */,
-				B52B9A3D0312871BE55D61F0D72FE8FB /* Release */,
+				4B3062A2CA7B12C94A133DEA36D13BB7 /* Debug */,
+				6A2408C1D3B3FD0BAEFE485BF0229014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1338,8 +1302,8 @@
 		B58B12408491E9DE6A34D161DBDD9CC1 /* Build configuration list for PBXNativeTarget "Pods-FuelTrackerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				728F947FC4FA1867B525573ACF01663D /* Debug */,
-				C26FD7CFF89AD8CDA0E6B2E4D36506AC /* Release */,
+				A9D351904F1D5457770E5A0B524C2E7B /* Debug */,
+				BDF4D123158C80F847594E02707EFC43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1347,8 +1311,8 @@
 		FD2858385EAEAA718BE319637889BC64 /* Build configuration list for PBXNativeTarget "Pods-FuelTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				81FD3CAACA3493D9BD855D0B58A78053 /* Debug */,
-				B820B49CA4CAE79525323CFE511416CA /* Release */,
+				62F05108FF7494E2E392A1FC8D3A6CDB /* Debug */,
+				E637DD8EDEAA7C28F7E2CD0004F0573E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -12,6 +12,7 @@ import SQLite
 class FuelRegisterViewController: UIViewController {
     
     var database: Connection!
+    
     let fuelsTable = Table("fuels")
     let id = Expression<Int>("id")
     let date = Expression<Date>("date")
@@ -23,7 +24,7 @@ class FuelRegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setupDatabase()
     }
     
@@ -57,13 +58,17 @@ class FuelRegisterViewController: UIViewController {
     }
     
     private func saveToDatabase() {
-        let insertFuel = fuelsTable.insert(date <- (fuelToSave?.date)!, mileage <- (fuelToSave?.mileage)!, quantity <- (fuelToSave?.quantity)!, pricePerUnit <- (fuelToSave?.pricePerUnit)!)
-        
-        do {
-            try database?.run(insertFuel)
-            listFuels()
-        } catch {
-            print(error)
+        if let dateOfFuel = fuelToSave?.date, let mileageToSave = fuelToSave?.mileage, let quantityToSave = fuelToSave?.quantity, let priceToSave = fuelToSave?.pricePerUnit {
+            let insertFuel = fuelsTable.insert(date <- dateOfFuel, mileage <- mileageToSave, quantity <- quantityToSave, pricePerUnit <- priceToSave)
+            
+            do {
+                try database?.run(insertFuel)
+                listFuels()
+            } catch {
+                print(error)
+            } 
+        } else {
+            print("there was a problem while retriving data from fuelToSave")
         }
     }
     
@@ -87,6 +92,6 @@ class FuelRegisterViewController: UIViewController {
         }
     }
     
-
+    
     
 }
