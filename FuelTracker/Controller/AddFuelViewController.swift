@@ -65,13 +65,14 @@ class AddFuelViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
-                
+        
         let date: Date = Date()
         let mileage: Int = (mileageTextField.text?.intValue)!
         let quantity: Double = (quantityTextField.text?.doubleValue)!
         let pricePerUnit: Double = (priceTextField.text?.doubleValue)!
-
-        fuel = Fuel(date: date, mileage: mileage, quantity: quantity, pricePerUnit: pricePerUnit)
+        
+        let id = DatabaseManager.instance.addFuel(dateOfFuel: date, mileageOnSave: mileage, quantityOfFuel: quantity, pricePerUnitOfFuel: pricePerUnit)
+        print(id)        
     }
     
     // MARK: IBActions
@@ -83,7 +84,7 @@ class AddFuelViewController: UIViewController {
     @IBAction func mileageTextFieldChanged(_ sender: UITextField) {
         checkTextFieldsContent()
     }
-
+    
     @IBAction func totalAmountTextFieldChanged(_ sender: UITextField) {
         priceTextField.text = calculatePricePerUnit()
     }
