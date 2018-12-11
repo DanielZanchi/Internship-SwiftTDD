@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -130,7 +130,7 @@
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5B0A5A6BECA34BEDFF17ADBA5E36D446 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
 		60C1C7F9880248765A2E996497CB5837 /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
-		6337CEA0E25C01260343880399B348E4 /* Pods_FuelTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6337CEA0E25C01260343880399B348E4 /* Pods_FuelTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FuelTrackerUITests.framework; path = "Pods-FuelTrackerUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B60A1445192FDF093A381FE9B04C0DA /* Pods-FuelTrackerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FuelTrackerUITests-frameworks.sh"; sourceTree = "<group>"; };
 		73987F20D58E4DFF39C38E172895FE1F /* Pods-FuelTrackerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FuelTrackerUITests-umbrella.h"; sourceTree = "<group>"; };
 		746154B69D92D2C54D896DD6A9A3596D /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 		8B04640E8443E9F57A1A0F3534C5FB24 /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
 		8FC3C49DF0FA6CD35B6F65A7E38061AF /* Pods-FuelTrackerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FuelTrackerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		924EBA74F819B93C71ABED1ACC6C58C2 /* Countable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Countable.swift; path = Sources/Classes/Countable.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94DF45E174C4C40AFEC706ABEB49C554 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
 		96FCF07BF387B10A9007872916C12BAD /* Parameter+Literals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Parameter+Literals.swift"; path = "Sources/Classes/Parameter+Literals.swift"; sourceTree = "<group>"; };
 		A0B3D0DB20D764178A10448832DDAC64 /* Pods-FuelTrackerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FuelTrackerUITests-dummy.m"; sourceTree = "<group>"; };
@@ -154,18 +154,18 @@
 		A8468E6B50E7AEDBF3069F318BD83C50 /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
 		A9B32D78FB945F537F6891ED2D2A8776 /* SwiftyMocky-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyMocky-umbrella.h"; sourceTree = "<group>"; };
 		B42BBCF32C88F1D4F880B62CA061CD14 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
-		B8C63A710C7DA1B05FE8DF33F2B0F8AF /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8C63A710C7DA1B05FE8DF33F2B0F8AF /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLite.framework; path = SQLite.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9A71788509952B5A066525D96CD2D02 /* Coding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coding.swift; path = Sources/SQLite/Typed/Coding.swift; sourceTree = "<group>"; };
 		BFA082B46EE0E2D10736CD51E65F16F2 /* Pods-FuelTracker-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FuelTracker-resources.sh"; sourceTree = "<group>"; };
-		C1F3B3BCC2E333A53D2A04A3D28E364B /* Pods_FuelTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1F3B3BCC2E333A53D2A04A3D28E364B /* Pods_FuelTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FuelTracker.framework; path = "Pods-FuelTracker.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2234F3697064D6D97FBF7E5CE067F47 /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
 		C45A6A27E89A63F37B72CD34A5D5BB06 /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
 		C5850C22613E4542FCC3DDED51876E40 /* SwiftyMocky-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyMocky-dummy.m"; sourceTree = "<group>"; };
 		C654F111068D8BC6EB89202319D61456 /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
 		CA648DA95E91FCAD5B63039AC7AE94A0 /* Pods-FuelTrackerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FuelTrackerTests-umbrella.h"; sourceTree = "<group>"; };
 		CEB7E2E6B45919FFAB229E7AB120ADC8 /* Pods-FuelTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FuelTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		CEDDFC708647ECD3C4736F44BD9AB8F2 /* Pods_FuelTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D009CAEC657D51A9E14B3C36586BCF59 /* SwiftyMocky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyMocky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDDFC708647ECD3C4736F44BD9AB8F2 /* Pods_FuelTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FuelTrackerTests.framework; path = "Pods-FuelTrackerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D009CAEC657D51A9E14B3C36586BCF59 /* SwiftyMocky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyMocky.framework; path = SwiftyMocky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D22A82A010A1A131EFA1E96A6EB98C21 /* SwiftyMocky.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyMocky.xcconfig; sourceTree = "<group>"; };
 		D66CEFC20FAF5D68D880173EF1E555A8 /* Policies.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Policies.swift; path = Sources/Classes/Policies.swift; sourceTree = "<group>"; };
 		DA8C3609C446DEE702516D7E2E5C799F /* Pods-FuelTrackerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FuelTrackerTests-dummy.m"; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 		EF31DC5185E6794D4F61074F85A6F95A /* Pods-FuelTrackerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FuelTrackerTests.modulemap"; sourceTree = "<group>"; };
 		F0540EC80FEE8F24BCD9C6AAA16C4531 /* MockySetup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MockySetup.h; path = Sources/Classes/MockySetup.h; sourceTree = "<group>"; };
 		F188A43F74F2655CCD657ABF792CFADF /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
-		F39460B989EC448C54A95E4B12C06DD0 /* Mock.swifttemplate */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Mock.swifttemplate; path = Sources/Templates/Mock.swifttemplate; sourceTree = "<group>"; };
+		F39460B989EC448C54A95E4B12C06DD0 /* Mock.swifttemplate */ = {isa = PBXFileReference; includeInIndex = 1; name = Mock.swifttemplate; path = Sources/Templates/Mock.swifttemplate; sourceTree = "<group>"; };
 		F3E181A80664F8815290A6C466ABCDD4 /* Pods-FuelTrackerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FuelTrackerTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		F491A71A0024D8CB7EE18597F7EF50B2 /* Pods-FuelTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FuelTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
 		F88221ABF6161291F010373FAE2FB2DA /* Mock+Assertions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Mock+Assertions.swift"; path = "Sources/Classes/Mock+Assertions.swift"; sourceTree = "<group>"; };
@@ -324,6 +324,7 @@
 				AB3D962D15B76C2C4DED597359D7B4EA /* Core */,
 				08B3125E61CE7DC2B548CA82AC96EB86 /* Support Files */,
 			);
+			name = SwiftyMocky;
 			path = SwiftyMocky;
 			sourceTree = "<group>";
 		};
@@ -331,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 			);
+			name = SwiftLint;
 			path = SwiftLint;
 			sourceTree = "<group>";
 		};
@@ -439,6 +441,7 @@
 				33FA785449EE6C350E290920F0939625 /* standard */,
 				0991A1996137B48606028349A12EF34A /* Support Files */,
 			);
+			name = SQLite.swift;
 			path = SQLite.swift;
 			sourceTree = "<group>";
 		};
@@ -446,6 +449,7 @@
 			isa = PBXGroup;
 			children = (
 			);
+			name = Sourcery;
 			path = Sourcery;
 			sourceTree = "<group>";
 		};
@@ -618,7 +622,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -805,7 +809,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-FuelTrackerTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FuelTrackerTests/Pods-FuelTrackerTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -876,7 +884,6 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -899,7 +906,11 @@
 				INFOPLIST_FILE = "Target Support Files/SwiftyMocky/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/SwiftyMocky/SwiftyMocky.modulemap";
 				PRODUCT_MODULE_NAME = SwiftyMocky;
 				PRODUCT_NAME = SwiftyMocky;
@@ -933,7 +944,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-FuelTracker/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FuelTracker/Pods-FuelTracker.modulemap";
 				OTHER_LDFLAGS = "";
@@ -969,14 +984,19 @@
 				INFOPLIST_FILE = "Target Support Files/SwiftyMocky/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/SwiftyMocky/SwiftyMocky.modulemap";
 				PRODUCT_MODULE_NAME = SwiftyMocky;
 				PRODUCT_NAME = SwiftyMocky;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1067,7 +1087,11 @@
 				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
 				PRODUCT_MODULE_NAME = SQLite;
 				PRODUCT_NAME = SQLite;
@@ -1101,7 +1125,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-FuelTrackerTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FuelTrackerTests/Pods-FuelTrackerTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1137,7 +1165,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-FuelTrackerUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FuelTrackerUITests/Pods-FuelTrackerUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1172,7 +1204,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-FuelTrackerUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FuelTrackerUITests/Pods-FuelTrackerUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1207,14 +1243,19 @@
 				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
 				PRODUCT_MODULE_NAME = SQLite;
 				PRODUCT_NAME = SQLite;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1242,7 +1283,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-FuelTracker/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FuelTracker/Pods-FuelTracker.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1252,7 +1297,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
