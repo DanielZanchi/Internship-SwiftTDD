@@ -8,7 +8,7 @@
 
 import SQLite
 
-class DatabaseManager {
+class DatabaseManager: DatabaseManagerProtocol {
     
     static let instance = DatabaseManager()
     
@@ -37,7 +37,7 @@ class DatabaseManager {
         createTable()
     }
     
-    private func createTable() {
+    func createTable() {
         let create = self.fuelsTable.create { (table) in
             table.column(id, primaryKey: true)
             table.column(date)
@@ -65,7 +65,7 @@ class DatabaseManager {
         }
     }
     
-    func getFuels() -> [Fuel] {
+    func getFuels() -> [Fuel]? {
         var fuels = [Fuel]()
         
         do {
@@ -73,7 +73,9 @@ class DatabaseManager {
                 fuels.append(Fuel(id: fuel[id], date: fuel[date], mileage: fuel[mileage], quantity: fuel[quantity], pricePerUnit: fuel[pricePerUnit]))
             }
         } catch {
+            print("error while reading fuels")
             print(error)
+            return nil
         }
         
         return fuels
@@ -108,5 +110,30 @@ class DatabaseManager {
         }
         
         return false
+    }
+    
+    func dropTable() -> Bool {
+        do {
+            try database?.run(fuelsTable.drop(ifExists: true))
+            return true
+        } catch {
+            print(error)
+            print("wasn't able to drop table")
+            return false
+        }
+    }
+    
+    func destroyDatabase() -> Bool {
+        do {
+            let documentDirectory = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+            let fileURL = documentDirectory.appendingPathComponent("fuels").appendingPathExtension("sqlite3")
+            try FileManager.default.removeItem(at: fileURL)
+            return true
+            
+        } catch {
+            print("unable to delete database, maybe the file doesn't exist")
+            print(error)
+            return false
+        }
     }
 }

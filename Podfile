@@ -13,6 +13,8 @@ target 'FuelTracker' do
   target 'FuelTrackerTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'SwiftyMocky'
+    pod 'Sourcery'
   end
 
   target 'FuelTrackerUITests' do

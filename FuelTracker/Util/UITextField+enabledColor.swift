@@ -6,7 +6,6 @@
 //  Copyright © 2018 Daniel Zanchi. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 extension UITextField {

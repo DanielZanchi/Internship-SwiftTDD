@@ -10,6 +10,7 @@ PODS:
     - Sourcery
 
 DEPENDENCIES:
+  - Sourcery
   - SQLite.swift (~> 0.11.5)
   - SwiftLint
   - SwiftyMocky
@@ -27,6 +28,6 @@ SPEC CHECKSUMS:
   SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
   SwiftyMocky: b3580655f96a5835a802bbfd8da9570cda0c285e
 
-PODFILE CHECKSUM: 52dc85da242c7f53b43ae427e35fdbfa41c333a2
+PODFILE CHECKSUM: eda3b7c44eea5c020390b46e5805ca2dd3538e77
 
 COCOAPODS: 1.5.3

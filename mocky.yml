@@ -5,13 +5,12 @@ sources:
 templates:
   - ./Pods/SwiftyMocky/Sources/Templates # Different for Carthage installation
 output:
-  ./FuelTracker
+  ./FuelTrackerTests
 args:
   testable:
     - FuelTracker
   import:
-    - RxSwift
-    - RxBlocking
+    - SQLite
   excludedSwiftLintRules:
     - force_cast
     - function_body_length

@@ -17,7 +17,9 @@ class FuelRegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        fuels = DatabaseManager.instance.getFuels()
+        if let fuels =  DatabaseManager.instance.getFuels() {
+            self.fuels = fuels
+        }
     }   
     
 }

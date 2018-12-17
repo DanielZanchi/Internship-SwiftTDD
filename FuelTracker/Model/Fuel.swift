@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Fuel {
+struct Fuel: Equatable {
     let id: Int64!
     let date: Date!
     let mileage: Int!

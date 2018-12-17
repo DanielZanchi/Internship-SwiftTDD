@@ -66,7 +66,7 @@ class AddFuelViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         
-        let date: Date = Date()
+        let date = Date()
         let mileage: Int = (mileageTextField.text?.intValue)!
         let quantity: Double = (quantityTextField.text?.doubleValue)!
         let pricePerUnit: Double = (priceTextField.text?.doubleValue)!
