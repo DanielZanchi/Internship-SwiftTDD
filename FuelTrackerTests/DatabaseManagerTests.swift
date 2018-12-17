@@ -18,7 +18,7 @@ class DatabaseManagerTests: XCTestCase {
         
         database = DatabaseManager.instance
         _ = database.dropTable()
-        database.createTable()
+        _ = database.createTable()
     }
     
     override func tearDown() {
@@ -89,14 +89,24 @@ class DatabaseManagerTests: XCTestCase {
     }
     
     func testDropTableFail() {
-        database = DatabaseManager.instance
-        XCTAssertEqual(database.destroyDatabase(), true)
+        XCTAssertEqual(database.dropTable(), true)
         XCTAssertEqual(database.dropTable(), false)
     }
     
-    func testDestroyTableFail() {
-        XCTAssertEqual(database.destroyDatabase(), true)
-        XCTAssertEqual(database.destroyDatabase(), false)
+    
+    func testCreateTableFail() {
+        do {
+            let documentDirectory = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+            let fileURL = documentDirectory.appendingPathComponent("fuels").appendingPathExtension("sqlite3")
+            let t = ""
+            try t.write(to: fileURL, atomically: false, encoding: String.Encoding.utf8)
+        } catch {
+            database = nil
+            print("unable to create database connection")
+            print(error)
+        }
+        
+        XCTAssertEqual(database.createTable(), false)
     }
     
     //Helper

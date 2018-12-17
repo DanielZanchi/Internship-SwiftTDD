@@ -34,10 +34,10 @@ class DatabaseManager: DatabaseManagerProtocol {
             print(error)
         }
         
-        createTable()
+        _ = createTable()
     }
     
-    func createTable() {
+    func createTable() -> Bool {
         let create = self.fuelsTable.create { (table) in
             table.column(id, primaryKey: true)
             table.column(date)
@@ -48,9 +48,11 @@ class DatabaseManager: DatabaseManagerProtocol {
         
         do {
             try database?.run(create)
+            return true
         } catch {
             print("unable to create table")
             print(error)
+            return false
         }
     }
     
@@ -69,8 +71,12 @@ class DatabaseManager: DatabaseManagerProtocol {
         var fuels = [Fuel]()
         
         do {
-            for fuel in try database!.prepare(fuelsTable) {
-                fuels.append(Fuel(id: fuel[id], date: fuel[date], mileage: fuel[mileage], quantity: fuel[quantity], pricePerUnit: fuel[pricePerUnit]))
+            if let fuelsList = try database?.prepare(fuelsTable) {
+                for fuel in fuelsList {
+                    fuels.append(Fuel(id: fuel[id], date: fuel[date], mileage: fuel[mileage], quantity: fuel[quantity], pricePerUnit: fuel[pricePerUnit]))
+                }
+            } else {
+                print("error")
             }
         } catch {
             print("error while reading fuels")
@@ -100,7 +106,7 @@ class DatabaseManager: DatabaseManagerProtocol {
                 mileage <- newFuel.mileage, 
                 quantity <- newFuel.quantity, 
                 pricePerUnit <- newFuel.pricePerUnit
-            ])
+                ])
             
             if try database!.run(update) > 0 {
                 return true
@@ -114,7 +120,7 @@ class DatabaseManager: DatabaseManagerProtocol {
     
     func dropTable() -> Bool {
         do {
-            try database?.run(fuelsTable.drop(ifExists: true))
+            try database?.run(fuelsTable.drop())
             return true
         } catch {
             print(error)
@@ -122,18 +128,5 @@ class DatabaseManager: DatabaseManagerProtocol {
             return false
         }
     }
-    
-    func destroyDatabase() -> Bool {
-        do {
-            let documentDirectory = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-            let fileURL = documentDirectory.appendingPathComponent("fuels").appendingPathExtension("sqlite3")
-            try FileManager.default.removeItem(at: fileURL)
-            return true
-            
-        } catch {
-            print("unable to delete database, maybe the file doesn't exist")
-            print(error)
-            return false
-        }
-    }
+
 }
