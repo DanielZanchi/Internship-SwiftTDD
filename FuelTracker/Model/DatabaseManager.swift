@@ -22,7 +22,7 @@ class DatabaseManager: DatabaseManagerProtocol {
     let quantity = Expression<Double>("quantity")
     let pricePerUnit = Expression<Double>("pricePerUnit")
     
-    private init() {
+    required init() {
         do {
             let documentDirectory = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
             let fileURL = documentDirectory.appendingPathComponent("fuels").appendingPathExtension("sqlite3")

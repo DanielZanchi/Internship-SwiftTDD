@@ -20,6 +20,10 @@ class FuelRegisterViewController: UIViewController {
         if let fuels =  DatabaseManager.instance.getFuels() {
             self.fuels = fuels
         }
-    }   
+    }  
+    
+    @IBAction func unwindToFuelRegister(sender: UIStoryboardSegue) {
+    }
+
     
 }
