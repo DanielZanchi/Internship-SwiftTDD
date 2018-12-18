@@ -36,7 +36,7 @@ class FuelTests: XCTestCase {
     }
     
     func testName() {
-        XCTAssertEqual("01/01/1970", myFuelViewModel.name)
+        XCTAssertEqual("01/01/1970", myFuelViewModel.date)
     }
     
     func testQuantity() {

@@ -72,7 +72,7 @@ class DatabaseManagerProtocolMock: DatabaseManagerProtocol, Mock {
 
 
 
-    required init() { }
+    required init(manager: FileManager) { }
 
     func addFuel(dateOfFuel: Date, mileageOnSave: Int, quantityOfFuel: Double, pricePerUnitOfFuel: Double) -> Int64 {
         addInvocation(.m_addFuel__dateOfFuel_dateOfFuelmileageOnSave_mileageOnSavequantityOfFuel_quantityOfFuelpricePerUnitOfFuel_pricePerUnitOfFuel(Parameter<Date>.value(`dateOfFuel`), Parameter<Int>.value(`mileageOnSave`), Parameter<Double>.value(`quantityOfFuel`), Parameter<Double>.value(`pricePerUnitOfFuel`)))

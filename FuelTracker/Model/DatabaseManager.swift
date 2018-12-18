@@ -10,7 +10,7 @@ import SQLite
 
 class DatabaseManager: DatabaseManagerProtocol {
     
-    static let instance = DatabaseManager()
+    static let instance = DatabaseManager(manager: FileManager.default)
     
     private let database: Connection?
     
@@ -22,12 +22,11 @@ class DatabaseManager: DatabaseManagerProtocol {
     let quantity = Expression<Double>("quantity")
     let pricePerUnit = Expression<Double>("pricePerUnit")
     
-    required init() {
+    required init(manager: FileManager) {
         do {
-            let documentDirectory = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+            let documentDirectory = try manager.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
             let fileURL = documentDirectory.appendingPathComponent("fuels").appendingPathExtension("sqlite3")
             database = try Connection(fileURL.path)
-            
         } catch {
             database = nil
             print("unable to create database connection")
@@ -71,7 +70,7 @@ class DatabaseManager: DatabaseManagerProtocol {
         var fuels = [Fuel]()
         
         do {
-            if let fuelsList = try database?.prepare(fuelsTable) {
+            if let fuelsList = try database?.prepare(fuelsTable.order(date.desc)) {
                 for fuel in fuelsList {
                     fuels.append(Fuel(id: fuel[id], date: fuel[date], mileage: fuel[mileage], quantity: fuel[quantity], pricePerUnit: fuel[pricePerUnit]))
                 }

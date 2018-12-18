@@ -49,4 +49,13 @@ class UtilTests: XCTestCase {
         textField.isEnabled = false
         XCTAssertEqual(textField.backgroundColor, UIColor(red: 201/255, green: 193/255, blue: 195/255, alpha: 1.0))
     }
+    
+    func testCellIdentifier() {
+        XCTAssertEqual("FuelTableViewCell", FuelTableViewCell.identifier)
+    }
+    
+    func testDateToString() {
+        let date = Date(timeIntervalSince1970: 0)
+        XCTAssertEqual("01/01/1970", date.toString(dateFormat: "dd/MM/YYY"))
+    }
 }
