@@ -16,23 +16,26 @@
 		3007BA0B2175EA35002C4BEB /* FuelTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3007BA0A2175EA35002C4BEB /* FuelTrackerUITests.swift */; };
 		303CAAF421778F8700202E44 /* FuelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303CAAF321778F8700202E44 /* FuelViewModel.swift */; };
 		304DBF4721C7AAA900265662 /* DatabaseManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DBF4621C7AAA900265662 /* DatabaseManagerProtocol.swift */; };
-		304DBF4C21C7B74900265662 /* Mock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DBF4B21C7B74900265662 /* Mock.generated.swift */; };
 		304DBF4E21C7C00300265662 /* DatabaseManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DBF4D21C7C00300265662 /* DatabaseManagerTests.swift */; };
 		30639D5B217BD43E0011ADB2 /* String+DoubleUIntValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30639D5A217BD43E0011ADB2 /* String+DoubleUIntValue.swift */; };
 		30639D5E217BD8C80011ADB2 /* Double+stringValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30639D5D217BD8C80011ADB2 /* Double+stringValue.swift */; };
 		30639D60217DD2A00011ADB2 /* UtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30639D5F217DD2A00011ADB2 /* UtilTests.swift */; };
 		3075AD8121762C4E00025C2A /* AddFuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3075AD8021762C4E00025C2A /* AddFuelViewController.swift */; };
+		30B7DC7D21CAB30500015BCB /* Mock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B7DC7C21CAB30500015BCB /* Mock.generated.swift */; };
+		30B7DC8521CAB6DE00015BCB /* triedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B7DC8121CAB63700015BCB /* triedProtocol.swift */; };
 		30C42A7921C01F4D0063E894 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C42A7821C01F4D0063E894 /* DatabaseManager.swift */; };
 		30C4D78C217A4183006F0085 /* AddFuelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C4D78B217A4183006F0085 /* AddFuelUITests.swift */; };
 		30C9555A217665D2008BBC51 /* Fuel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C95559217665D2008BBC51 /* Fuel.swift */; };
 		30C9557D217669C2008BBC51 /* FuelTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C9557C217669C2008BBC51 /* FuelTrackerTests.swift */; };
 		30C9557F217669EF008BBC51 /* FuelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C9557E217669EF008BBC51 /* FuelTests.swift */; };
+		30CDDA1921CA9DC20013637B /* FuelsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CDDA1821CA9DC20013637B /* FuelsHelper.swift */; };
+		30CDDA1B21CA9F870013637B /* FuelsHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CDDA1A21CA9F870013637B /* FuelsHelperTests.swift */; };
 		30F45376217F2143006F190F /* UITextField+enabledColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F45375217F2143006F190F /* UITextField+enabledColor.swift */; };
 		30F6159921C91FD000399E4C /* FuelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F6159821C91FD000399E4C /* FuelTableViewCell.swift */; };
 		30F6159B21C9250300399E4C /* Date+toString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F6159A21C9250300399E4C /* Date+toString.swift */; };
 		30F6159D21C92B1800399E4C /* UITableViewCell+identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F6159C21C92B1800399E4C /* UITableViewCell+identifier.swift */; };
-		AD9E0995B3C765648B01DC8C /* Pods_FuelTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45EE5D1625E492D3A4AA197 /* Pods_FuelTrackerUITests.framework */; };
-		DEAF1BAB37A6B72DD50137A5 /* Pods_FuelTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD39FA5B72A6853407722B29 /* Pods_FuelTrackerTests.framework */; };
+		98244CF5643CDF58B3A37825 /* Pods_FuelTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E820E10A81B312F0ACB23338 /* Pods_FuelTrackerUITests.framework */; };
+		A9CC79132D4A1CD9BAD78D3F /* Pods_FuelTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182658C8A7F459701C00F9C7 /* Pods_FuelTrackerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +56,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		182658C8A7F459701C00F9C7 /* Pods_FuelTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18DF27DF7624C9A175718976 /* Pods_FuelTracker_FuelTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelTracker_FuelTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19DBE75C23EC7EA1B6A86DBF /* Pods-FuelTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuelTracker/Pods-FuelTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		1DFB7CA38E44AB947258A114 /* Pods-FuelTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTrackerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuelTrackerUITests/Pods-FuelTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		20602C65F0652F3E3A8DACFE /* Pods_FuelTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21A84D9F8A35D98758850BE9 /* Pods-FuelTracker-FuelTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTracker-FuelTrackerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuelTracker-FuelTrackerUITests/Pods-FuelTracker-FuelTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3007B9E72175EA31002C4BEB /* FuelTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuelTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3007B9EA2175EA31002C4BEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3007B9EC2175EA31002C4BEB /* FuelRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelRegisterViewController.swift; sourceTree = "<group>"; };
@@ -68,12 +74,13 @@
 		3007BA0C2175EA35002C4BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		303CAAF321778F8700202E44 /* FuelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelViewModel.swift; sourceTree = "<group>"; };
 		304DBF4621C7AAA900265662 /* DatabaseManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManagerProtocol.swift; sourceTree = "<group>"; };
-		304DBF4B21C7B74900265662 /* Mock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.generated.swift; sourceTree = "<group>"; };
 		304DBF4D21C7C00300265662 /* DatabaseManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManagerTests.swift; sourceTree = "<group>"; };
 		30639D5A217BD43E0011ADB2 /* String+DoubleUIntValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DoubleUIntValue.swift"; sourceTree = "<group>"; };
 		30639D5D217BD8C80011ADB2 /* Double+stringValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+stringValue.swift"; sourceTree = "<group>"; };
 		30639D5F217DD2A00011ADB2 /* UtilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilTests.swift; sourceTree = "<group>"; };
 		3075AD8021762C4E00025C2A /* AddFuelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFuelViewController.swift; sourceTree = "<group>"; };
+		30B7DC7C21CAB30500015BCB /* Mock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.generated.swift; sourceTree = "<group>"; };
+		30B7DC8121CAB63700015BCB /* triedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = triedProtocol.swift; sourceTree = "<group>"; };
 		30C42A7821C01F4D0063E894 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		30C4D78B217A4183006F0085 /* AddFuelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFuelUITests.swift; sourceTree = "<group>"; };
 		30C95559217665D2008BBC51 /* Fuel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel.swift; sourceTree = "<group>"; };
@@ -81,15 +88,17 @@
 		30C9557521766991008BBC51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30C9557C217669C2008BBC51 /* FuelTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTrackerTests.swift; sourceTree = "<group>"; };
 		30C9557E217669EF008BBC51 /* FuelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTests.swift; sourceTree = "<group>"; };
+		30CDDA1821CA9DC20013637B /* FuelsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelsHelper.swift; sourceTree = "<group>"; };
+		30CDDA1A21CA9F870013637B /* FuelsHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelsHelperTests.swift; sourceTree = "<group>"; };
 		30F45375217F2143006F190F /* UITextField+enabledColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+enabledColor.swift"; sourceTree = "<group>"; };
 		30F6159821C91FD000399E4C /* FuelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTableViewCell.swift; sourceTree = "<group>"; };
 		30F6159A21C9250300399E4C /* Date+toString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+toString.swift"; sourceTree = "<group>"; };
 		30F6159C21C92B1800399E4C /* UITableViewCell+identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+identifier.swift"; sourceTree = "<group>"; };
 		44764592B224738B3D8392E9 /* Pods-FuelTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTrackerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuelTrackerTests/Pods-FuelTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		79135A41ED022EF335929725 /* Pods-FuelTracker-FuelTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTracker-FuelTrackerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuelTracker-FuelTrackerUITests/Pods-FuelTracker-FuelTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7BB2D57EB12A342503F8109C /* Pods-FuelTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTrackerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuelTrackerUITests/Pods-FuelTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		96DB7E24E499947C23F35854 /* Pods-FuelTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuelTracker/Pods-FuelTracker.release.xcconfig"; sourceTree = "<group>"; };
-		AD39FA5B72A6853407722B29 /* Pods_FuelTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C45EE5D1625E492D3A4AA197 /* Pods_FuelTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E820E10A81B312F0ACB23338 /* Pods_FuelTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4FA3050D23F86D11B684725 /* Pods-FuelTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTrackerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuelTrackerTests/Pods-FuelTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,7 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD9E0995B3C765648B01DC8C /* Pods_FuelTrackerUITests.framework in Frameworks */,
+				98244CF5643CDF58B3A37825 /* Pods_FuelTrackerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEAF1BAB37A6B72DD50137A5 /* Pods_FuelTrackerTests.framework in Frameworks */,
+				A9CC79132D4A1CD9BAD78D3F /* Pods_FuelTrackerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +171,7 @@
 		3007BA092175EA35002C4BEB /* FuelTrackerUITests */ = {
 			isa = PBXGroup;
 			children = (
+				30B7DC7C21CAB30500015BCB /* Mock.generated.swift */,
 				3007BA0A2175EA35002C4BEB /* FuelTrackerUITests.swift */,
 				30C4D78B217A4183006F0085 /* AddFuelUITests.swift */,
 				3007BA0C2175EA35002C4BEB /* Info.plist */,
@@ -174,6 +184,7 @@
 			children = (
 				30C95559217665D2008BBC51 /* Fuel.swift */,
 				30C42A7821C01F4D0063E894 /* DatabaseManager.swift */,
+				30B7DC8121CAB63700015BCB /* triedProtocol.swift */,
 				304DBF4621C7AAA900265662 /* DatabaseManagerProtocol.swift */,
 			);
 			path = Model;
@@ -183,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				303CAAF321778F8700202E44 /* FuelViewModel.swift */,
+				30CDDA1821CA9DC20013637B /* FuelsHelper.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -212,9 +224,9 @@
 		30C9557221766991008BBC51 /* FuelTrackerTests */ = {
 			isa = PBXGroup;
 			children = (
-				304DBF4B21C7B74900265662 /* Mock.generated.swift */,
 				30C9557521766991008BBC51 /* Info.plist */,
 				30C9557C217669C2008BBC51 /* FuelTrackerTests.swift */,
+				30CDDA1A21CA9F870013637B /* FuelsHelperTests.swift */,
 				30C9557E217669EF008BBC51 /* FuelTests.swift */,
 				304DBF4D21C7C00300265662 /* DatabaseManagerTests.swift */,
 				30639D5F217DD2A00011ADB2 /* UtilTests.swift */,
@@ -231,6 +243,8 @@
 				44764592B224738B3D8392E9 /* Pods-FuelTrackerTests.release.xcconfig */,
 				1DFB7CA38E44AB947258A114 /* Pods-FuelTrackerUITests.debug.xcconfig */,
 				7BB2D57EB12A342503F8109C /* Pods-FuelTrackerUITests.release.xcconfig */,
+				79135A41ED022EF335929725 /* Pods-FuelTracker-FuelTrackerUITests.debug.xcconfig */,
+				21A84D9F8A35D98758850BE9 /* Pods-FuelTracker-FuelTrackerUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -239,8 +253,9 @@
 			isa = PBXGroup;
 			children = (
 				20602C65F0652F3E3A8DACFE /* Pods_FuelTracker.framework */,
-				AD39FA5B72A6853407722B29 /* Pods_FuelTrackerTests.framework */,
-				C45EE5D1625E492D3A4AA197 /* Pods_FuelTrackerUITests.framework */,
+				18DF27DF7624C9A175718976 /* Pods_FuelTracker_FuelTrackerUITests.framework */,
+				182658C8A7F459701C00F9C7 /* Pods_FuelTrackerTests.framework */,
+				E820E10A81B312F0ACB23338 /* Pods_FuelTrackerUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -276,6 +291,7 @@
 				3007BA022175EA35002C4BEB /* Sources */,
 				3007BA032175EA35002C4BEB /* Frameworks */,
 				3007BA042175EA35002C4BEB /* Resources */,
+				37256C673AF621B36ACF7CCB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,7 +311,6 @@
 				30C9556D21766991008BBC51 /* Sources */,
 				30C9556E21766991008BBC51 /* Frameworks */,
 				30C9556F21766991008BBC51 /* Resources */,
-				D23E13C9A41DD039AD8973E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -464,6 +479,28 @@
 			shellPath = /bin/sh;
 			shellScript = "";
 		};
+		37256C673AF621B36ACF7CCB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FuelTrackerUITests/Pods-FuelTrackerUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyMocky/SwiftyMocky.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyMocky.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FuelTrackerUITests/Pods-FuelTrackerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D12C796CB0AD2D75D1803D14 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -486,28 +523,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D23E13C9A41DD039AD8973E6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-FuelTrackerTests/Pods-FuelTrackerTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SwiftyMocky/SwiftyMocky.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyMocky.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FuelTrackerTests/Pods-FuelTrackerTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -518,6 +533,7 @@
 				3075AD8121762C4E00025C2A /* AddFuelViewController.swift in Sources */,
 				30C9555A217665D2008BBC51 /* Fuel.swift in Sources */,
 				30F6159921C91FD000399E4C /* FuelTableViewCell.swift in Sources */,
+				30CDDA1921CA9DC20013637B /* FuelsHelper.swift in Sources */,
 				304DBF4721C7AAA900265662 /* DatabaseManagerProtocol.swift in Sources */,
 				30639D5E217BD8C80011ADB2 /* Double+stringValue.swift in Sources */,
 				30639D5B217BD43E0011ADB2 /* String+DoubleUIntValue.swift in Sources */,
@@ -526,6 +542,7 @@
 				30F6159D21C92B1800399E4C /* UITableViewCell+identifier.swift in Sources */,
 				3007B9EB2175EA31002C4BEB /* AppDelegate.swift in Sources */,
 				30F6159B21C9250300399E4C /* Date+toString.swift in Sources */,
+				30B7DC8521CAB6DE00015BCB /* triedProtocol.swift in Sources */,
 				303CAAF421778F8700202E44 /* FuelViewModel.swift in Sources */,
 				30C42A7921C01F4D0063E894 /* DatabaseManager.swift in Sources */,
 			);
@@ -535,6 +552,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30B7DC7D21CAB30500015BCB /* Mock.generated.swift in Sources */,
 				3007BA0B2175EA35002C4BEB /* FuelTrackerUITests.swift in Sources */,
 				30C4D78C217A4183006F0085 /* AddFuelUITests.swift in Sources */,
 			);
@@ -546,7 +564,7 @@
 			files = (
 				30C9557D217669C2008BBC51 /* FuelTrackerTests.swift in Sources */,
 				30639D60217DD2A00011ADB2 /* UtilTests.swift in Sources */,
-				304DBF4C21C7B74900265662 /* Mock.generated.swift in Sources */,
+				30CDDA1B21CA9F870013637B /* FuelsHelperTests.swift in Sources */,
 				30C9557F217669EF008BBC51 /* FuelTests.swift in Sources */,
 				304DBF4E21C7C00300265662 /* DatabaseManagerTests.swift in Sources */,
 			);
@@ -709,7 +727,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZAN22F267Y;
+				DEVELOPMENT_TEAM = YWVZ82Y5NE;
 				INFOPLIST_FILE = FuelTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -728,7 +746,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZAN22F267Y;
+				DEVELOPMENT_TEAM = YWVZ82Y5NE;
 				INFOPLIST_FILE = FuelTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -745,17 +763,20 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1DFB7CA38E44AB947258A114 /* Pods-FuelTrackerUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FuelTracker.app/FuelTracker";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZAN22F267Y;
+				DEVELOPMENT_TEAM = YWVZ82Y5NE;
 				INFOPLIST_FILE = FuelTrackerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+					"@executable_path/Frameworks",
+					"$(FRAMEWORK_SEARCH_PATHS)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.DanielZanchi.FuelTrackerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = FuelTracker;
@@ -766,17 +787,20 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7BB2D57EB12A342503F8109C /* Pods-FuelTrackerUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FuelTracker.app/FuelTracker";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZAN22F267Y;
+				DEVELOPMENT_TEAM = YWVZ82Y5NE;
 				INFOPLIST_FILE = FuelTrackerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+					"@executable_path/Frameworks",
+					"$(FRAMEWORK_SEARCH_PATHS)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.DanielZanchi.FuelTrackerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = FuelTracker;
@@ -790,7 +814,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZAN22F267Y;
+				DEVELOPMENT_TEAM = YWVZ82Y5NE;
 				INFOPLIST_FILE = FuelTrackerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -814,7 +838,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZAN22F267Y;
+				DEVELOPMENT_TEAM = YWVZ82Y5NE;
 				INFOPLIST_FILE = FuelTrackerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

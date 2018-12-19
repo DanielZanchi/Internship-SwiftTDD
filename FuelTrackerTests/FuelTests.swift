@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import SwiftyMocky
 @testable import FuelTracker
 
 class FuelTests: XCTestCase {

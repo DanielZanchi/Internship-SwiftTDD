@@ -49,8 +49,8 @@ extension FuelRegisterViewController: UITableViewDelegate, UITableViewDataSource
             
             if (indexPath.row + 1) < DatabaseManager.instance.getFuels()!.count {
                 let oldFuel = DatabaseManager.instance.getFuels()![indexPath.row + 1]
-                distance = fuel.mileage - oldFuel.mileage
-                consumption = Double(distance) / fuel.quantity
+                distance = FuelsHelper.calculateDistance(from: fuel, to: oldFuel)
+                consumption = FuelsHelper.calculateConsumption(distance: distance, fuelQuantity: fuel.quantity)
             }
             
             let fuelView = FuelViewModel(fuel: fuel)

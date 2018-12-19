@@ -2,10 +2,11 @@ sources:
   include:
     - ./FuelTracker
     - ./FuelTrackerTests
+    - ./FuelTrackerUITests
 templates:
   - ./Pods/SwiftyMocky/Sources/Templates # Different for Carthage installation
 output:
-  ./FuelTrackerTests
+  ./FuelTrackerUITests
 args:
   testable:
     - FuelTracker

@@ -11,9 +11,7 @@ import SQLite
 
 //sourcery: AutoMockable
 protocol DatabaseManagerProtocol {
-    
-    init(manager: FileManager)
-    
+        
     func addFuel(dateOfFuel: Date, mileageOnSave: Int, quantityOfFuel: Double, pricePerUnitOfFuel: Double) -> Int64
     
     func getFuels() -> [Fuel]?

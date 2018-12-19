@@ -3,7 +3,7 @@ PODS:
   - SQLite.swift (0.11.5):
     - SQLite.swift/standard (= 0.11.5)
   - SQLite.swift/standard (0.11.5)
-  - SwiftLint (0.26.0)
+  - SwiftLint (0.29.1)
   - SwiftyMocky (3.0.0):
     - SwiftyMocky/Core (= 3.0.0)
   - SwiftyMocky/Core (3.0.0):
@@ -25,9 +25,9 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Sourcery: 5895672cae353cdbfa95f3f4aaeb75a664d76f6a
   SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
-  SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
+  SwiftLint: 6772320e40b52049053a518c17db9b0634a0b45a
   SwiftyMocky: b3580655f96a5835a802bbfd8da9570cda0c285e
 
-PODFILE CHECKSUM: eda3b7c44eea5c020390b46e5805ca2dd3538e77
+PODFILE CHECKSUM: 6acb673f5f3023a76ff32279f65fccb73b99fe40
 
 COCOAPODS: 1.5.3

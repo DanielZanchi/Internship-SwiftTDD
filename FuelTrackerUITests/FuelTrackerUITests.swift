@@ -7,6 +7,8 @@
 //
 
 import XCTest
+//import SwiftyMocky
+@testable import FuelTracker
 
 class FuelTrackerUITests: XCTestCase {
     var app: XCUIApplication!
@@ -27,13 +29,15 @@ class FuelTrackerUITests: XCTestCase {
         let fuelRegisterNavigationBar = app.navigationBars["Fuel Register"]
         let fuelRegisterTitle = fuelRegisterNavigationBar.otherElements["Fuel Register"]
         XCTAssert(fuelRegisterTitle.exists)
-
     }
 
     func testAddButton() {
         XCTAssert(app.navigationBars["Fuel Register"].exists)
         app.navigationBars["Fuel Register"].buttons["Add"].tap()
-        XCTAssert(app.navigationBars["Add Fuel"].exists)
+        XCTAssert(app.navigationBars["Add sFuel"].exists)
+    }
+    
+    func testTableViewReload() {
     }
 
 }
