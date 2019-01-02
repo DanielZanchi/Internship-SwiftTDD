@@ -47,8 +47,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3007BA052175EA35002C4BEB"
-            BuildableName = "FuelTrackerUITests.xctest"
-            BlueprintName = "FuelTrackerUITests"
+            BuildableName = "FuelTrackerUIBADTests.xctest"
+            BlueprintName = "FuelTrackerUIBADTests"
             ReferencedContainer = "container:FuelTracker.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
@@ -58,8 +58,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3007BA052175EA35002C4BEB"
-               BuildableName = "FuelTrackerUITests.xctest"
-               BlueprintName = "FuelTrackerUITests"
+               BuildableName = "FuelTrackerUIBADTests.xctest"
+               BlueprintName = "FuelTrackerUIBADTests"
                ReferencedContainer = "container:FuelTracker.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -70,6 +70,16 @@
                BlueprintIdentifier = "30C9557021766991008BBC51"
                BuildableName = "FuelTrackerTests.xctest"
                BlueprintName = "FuelTrackerTests"
+               ReferencedContainer = "container:FuelTracker.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "30A31EDF21D3985200FBDA74"
+               BuildableName = "FuelTrackerUITests.xctest"
+               BlueprintName = "FuelTrackerUITests"
                ReferencedContainer = "container:FuelTracker.xcodeproj">
             </BuildableReference>
          </TestableReference>

@@ -33,10 +33,10 @@ class DatabaseManager: DatabaseManagerProtocol {
             print(error)
         }
         
-        _ = createTable()
+        createTable()
     }
     
-    func createTable() -> Bool {
+    @discardableResult func createTable() -> Bool {
         let create = self.fuelsTable.create { (table) in
             table.column(id, primaryKey: true)
             table.column(date)
@@ -117,7 +117,7 @@ class DatabaseManager: DatabaseManagerProtocol {
         return false
     }
     
-    func dropTable() -> Bool {
+    @discardableResult func dropTable() -> Bool {
         do {
             try database?.run(fuelsTable.drop())
             return true

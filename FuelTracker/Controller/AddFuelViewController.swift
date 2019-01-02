@@ -19,6 +19,9 @@ class AddFuelViewController: UIViewController {
     
     var fuel: Fuel?
     
+    var fuelToEdit: Fuel?
+    var isEditingFuel = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,6 +29,11 @@ class AddFuelViewController: UIViewController {
         self.view.addGestureRecognizer(tap)
         
         didEnterQuantity(false)
+        
+        if isEditingFuel {
+            setupTextFields()
+            self.title = "Edit Fuel"
+        }
     }
     
     @objc private func dismissKeyboard() {
@@ -46,6 +54,16 @@ class AddFuelViewController: UIViewController {
         saveButton.isEnabled = entered
         totalAmountTextField.isEnabled = entered
         priceTextField.isEnabled = entered
+    }
+    
+    private func setupTextFields() {
+        if let fuel = fuelToEdit {
+            mileageTextField.text = String(fuel.mileage)
+            quantityTextField.text = fuel.quantity.toString(decimals: 2)
+            priceTextField.text = fuel.pricePerUnit.toString(decimals: 3)
+            totalAmountTextField.text = calculateTotalAmount()
+            checkTextFieldsContent()
+        }
     }
     
     private func calculatePricePerUnit() -> String {

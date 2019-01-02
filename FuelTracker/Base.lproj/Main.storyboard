@@ -126,7 +126,7 @@
         <!--Add Fuel-->
         <scene sceneID="jMR-zU-VOS">
             <objects>
-                <viewController id="OCe-mt-ks4" customClass="AddFuelViewController" customModule="FuelTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddFuelVC" id="OCe-mt-ks4" customClass="AddFuelViewController" customModule="FuelTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c9W-qO-IaE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

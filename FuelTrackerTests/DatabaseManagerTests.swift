@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import SwiftyMocky
 @testable import FuelTracker
 
 class DatabaseManagerTests: XCTestCase {
@@ -18,8 +17,8 @@ class DatabaseManagerTests: XCTestCase {
         super.setUp()
         
         database = DatabaseManager.instance
-        _ = database.dropTable()
-        _ = database.createTable()
+        database.dropTable()
+        database.createTable()
     }
     
     override func tearDown() {
@@ -30,68 +29,69 @@ class DatabaseManagerTests: XCTestCase {
         XCTAssertEqual(addFuel(), 1)
     }
     
-    func testAddFuelFail() {
+    func testDropTable() {
         XCTAssertEqual(database.dropTable(), true)
+    }
+    
+    func testDropTableFail() {
+        database.dropTable()
+    }
+    
+    func testAddFuelFail() {
+        database.dropTable()
         XCTAssertEqual(addFuel(), -1)
     }
     
     func testGetFuels() {        
         // add two fuels
-        XCTAssertEqual(addFuel(), 1)
-        XCTAssertEqual(addFuel(), 2)
+        addFuel()
+        addFuel()
         
         //read two fuels
-        XCTAssertEqual(database.getFuels()![0].pricePerUnit, 1.5)
-        XCTAssertEqual(database.getFuels()![1].pricePerUnit, 1.5)
+        XCTAssertEqual(database.getFuels()?[1].pricePerUnit, 1.5)
     }
     
     func testGetFuelsFail() {
         // add two fuels
-        XCTAssertEqual(addFuel(), 1)
-        XCTAssertEqual(addFuel(), 2)
+        addFuel()
+        addFuel()
         
-        XCTAssertEqual(database.dropTable(), true)
+        database.dropTable()
         
         //read two fuels
         XCTAssertEqual(database.getFuels(), nil)
     }
     
     func testDeleteFuel() {
-        XCTAssertEqual(addFuel(), 1)
+        addFuel()
         XCTAssertEqual(database.deleteFuel(fID: 1), true)
     }
     
     func testDeleteFuelFail() {
-        XCTAssertEqual(addFuel(), 1)
-        XCTAssertEqual(database.dropTable(), true)
+        addFuel()
+        testDropTable()
         XCTAssertEqual(database.deleteFuel(fID: 10), false)
     }
     
     func testUpdateFuel() {
-        XCTAssertEqual(addFuel(), 1)
+        addFuel()
         let newFuel = Fuel(id: 1, date: Date(), mileage: 200, quantity: 100, pricePerUnit: 3.0)
         XCTAssertEqual(database.updateFuel(fID: 1, newFuel: newFuel), true)
-        XCTAssertEqual(database.getFuels()![0].pricePerUnit, 3.0)
     }
     
     func testUpdateFuelFail() {
-        XCTAssertEqual(addFuel(), 1)
+        addFuel()
+        addFuel()
         let newFuel = Fuel(id: 3, date: Date(), mileage: 200, quantity: 100, pricePerUnit: 3.0)
         XCTAssertEqual(database.updateFuel(fID: 3, newFuel: newFuel), false)
     }
     
     func testUpdateFuelFail2() {
-        XCTAssertEqual(addFuel(), 1)
-        
-        XCTAssertEqual(database.dropTable(), true)
+        addFuel()
+        database.dropTable()
         
         let newFuel = Fuel(id: 1, date: Date(), mileage: 200, quantity: 100, pricePerUnit: 3.0)
         XCTAssertEqual(database.updateFuel(fID: 1, newFuel: newFuel), false)
-    }
-    
-    func testDropTableFail() {
-        XCTAssertEqual(database.dropTable(), true)
-        XCTAssertEqual(database.dropTable(), false)
     }
     
     
@@ -111,7 +111,7 @@ class DatabaseManagerTests: XCTestCase {
     }
     
     //Helper
-    private func addFuel() -> Int64 {
+    @discardableResult private func addFuel() -> Int64 {
         return database.addFuel(dateOfFuel: Date(), mileageOnSave: 100, quantityOfFuel: 50, pricePerUnitOfFuel: 1.5)
     }
     
