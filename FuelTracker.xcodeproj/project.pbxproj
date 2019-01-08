@@ -16,14 +16,12 @@
 		303CAAF421778F8700202E44 /* FuelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303CAAF321778F8700202E44 /* FuelViewModel.swift */; };
 		304DBF4721C7AAA900265662 /* DatabaseManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DBF4621C7AAA900265662 /* DatabaseManagerProtocol.swift */; };
 		304DBF4E21C7C00300265662 /* DatabaseManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DBF4D21C7C00300265662 /* DatabaseManagerTests.swift */; };
-		3058DF0021DCCA6900881930 /* fuels.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 30B3198721D4056300D19952 /* fuels.sqlite3 */; };
 		30639D5B217BD43E0011ADB2 /* String+DoubleUIntValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30639D5A217BD43E0011ADB2 /* String+DoubleUIntValue.swift */; };
 		30639D5E217BD8C80011ADB2 /* Double+stringValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30639D5D217BD8C80011ADB2 /* Double+stringValue.swift */; };
 		30639D60217DD2A00011ADB2 /* UtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30639D5F217DD2A00011ADB2 /* UtilTests.swift */; };
 		3075AD8121762C4E00025C2A /* AddFuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3075AD8021762C4E00025C2A /* AddFuelViewController.swift */; };
 		30A31EEB21D3988700FBDA74 /* AddFuelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A31EEA21D3988700FBDA74 /* AddFuelUITests.swift */; };
 		30A31EED21D398B800FBDA74 /* FuelTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A31EEC21D398B800FBDA74 /* FuelTrackerUITests.swift */; };
-		30B3198821D4056300D19952 /* fuels.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 30B3198721D4056300D19952 /* fuels.sqlite3 */; };
 		30C42A7921C01F4D0063E894 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C42A7821C01F4D0063E894 /* DatabaseManager.swift */; };
 		30C9555A217665D2008BBC51 /* Fuel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C95559217665D2008BBC51 /* Fuel.swift */; };
 		30C9557D217669C2008BBC51 /* FuelTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C9557C217669C2008BBC51 /* FuelTrackerTests.swift */; };
@@ -80,7 +78,6 @@
 		30A31EE421D3985200FBDA74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30A31EEA21D3988700FBDA74 /* AddFuelUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFuelUITests.swift; sourceTree = "<group>"; };
 		30A31EEC21D398B800FBDA74 /* FuelTrackerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuelTrackerUITests.swift; sourceTree = "<group>"; };
-		30B3198721D4056300D19952 /* fuels.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = fuels.sqlite3; sourceTree = "<group>"; };
 		30C42A7821C01F4D0063E894 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		30C95559217665D2008BBC51 /* Fuel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel.swift; sourceTree = "<group>"; };
 		30C9557121766991008BBC51 /* FuelTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuelTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,7 +208,6 @@
 		30A31EE121D3985200FBDA74 /* FuelTrackerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				30B3198721D4056300D19952 /* fuels.sqlite3 */,
 				30A31EEC21D398B800FBDA74 /* FuelTrackerUITests.swift */,
 				30A31EEA21D3988700FBDA74 /* AddFuelUITests.swift */,
 				30A31EE421D3985200FBDA74 /* Info.plist */,
@@ -371,7 +367,6 @@
 				3007B9F52175EA35002C4BEB /* LaunchScreen.storyboard in Resources */,
 				3007B9F22175EA35002C4BEB /* Assets.xcassets in Resources */,
 				3007B9F02175EA31002C4BEB /* Main.storyboard in Resources */,
-				3058DF0021DCCA6900881930 /* fuels.sqlite3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +374,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30B3198821D4056300D19952 /* fuels.sqlite3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
