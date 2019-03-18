@@ -53,7 +53,9 @@ extension AppDelegate {
             return
         }
         
-        DatabaseManager.instance.dropTable()
-        DatabaseManager.instance.createTable()
+        let database = Database().myDatabase
+        let fuelsManager = FuelsManager(database: database)
+        fuelsManager.dropTable()
+        fuelsManager.createTable()
     }
 }

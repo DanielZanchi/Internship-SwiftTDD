@@ -13,8 +13,10 @@
 		3007B9F02175EA31002C4BEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3007B9EE2175EA31002C4BEB /* Main.storyboard */; };
 		3007B9F22175EA35002C4BEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3007B9F12175EA34002C4BEB /* Assets.xcassets */; };
 		3007B9F52175EA35002C4BEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3007B9F32175EA35002C4BEB /* LaunchScreen.storyboard */; };
+		3020F29A2240062500D2CF28 /* FuelsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3020F2992240062500D2CF28 /* FuelsManager.swift */; };
+		3020F29C224008D600D2CF28 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3020F29B224008D600D2CF28 /* Database.swift */; };
+		3020F29E2240129600D2CF28 /* FuelsManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3020F29D2240129600D2CF28 /* FuelsManagerProtocol.swift */; };
 		303CAAF421778F8700202E44 /* FuelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303CAAF321778F8700202E44 /* FuelViewModel.swift */; };
-		304DBF4721C7AAA900265662 /* DatabaseManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DBF4621C7AAA900265662 /* DatabaseManagerProtocol.swift */; };
 		304DBF4E21C7C00300265662 /* DatabaseManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DBF4D21C7C00300265662 /* DatabaseManagerTests.swift */; };
 		30639D5B217BD43E0011ADB2 /* String+DoubleUIntValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30639D5A217BD43E0011ADB2 /* String+DoubleUIntValue.swift */; };
 		30639D5E217BD8C80011ADB2 /* Double+stringValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30639D5D217BD8C80011ADB2 /* Double+stringValue.swift */; };
@@ -22,7 +24,6 @@
 		3075AD8121762C4E00025C2A /* AddFuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3075AD8021762C4E00025C2A /* AddFuelViewController.swift */; };
 		30A31EEB21D3988700FBDA74 /* AddFuelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A31EEA21D3988700FBDA74 /* AddFuelUITests.swift */; };
 		30A31EED21D398B800FBDA74 /* FuelTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A31EEC21D398B800FBDA74 /* FuelTrackerUITests.swift */; };
-		30C42A7921C01F4D0063E894 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C42A7821C01F4D0063E894 /* DatabaseManager.swift */; };
 		30C9555A217665D2008BBC51 /* Fuel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C95559217665D2008BBC51 /* Fuel.swift */; };
 		30C9557D217669C2008BBC51 /* FuelTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C9557C217669C2008BBC51 /* FuelTrackerTests.swift */; };
 		30C9557F217669EF008BBC51 /* FuelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C9557E217669EF008BBC51 /* FuelTests.swift */; };
@@ -67,8 +68,10 @@
 		3007B9F12175EA34002C4BEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3007B9F42175EA35002C4BEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3007B9F62175EA35002C4BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3020F2992240062500D2CF28 /* FuelsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelsManager.swift; sourceTree = "<group>"; };
+		3020F29B224008D600D2CF28 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		3020F29D2240129600D2CF28 /* FuelsManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelsManagerProtocol.swift; sourceTree = "<group>"; };
 		303CAAF321778F8700202E44 /* FuelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelViewModel.swift; sourceTree = "<group>"; };
-		304DBF4621C7AAA900265662 /* DatabaseManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManagerProtocol.swift; sourceTree = "<group>"; };
 		304DBF4D21C7C00300265662 /* DatabaseManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManagerTests.swift; sourceTree = "<group>"; };
 		30639D5A217BD43E0011ADB2 /* String+DoubleUIntValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DoubleUIntValue.swift"; sourceTree = "<group>"; };
 		30639D5D217BD8C80011ADB2 /* Double+stringValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+stringValue.swift"; sourceTree = "<group>"; };
@@ -78,7 +81,6 @@
 		30A31EE421D3985200FBDA74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30A31EEA21D3988700FBDA74 /* AddFuelUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFuelUITests.swift; sourceTree = "<group>"; };
 		30A31EEC21D398B800FBDA74 /* FuelTrackerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuelTrackerUITests.swift; sourceTree = "<group>"; };
-		30C42A7821C01F4D0063E894 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		30C95559217665D2008BBC51 /* Fuel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel.swift; sourceTree = "<group>"; };
 		30C9557121766991008BBC51 /* FuelTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuelTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C9557521766991008BBC51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -168,8 +170,9 @@
 			isa = PBXGroup;
 			children = (
 				30C95559217665D2008BBC51 /* Fuel.swift */,
-				30C42A7821C01F4D0063E894 /* DatabaseManager.swift */,
-				304DBF4621C7AAA900265662 /* DatabaseManagerProtocol.swift */,
+				3020F2992240062500D2CF28 /* FuelsManager.swift */,
+				3020F29D2240129600D2CF28 /* FuelsManagerProtocol.swift */,
+				3020F29B224008D600D2CF28 /* Database.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -501,9 +504,9 @@
 			files = (
 				3075AD8121762C4E00025C2A /* AddFuelViewController.swift in Sources */,
 				30C9555A217665D2008BBC51 /* Fuel.swift in Sources */,
+				3020F29A2240062500D2CF28 /* FuelsManager.swift in Sources */,
 				30F6159921C91FD000399E4C /* FuelTableViewCell.swift in Sources */,
 				30CDDA1921CA9DC20013637B /* FuelsHelper.swift in Sources */,
-				304DBF4721C7AAA900265662 /* DatabaseManagerProtocol.swift in Sources */,
 				30639D5E217BD8C80011ADB2 /* Double+stringValue.swift in Sources */,
 				30639D5B217BD43E0011ADB2 /* String+DoubleUIntValue.swift in Sources */,
 				3007B9ED2175EA31002C4BEB /* FuelRegisterViewController.swift in Sources */,
@@ -512,7 +515,8 @@
 				3007B9EB2175EA31002C4BEB /* AppDelegate.swift in Sources */,
 				30F6159B21C9250300399E4C /* Date+toString.swift in Sources */,
 				303CAAF421778F8700202E44 /* FuelViewModel.swift in Sources */,
-				30C42A7921C01F4D0063E894 /* DatabaseManager.swift in Sources */,
+				3020F29C224008D600D2CF28 /* Database.swift in Sources */,
+				3020F29E2240129600D2CF28 /* FuelsManagerProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

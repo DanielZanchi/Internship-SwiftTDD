@@ -7,10 +7,12 @@
 //
 
 import UIKit
-
+import SQLite
 class FuelRegisterViewController: UIViewController {
     
     private var fuels = [Fuel]()
+    
+    let fuelsManager = FuelsManager(database: Database().myDatabase )
     
     //MARK: Outlets
     @IBOutlet weak var fuelTableView: UITableView!
@@ -18,7 +20,7 @@ class FuelRegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let fuels = DatabaseManager.instance.getFuels() {
+        if let fuels = fuelsManager.getFuels() {
             self.fuels = fuels
         }
     }  
@@ -38,21 +40,22 @@ class FuelRegisterViewController: UIViewController {
 extension FuelRegisterViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let fuels = DatabaseManager.instance.getFuels() {
-            return fuels.count
+        var rows = 0
+        if let fuels = fuelsManager.getFuels() {
+            rows = fuels.count
         }
-        return 0
+        return rows
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {        
         let cell = tableView.dequeueReusableCell(withIdentifier: FuelTableViewCell.identifier) as! FuelTableViewCell
         
-        if let fuel = DatabaseManager.instance.getFuels()?[indexPath.row] {
+        if let fuel = fuelsManager.getFuels()?[indexPath.row] {
             var distance = 0
             var consumption = 0.00
             
-            if (indexPath.row + 1) < (DatabaseManager.instance.getFuels()?.count)! {
-                if let oldFuel = DatabaseManager.instance.getFuels()?[indexPath.row + 1] {
+            if (indexPath.row + 1) < (fuelsManager.getFuels()?.count)! {
+                if let oldFuel = fuelsManager.getFuels()?[indexPath.row + 1] {
                     distance = FuelsHelper.calculateDistance(from: fuel, to: oldFuel)
                     consumption = FuelsHelper.calculateConsumption(distance: distance, fuelQuantity: fuel.quantity)
                 }
@@ -71,11 +74,11 @@ extension FuelRegisterViewController: UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { 
         if let EditViewController = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "AddFuelVC") as? AddFuelViewController {
             
-            if let fuelToEdit = DatabaseManager.instance.getFuels()?[indexPath.row] {
-            EditViewController.fuelToEdit = fuelToEdit
-            EditViewController.isEditingFuel = true
-            
-            self.navigationController?.pushViewController(EditViewController, animated: true)
+            if let fuelToEdit = fuelsManager.getFuels()?[indexPath.row] {
+                EditViewController.fuelToEdit = fuelToEdit
+                EditViewController.isEditingFuel = true
+                
+                self.navigationController?.pushViewController(EditViewController, animated: true)
             }
         }
         

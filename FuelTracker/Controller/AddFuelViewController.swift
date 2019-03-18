@@ -89,7 +89,10 @@ class AddFuelViewController: UIViewController {
         let quantity: Double = (quantityTextField.text?.doubleValue)!
         let pricePerUnit: Double = (priceTextField.text?.doubleValue)!
         
-        let id = DatabaseManager.instance.addFuel(dateOfFuel: date, mileageOnSave: mileage, quantityOfFuel: quantity, pricePerUnitOfFuel: pricePerUnit)
+        
+        let database = Database().myDatabase
+        let fuelsManager = FuelsManager(database: database)
+        let id = fuelsManager.addFuel(dateOfFuel: date, mileageOnSave: mileage, quantityOfFuel: quantity, pricePerUnitOfFuel: pricePerUnit)
         print(id)        
     }
     

@@ -11,14 +11,15 @@ import XCTest
 
 class DatabaseManagerTests: XCTestCase {
             
-    var database: DatabaseManager!
+    var fuelsManager: FuelsManager!
     
     override func setUp() {
         super.setUp()
         
-        database = DatabaseManager.instance
-        database.dropTable()
-        database.createTable()
+        let database = Database().myDatabase
+        fuelsManager = FuelsManager(database: database)
+        fuelsManager.dropTable()
+        fuelsManager.createTable()
     }
     
     override func tearDown() {
@@ -29,16 +30,12 @@ class DatabaseManagerTests: XCTestCase {
         XCTAssertEqual(addFuel(), 1)
     }
     
-    func testDropTable() {
-        XCTAssertEqual(database.dropTable(), true)
-    }
-    
     func testDropTableFail() {
-        database.dropTable()
+        fuelsManager.dropTable()
     }
     
     func testAddFuelFail() {
-        database.dropTable()
+        fuelsManager.dropTable()
         XCTAssertEqual(addFuel(), -1)
     }
     
@@ -48,7 +45,7 @@ class DatabaseManagerTests: XCTestCase {
         addFuel()
         
         //read two fuels
-        XCTAssertEqual(database.getFuels()?[1].pricePerUnit, 1.5)
+        XCTAssertEqual(fuelsManager.getFuels()?[1].pricePerUnit, 1.5)
     }
     
     func testGetFuelsFail() {
@@ -56,42 +53,42 @@ class DatabaseManagerTests: XCTestCase {
         addFuel()
         addFuel()
         
-        database.dropTable()
+        fuelsManager.dropTable()
         
         //read two fuels
-        XCTAssertEqual(database.getFuels(), nil)
+        XCTAssertEqual(fuelsManager.getFuels(), nil)
     }
     
     func testDeleteFuel() {
         addFuel()
-        XCTAssertEqual(database.deleteFuel(fID: 1), true)
+        XCTAssertEqual(fuelsManager.deleteFuel(fID: 1), true)
     }
     
     func testDeleteFuelFail() {
         addFuel()
-        testDropTable()
-        XCTAssertEqual(database.deleteFuel(fID: 10), false)
+        fuelsManager.dropTable()
+        XCTAssertEqual(fuelsManager.deleteFuel(fID: 10), false)
     }
     
     func testUpdateFuel() {
         addFuel()
         let newFuel = Fuel(id: 1, date: Date(), mileage: 200, quantity: 100, pricePerUnit: 3.0)
-        XCTAssertEqual(database.updateFuel(fID: 1, newFuel: newFuel), true)
+        XCTAssertEqual(fuelsManager.updateFuel(fID: 1, newFuel: newFuel), true)
     }
     
     func testUpdateFuelFail() {
         addFuel()
         addFuel()
         let newFuel = Fuel(id: 3, date: Date(), mileage: 200, quantity: 100, pricePerUnit: 3.0)
-        XCTAssertEqual(database.updateFuel(fID: 3, newFuel: newFuel), false)
+        XCTAssertEqual(fuelsManager.updateFuel(fID: 3, newFuel: newFuel), false)
     }
     
     func testUpdateFuelFail2() {
         addFuel()
-        database.dropTable()
+        fuelsManager.dropTable()
         
         let newFuel = Fuel(id: 1, date: Date(), mileage: 200, quantity: 100, pricePerUnit: 3.0)
-        XCTAssertEqual(database.updateFuel(fID: 1, newFuel: newFuel), false)
+        XCTAssertEqual(fuelsManager.updateFuel(fID: 1, newFuel: newFuel), false)
     }
     
     
@@ -102,17 +99,17 @@ class DatabaseManagerTests: XCTestCase {
             let t = ""
             try t.write(to: fileURL, atomically: false, encoding: String.Encoding.utf8)
         } catch {
-            database = nil
+            fuelsManager = nil
             print("unable to create database connection")
             print(error)
         }
-        
-        XCTAssertEqual(database.createTable(), false)
+        print("DATABASE \(fuelsManager.createTable())")
+        XCTAssertEqual(fuelsManager.createTable(), false)
     }
     
     //Helper
     @discardableResult private func addFuel() -> Int64 {
-        return database.addFuel(dateOfFuel: Date(), mileageOnSave: 100, quantityOfFuel: 50, pricePerUnitOfFuel: 1.5)
+        return fuelsManager.addFuel(dateOfFuel: Date(), mileageOnSave: 100, quantityOfFuel: 50, pricePerUnitOfFuel: 1.5)
     }
     
 }

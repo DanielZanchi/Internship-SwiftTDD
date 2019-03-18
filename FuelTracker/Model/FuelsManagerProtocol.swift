@@ -1,17 +1,15 @@
 //
-//  DatabaseManagerProtocol.swift
+//  FuelsManagerProtocol.swift
 //  FuelTracker
 //
-//  Created by Daniel Zanchi on 17/12/2018.
-//  Copyright © 2018 Daniel Zanchi. All rights reserved.
+//  Created by Daniel Zanchi on 18/03/2019.
+//  Copyright © 2019 Daniel Zanchi. All rights reserved.
 //
 
-import Foundation
 import SQLite
 
-//sourcery: AutoMockable
-protocol DatabaseManagerProtocol {
-        
+protocol FuelsManagerProtocol {
+    
     func addFuel(dateOfFuel: Date, mileageOnSave: Int, quantityOfFuel: Double, pricePerUnitOfFuel: Double) -> Int64
     
     func getFuels() -> [Fuel]?

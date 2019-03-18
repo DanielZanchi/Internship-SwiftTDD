@@ -1,20 +1,18 @@
 //
-//  DatabaseManager.swift
+//  FuelManager.swift
 //  FuelTracker
 //
-//  Created by Daniel Zanchi on 11/12/2018.
-//  Copyright © 2018 Daniel Zanchi. All rights reserved.
+//  Created by Daniel Zanchi on 18/03/2019.
+//  Copyright © 2019 Daniel Zanchi. All rights reserved.
 //
 
 import SQLite
 
-class DatabaseManager: DatabaseManagerProtocol {
-    
-    static let instance = DatabaseManager()
+class FuelsManager: FuelsManagerProtocol {
     
     private var database: Connection?
     
-    let fuelsTable = Table("fuels")
+    private let fuelsTable = Table("fuels")
     
     let id = Expression<Int64>("id")
     let date = Expression<Date>("date")
@@ -22,20 +20,12 @@ class DatabaseManager: DatabaseManagerProtocol {
     let quantity = Expression<Double>("quantity")
     let pricePerUnit = Expression<Double>("pricePerUnit")
     
-    init() {
-        do {            
-            let documentDirectory = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-            let fileURL = documentDirectory.appendingPathComponent("fuels").appendingPathExtension("sqlite3")
-            database = try Connection(fileURL.path)
-        } catch {
-            print("unable to create database connection")
-            print(error)
-            database = nil
-        }
+    init(database: Connection) {
+        self.database = database
         
         createTable()
     }
-    
+
     @discardableResult func createTable() -> Bool {
         let create = self.fuelsTable.create { (table) in
             table.column(id, primaryKey: true)
@@ -44,15 +34,14 @@ class DatabaseManager: DatabaseManagerProtocol {
             table.column(quantity)
             table.column(pricePerUnit)
         }
-        
         do {
             try database?.run(create)
             return true
         } catch {
             print("unable to create table")
             print(error)
-            return false
         }
+        return false
     }
     
     func addFuel(dateOfFuel: Date, mileageOnSave: Int, quantityOfFuel: Double, pricePerUnitOfFuel: Double) -> Int64 {
@@ -62,8 +51,8 @@ class DatabaseManager: DatabaseManagerProtocol {
             return id
         } catch {
             print(error)
-            return -1
         }
+        return -1
     }
     
     func getFuels() -> [Fuel]? {
@@ -93,8 +82,8 @@ class DatabaseManager: DatabaseManagerProtocol {
             return true
         } catch {
             print(error)
-            return false
         }
+        return false
     }
     
     func updateFuel(fID: Int64, newFuel: Fuel) -> Bool {
@@ -117,15 +106,7 @@ class DatabaseManager: DatabaseManagerProtocol {
         return false
     }
     
-    @discardableResult func dropTable() -> Bool {
-        do {
-            try database?.run(fuelsTable.drop())
-            return true
-        } catch {
-            print(error)
-            print("wasn't able to drop table")
-            return false
-        }
+    func dropTable() {
+        try! database?.run(fuelsTable.drop())
     }
-    
 }
