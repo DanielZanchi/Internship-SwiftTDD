@@ -29,6 +29,7 @@
 		30C9557F217669EF008BBC51 /* FuelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C9557E217669EF008BBC51 /* FuelTests.swift */; };
 		30CDDA1921CA9DC20013637B /* FuelsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CDDA1821CA9DC20013637B /* FuelsHelper.swift */; };
 		30CDDA1B21CA9F870013637B /* FuelsHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CDDA1A21CA9F870013637B /* FuelsHelperTests.swift */; };
+		30CE8E992242438500944DAB /* FuelRegisterTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CE8E982242438500944DAB /* FuelRegisterTableView.swift */; };
 		30F45376217F2143006F190F /* UITextField+enabledColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F45375217F2143006F190F /* UITextField+enabledColor.swift */; };
 		30F6159921C91FD000399E4C /* FuelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F6159821C91FD000399E4C /* FuelTableViewCell.swift */; };
 		30F6159B21C9250300399E4C /* Date+toString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F6159A21C9250300399E4C /* Date+toString.swift */; };
@@ -88,6 +89,7 @@
 		30C9557E217669EF008BBC51 /* FuelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTests.swift; sourceTree = "<group>"; };
 		30CDDA1821CA9DC20013637B /* FuelsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelsHelper.swift; sourceTree = "<group>"; };
 		30CDDA1A21CA9F870013637B /* FuelsHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelsHelperTests.swift; sourceTree = "<group>"; };
+		30CE8E982242438500944DAB /* FuelRegisterTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelRegisterTableView.swift; sourceTree = "<group>"; };
 		30F45375217F2143006F190F /* UITextField+enabledColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+enabledColor.swift"; sourceTree = "<group>"; };
 		30F6159821C91FD000399E4C /* FuelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTableViewCell.swift; sourceTree = "<group>"; };
 		30F6159A21C9250300399E4C /* Date+toString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+toString.swift"; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				3007B9EC2175EA31002C4BEB /* FuelRegisterViewController.swift */,
+				30CE8E982242438500944DAB /* FuelRegisterTableView.swift */,
 				3075AD8021762C4E00025C2A /* AddFuelViewController.swift */,
 				30F6159821C91FD000399E4C /* FuelTableViewCell.swift */,
 			);
@@ -512,6 +515,7 @@
 				3007B9ED2175EA31002C4BEB /* FuelRegisterViewController.swift in Sources */,
 				30F45376217F2143006F190F /* UITextField+enabledColor.swift in Sources */,
 				30F6159D21C92B1800399E4C /* UITableViewCell+identifier.swift in Sources */,
+				30CE8E992242438500944DAB /* FuelRegisterTableView.swift in Sources */,
 				3007B9EB2175EA31002C4BEB /* AppDelegate.swift in Sources */,
 				30F6159B21C9250300399E4C /* Date+toString.swift in Sources */,
 				303CAAF421778F8700202E44 /* FuelViewModel.swift in Sources */,

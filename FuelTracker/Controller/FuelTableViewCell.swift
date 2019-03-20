@@ -28,6 +28,7 @@ class FuelTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    /// Sets the view of the cell, indicating the Fuel, the distance from the last fuel and the consumption
     func setup(model: FuelViewModel, distance: Int, consumption: Double) {
         dateLabel.text = model.date
         pricePerUnitLabel.text = ("\(model.pricePerUnit!) €/L")
