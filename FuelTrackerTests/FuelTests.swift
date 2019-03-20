@@ -16,8 +16,8 @@ class FuelTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        myFuel = Fuel(id: 1234, date: Date(timeIntervalSince1970: 0), mileage: 3450, quantity: 100, pricePerUnit: 2) // should return date as 01/01/1970
-        myFuelViewModel = FuelViewModel(fuel: myFuel)
+        myFuel = Fuel(id: 1234, date: Date(timeIntervalSince1970: 0), mileage: 3450, quantity: 100, pricePerUnit: 2, isTankNotFull: false) // should return date as 01/01/1970
+        myFuelViewModel = FuelViewModel(fuel: myFuel, distance: 500, consumption: 18)
         
     }
 
@@ -53,6 +53,17 @@ class FuelTests: XCTestCase {
 
     func testPrice() {
         XCTAssertEqual("200.00", myFuelViewModel.price)
+    }
+    
+    func testDistance() {
+        let fuel1 = Fuel(id: 1, date: Date(), mileage: 0, quantity: 50, pricePerUnit: 1.5, isTankNotFull: false)
+        let fuel2 = Fuel(id: 2, date: Date(), mileage: 100, quantity: 50, pricePerUnit: 1.5, isTankNotFull: false)
+        XCTAssertEqual(fuel2.calculateDistange(fromFuel: fuel1) , 100)
+    }
+    
+    func testConsumption() {
+        let distance = 100
+        XCTAssertEqual(myFuel.calculateConsumption(afterDistance: distance), 1.0)
     }
     
 }

@@ -270,6 +270,7 @@
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ujE-aK-RV8">
                                                         <rect key="frame" x="20.666666666666657" y="-1.3333333333333144" width="51" height="31"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="partialFuelSwitch"/>
                                                         <connections>
                                                             <action selector="partialFuelChanged:" destination="OCe-mt-ks4" eventType="valueChanged" id="Lbe-TM-XMI"/>
                                                         </connections>
@@ -283,6 +284,7 @@
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjZ-bS-Zvo">
                                                 <rect key="frame" x="212.33333333333334" y="0.0" width="79.333333333333343" height="28"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="partialFuelLabel"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -304,6 +306,7 @@
                             </stackView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When you don't fill up the tank it's not possible to calculate fuel consumption." textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rW0-Ll-Qcx">
                                 <rect key="frame" x="20" y="300" width="335" height="36"/>
+                                <accessibility key="accessibilityConfiguration" identifier="partialFuelMessageLabel"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>

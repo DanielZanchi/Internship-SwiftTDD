@@ -29,8 +29,8 @@ extension FuelRegisterViewController: UITableViewDelegate, UITableViewDataSource
             if let fuelsCount = fuelsManager.getFuels()?.count, fuel.isTankNotFull == false {
                 if (indexPath.row + 1) < fuelsCount {
                     if let oldFuel = fuelsManager.getFuels()?[indexPath.row + 1] {
-                        distance = FuelsHelper.calculateDistance(from: fuel, to: oldFuel)
-                        consumption = FuelsHelper.calculateConsumption(distance: distance, fuelQuantity: fuel.quantity)
+                        distance = fuel.calculateDistange(fromFuel: oldFuel)
+                        consumption = fuel.calculateConsumption(afterDistance: distance)
                     }
                 }
             } 

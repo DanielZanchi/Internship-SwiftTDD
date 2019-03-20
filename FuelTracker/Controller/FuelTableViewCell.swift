@@ -33,8 +33,10 @@ class FuelTableViewCell: UITableViewCell {
         dateLabel.text = model.date
         pricePerUnitLabel.text = ("\(model.pricePerUnit!) €/L")
         priceLabel.text = ("\(model.price!) €")
-        distanceLabel.text = "\(model.distance ?? 0) km"
+        distanceLabel.text = "\(model.distance!) km"
         consumptionLabel.text = model.consumption.toString(decimals: 2)
     }
+    
+    
 
 }

@@ -16,6 +16,7 @@ class AddFuelUITests: XCTestCase {
     var totalAmountTextField: XCUIElement?
     var pricePerUnitTextField: XCUIElement?
     var saveButton: XCUIElement?
+    var partialFuelSwitch: XCUIElement?
     
     override func setUp() {
         super.setUp()
@@ -119,6 +120,31 @@ class AddFuelUITests: XCTestCase {
         XCTAssertEqual(saveButton?.isEnabled, false)
     }
     
+    func testPartialFuelSwitchInitialState() {
+        let isOn = partialFuelSwitch?.value as? String
+        XCTAssertEqual(isOn, "0")
+    }
+    
+    func testPartialFuelLabelInitialState() {
+        XCTAssert(app.staticTexts["No"].exists)
+    }
+    
+    func testPartialFuelLabelAfterSwitchIsOn() {
+        partialFuelSwitch?.tap()
+        XCTAssert(app.staticTexts["Yes"].exists)
+    }
+    
+    func testPartialFuelMessageLabelInitialState() {
+        let text = "When you don't fill up the tank it's not possible to calculate fuel consumption."
+        XCTAssertFalse(app.staticTexts[text].exists)
+    }
+    
+    func testPartialFuelMessageLabelAfterSwitchIsOn() {
+        partialFuelSwitch?.tap()
+        let text = "When you don't fill up the tank it's not possible to calculate fuel consumption."
+        XCTAssert(app.staticTexts[text].exists)
+    }
+    
     func testSaveFuel() {
         inputText(textFieldID: "mileageTextField", text: "1000")
         inputText(textFieldID: "quantityTextField", text: "50")
@@ -137,7 +163,7 @@ class AddFuelUITests: XCTestCase {
         mileageTextField = app.textFields["mileageTextField"]
         totalAmountTextField = app.textFields["totalAmountTextField"]
         pricePerUnitTextField = app.textFields["priceTextField"]
-        
+        partialFuelSwitch = app.switches["partialFuelSwitch"]
         saveButton = app.buttons["Save"]
     }
 

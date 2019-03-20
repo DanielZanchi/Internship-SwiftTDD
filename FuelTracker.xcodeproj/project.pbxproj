@@ -27,8 +27,6 @@
 		30C9555A217665D2008BBC51 /* Fuel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C95559217665D2008BBC51 /* Fuel.swift */; };
 		30C9557D217669C2008BBC51 /* FuelTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C9557C217669C2008BBC51 /* FuelTrackerTests.swift */; };
 		30C9557F217669EF008BBC51 /* FuelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C9557E217669EF008BBC51 /* FuelTests.swift */; };
-		30CDDA1921CA9DC20013637B /* FuelsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CDDA1821CA9DC20013637B /* FuelsHelper.swift */; };
-		30CDDA1B21CA9F870013637B /* FuelsHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CDDA1A21CA9F870013637B /* FuelsHelperTests.swift */; };
 		30CE8E992242438500944DAB /* FuelRegisterTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CE8E982242438500944DAB /* FuelRegisterTableView.swift */; };
 		30F45376217F2143006F190F /* UITextField+enabledColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F45375217F2143006F190F /* UITextField+enabledColor.swift */; };
 		30F6159921C91FD000399E4C /* FuelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F6159821C91FD000399E4C /* FuelTableViewCell.swift */; };
@@ -87,8 +85,6 @@
 		30C9557521766991008BBC51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30C9557C217669C2008BBC51 /* FuelTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTrackerTests.swift; sourceTree = "<group>"; };
 		30C9557E217669EF008BBC51 /* FuelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTests.swift; sourceTree = "<group>"; };
-		30CDDA1821CA9DC20013637B /* FuelsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelsHelper.swift; sourceTree = "<group>"; };
-		30CDDA1A21CA9F870013637B /* FuelsHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelsHelperTests.swift; sourceTree = "<group>"; };
 		30CE8E982242438500944DAB /* FuelRegisterTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelRegisterTableView.swift; sourceTree = "<group>"; };
 		30F45375217F2143006F190F /* UITextField+enabledColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+enabledColor.swift"; sourceTree = "<group>"; };
 		30F6159821C91FD000399E4C /* FuelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTableViewCell.swift; sourceTree = "<group>"; };
@@ -183,7 +179,6 @@
 			isa = PBXGroup;
 			children = (
 				303CAAF321778F8700202E44 /* FuelViewModel.swift */,
-				30CDDA1821CA9DC20013637B /* FuelsHelper.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -226,7 +221,6 @@
 			children = (
 				30C9557521766991008BBC51 /* Info.plist */,
 				30C9557C217669C2008BBC51 /* FuelTrackerTests.swift */,
-				30CDDA1A21CA9F870013637B /* FuelsHelperTests.swift */,
 				30C9557E217669EF008BBC51 /* FuelTests.swift */,
 				304DBF4D21C7C00300265662 /* DatabaseManagerTests.swift */,
 				30639D5F217DD2A00011ADB2 /* UtilTests.swift */,
@@ -509,7 +503,6 @@
 				30C9555A217665D2008BBC51 /* Fuel.swift in Sources */,
 				3020F29A2240062500D2CF28 /* FuelsManager.swift in Sources */,
 				30F6159921C91FD000399E4C /* FuelTableViewCell.swift in Sources */,
-				30CDDA1921CA9DC20013637B /* FuelsHelper.swift in Sources */,
 				30639D5E217BD8C80011ADB2 /* Double+stringValue.swift in Sources */,
 				30639D5B217BD43E0011ADB2 /* String+DoubleUIntValue.swift in Sources */,
 				3007B9ED2175EA31002C4BEB /* FuelRegisterViewController.swift in Sources */,
@@ -539,7 +532,6 @@
 			files = (
 				30C9557D217669C2008BBC51 /* FuelTrackerTests.swift in Sources */,
 				30639D60217DD2A00011ADB2 /* UtilTests.swift in Sources */,
-				30CDDA1B21CA9F870013637B /* FuelsHelperTests.swift in Sources */,
 				30C9557F217669EF008BBC51 /* FuelTests.swift in Sources */,
 				304DBF4E21C7C00300265662 /* DatabaseManagerTests.swift in Sources */,
 			);
