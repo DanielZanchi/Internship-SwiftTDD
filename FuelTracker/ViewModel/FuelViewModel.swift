@@ -14,13 +14,17 @@ class FuelViewModel {
     var pricePerUnit: String!
     var price: String!
     var date: String!
+    var distance: Int!
+    var consumption: Double!
     
-    init(fuel: Fuel) {
+    init(fuel: Fuel, distance: Int, consumption: Double) {
         self.quantity = fuel.quantity.toString(decimals: 2)
         self.mileage = fuel.mileage
         self.pricePerUnit = fuel.pricePerUnit.toString(decimals: 3)
         self.price = (fuel.pricePerUnit * fuel.quantity).toString(decimals: 2)
         self.date = fuel.date.toString(dateFormat: "dd/MM/YYYY")
+        self.distance = distance
+        self.consumption = consumption
     }
     
 }

@@ -16,6 +16,9 @@ class AddFuelViewController: UIViewController {
     @IBOutlet weak var quantityTextField: UITextField!
     @IBOutlet weak var totalAmountTextField: UITextField!
     @IBOutlet weak var priceTextField: UITextField!
+    @IBOutlet weak var partialFuelSwitch: UISwitch!
+    @IBOutlet weak var partialFuelMessageLabel: UILabel!
+    @IBOutlet weak var partialFuelLabel: UILabel!
     
     var fuel: Fuel?
     
@@ -63,6 +66,8 @@ class AddFuelViewController: UIViewController {
             priceTextField.text = fuel.pricePerUnit.toString(decimals: 3)
             totalAmountTextField.text = calculateTotalAmount()
             checkTextFieldsContent()
+            partialFuelSwitch.isOn = fuel.isTankNotFull
+            partialFuelChanged(partialFuelSwitch)
         }
     }
     
@@ -88,12 +93,11 @@ class AddFuelViewController: UIViewController {
         let mileage: Int = (mileageTextField.text?.intValue)!
         let quantity: Double = (quantityTextField.text?.doubleValue)!
         let pricePerUnit: Double = (priceTextField.text?.doubleValue)!
-        
+        let isTankNotFull = partialFuelSwitch.isOn
         
         let database = Database().myDatabase
         let fuelsManager = FuelsManager(database: database)
-        let id = fuelsManager.addFuel(dateOfFuel: date, mileageOnSave: mileage, quantityOfFuel: quantity, pricePerUnitOfFuel: pricePerUnit)
-        print(id)        
+        _ = fuelsManager.addFuel(dateOfFuel: date, mileageOnSave: mileage, quantityOfFuel: quantity, pricePerUnitOfFuel: pricePerUnit, isTankNotFullFuel: isTankNotFull)
     }
     
     // MARK: IBActions
@@ -114,4 +118,13 @@ class AddFuelViewController: UIViewController {
         totalAmountTextField.text = calculateTotalAmount()
     }
     
+    @IBAction func partialFuelChanged(_ sender: UISwitch) {
+        partialFuelMessageLabel.isHidden = !sender.isOn
+        
+        if sender.isOn {
+            partialFuelLabel.text = "Yes"
+        } else {
+            partialFuelLabel.text = "No"
+        }
+    }
 }

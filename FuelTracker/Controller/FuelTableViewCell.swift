@@ -29,12 +29,12 @@ class FuelTableViewCell: UITableViewCell {
     }
     
     /// Sets the view of the cell, indicating the Fuel, the distance from the last fuel and the consumption
-    func setup(model: FuelViewModel, distance: Int, consumption: Double) {
+    func setup(model: FuelViewModel) {
         dateLabel.text = model.date
         pricePerUnitLabel.text = ("\(model.pricePerUnit!) €/L")
         priceLabel.text = ("\(model.price!) €")
-        distanceLabel.text = "\(distance) km"
-        consumptionLabel.text = consumption.toString(decimals: 2)
+        distanceLabel.text = "\(model.distance ?? 0) km"
+        consumptionLabel.text = model.consumption.toString(decimals: 2)
     }
 
 }

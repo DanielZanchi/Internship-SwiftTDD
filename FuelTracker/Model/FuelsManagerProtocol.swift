@@ -10,7 +10,7 @@ import SQLite
 
 protocol FuelsManagerProtocol {
     
-    func addFuel(dateOfFuel: Date, mileageOnSave: Int, quantityOfFuel: Double, pricePerUnitOfFuel: Double) -> Int64
+    func addFuel(dateOfFuel: Date, mileageOnSave: Int, quantityOfFuel: Double, pricePerUnitOfFuel: Double, isTankNotFullFuel: Bool) -> Int64
     
     func getFuels() -> [Fuel]?
     

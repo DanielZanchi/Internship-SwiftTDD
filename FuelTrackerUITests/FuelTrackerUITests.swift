@@ -65,10 +65,20 @@ class FuelTrackerUITests: XCTestCase {
         XCTAssert(app.staticTexts["30.00 €"].exists) 
     }
     
-    func testNumberOfRowsFail() {
-        app.launchArguments = ["-resetTable"]
-        app.launch()
+    func testDeleteFuel() {
+        addFuel()
         
+        var rows = app.tables.cells.count
+        XCTAssertEqual(rows, 1)
+        
+        app.tables.cells.firstMatch.swipeLeft()
+        app.tables.cells.firstMatch.buttons["Delete"].tap()
+        
+        rows = app.tables.cells.count
+        XCTAssertEqual(rows, 0)
+    }
+    
+    func testEmptyTable() {
         XCTAssertEqual(app.tables.cells.count , 0)
     }
     

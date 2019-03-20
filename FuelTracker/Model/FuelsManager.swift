@@ -19,6 +19,7 @@ class FuelsManager: FuelsManagerProtocol {
     let mileage = Expression<Int>("mileage")
     let quantity = Expression<Double>("quantity")
     let pricePerUnit = Expression<Double>("pricePerUnit")
+    let isTankNotFull = Expression<Bool>("isTankNotFull")
     
     init(database: Connection) {
         self.database = database
@@ -33,6 +34,7 @@ class FuelsManager: FuelsManagerProtocol {
             table.column(mileage)
             table.column(quantity)
             table.column(pricePerUnit)
+            table.column(isTankNotFull)
         }
         do {
             try database?.run(create)
@@ -44,14 +46,17 @@ class FuelsManager: FuelsManagerProtocol {
         return false
     }
     
-    func addFuel(dateOfFuel: Date, mileageOnSave: Int, quantityOfFuel: Double, pricePerUnitOfFuel: Double) -> Int64 {
-        let insertFuel = fuelsTable.insert(date <- dateOfFuel, mileage <- mileageOnSave, quantity <- quantityOfFuel, pricePerUnit <- pricePerUnitOfFuel)
+    func addFuel(dateOfFuel: Date, mileageOnSave: Int, quantityOfFuel: Double, pricePerUnitOfFuel: Double, isTankNotFullFuel: Bool) -> Int64 {
+        let insertFuel = fuelsTable.insert(date <- dateOfFuel, mileage <- mileageOnSave, quantity <- quantityOfFuel, pricePerUnit <- pricePerUnitOfFuel, isTankNotFull <- isTankNotFullFuel)
+        print("INFO: insertFuel created")
         do {
             let id = try database!.run(insertFuel)
+            print("INFO: this will not be called, because try fails")
             return id
         } catch {
             print(error)
         }
+        print("INFO: should return -1")
         return -1
     }
     
@@ -61,7 +66,7 @@ class FuelsManager: FuelsManagerProtocol {
         do {
             if let fuelsList = try database?.prepare(fuelsTable.order(date.desc)) {
                 for fuel in fuelsList {
-                    fuels.append(Fuel(id: fuel[id], date: fuel[date], mileage: fuel[mileage], quantity: fuel[quantity], pricePerUnit: fuel[pricePerUnit]))
+                    fuels.append(Fuel(id: fuel[id], date: fuel[date], mileage: fuel[mileage], quantity: fuel[quantity], pricePerUnit: fuel[pricePerUnit], isTankNotFull: fuel[isTankNotFull]))
                 }
             } else {
                 print("error")

@@ -8,6 +8,7 @@
 
 import UIKit
 import SQLite
+
 class FuelRegisterViewController: UIViewController {
     
     private var fuels = [Fuel]()

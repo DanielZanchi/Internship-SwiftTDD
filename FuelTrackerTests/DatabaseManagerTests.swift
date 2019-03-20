@@ -10,7 +10,7 @@ import XCTest
 @testable import FuelTracker
 
 class DatabaseManagerTests: XCTestCase {
-            
+    
     var fuelsManager: FuelsManager!
     
     override func setUp() {
@@ -93,16 +93,13 @@ class DatabaseManagerTests: XCTestCase {
     
     
     func testCreateTableFail() {
-        do {
-            let documentDirectory = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-            let fileURL = documentDirectory.appendingPathComponent("fuels").appendingPathExtension("sqlite3")
+        let documentDirectory = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+        if let dir = documentDirectory {
+            let fileURL = dir.appendingPathComponent("fuels").appendingPathExtension("sqlite3")
             let t = ""
-            try t.write(to: fileURL, atomically: false, encoding: String.Encoding.utf8)
-        } catch {
-            fuelsManager = nil
-            print("unable to create database connection")
-            print(error)
+            try? t.write(to: fileURL, atomically: false, encoding: String.Encoding.utf8)
         }
+        
         print("DATABASE \(fuelsManager.createTable())")
         XCTAssertEqual(fuelsManager.createTable(), false)
     }

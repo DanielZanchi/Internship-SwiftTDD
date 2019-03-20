@@ -14,4 +14,5 @@ struct Fuel: Equatable {
     let mileage: Int!
     let quantity: Double!
     let pricePerUnit: Double!
+    let isTankNotFull: Bool
 }
