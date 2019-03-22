@@ -97,7 +97,13 @@ class AddFuelViewController: UIViewController {
         
         let database = Database().myDatabase
         let fuelsManager = FuelsManager(database: database)
-        _ = fuelsManager.addFuel(dateOfFuel: date, mileageOnSave: mileage, quantityOfFuel: quantity, pricePerUnitOfFuel: pricePerUnit, isTankNotFullFuel: isTankNotFull)
+        _ = fuelsManager.addFuel(
+            dateOfFuel: date,
+            mileageOnSave: mileage,
+            quantityOfFuel: quantity,
+            pricePerUnitOfFuel: pricePerUnit,
+            isTankNotFullFuel: isTankNotFull
+        )
     }
     
     // MARK: IBActions

@@ -16,7 +16,6 @@ class FuelTableViewCell: UITableViewCell {
     @IBOutlet weak var pricePerUnitLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

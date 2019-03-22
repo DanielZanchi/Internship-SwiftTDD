@@ -55,7 +55,7 @@ class DatabaseManagerTests: XCTestCase {
         
         fuelsManager.dropTable()
         
-        //read two fuels
+        // read two fuels
         XCTAssertEqual(fuelsManager.getFuels(), nil)
     }
     
@@ -90,7 +90,6 @@ class DatabaseManagerTests: XCTestCase {
         let newFuel = Fuel(id: 1, date: Date(), mileage: 200, quantity: 100, pricePerUnit: 3.0, isTankNotFull: false)
         XCTAssertEqual(fuelsManager.updateFuel(fID: 1, newFuel: newFuel), false)
     }
-    
     
     func testCreateTableFail() {
         let documentDirectory = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)

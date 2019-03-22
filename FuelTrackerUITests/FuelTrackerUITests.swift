@@ -45,7 +45,7 @@ class FuelTrackerUITests: XCTestCase {
     func testTableViewRowCount() {
         let rows = app.tables.cells.count
         addFuel()
-        XCTAssertEqual(app.tables.cells.count , rows + 1)
+        XCTAssertEqual(app.tables.cells.count, rows + 1)
     }
     
     func testEditFuel() {
@@ -79,9 +79,8 @@ class FuelTrackerUITests: XCTestCase {
     }
     
     func testEmptyTable() {
-        XCTAssertEqual(app.tables.cells.count , 0)
+        XCTAssertEqual(app.tables.cells.count, 0)
     }
-    
     
     // Helper to input text into a textfield with an identifier
     func addFuel() {        
@@ -103,6 +102,7 @@ class FuelTrackerUITests: XCTestCase {
 }
 
 extension XCUIElement {
+    
     func clearTextField() {
         self.tap()
         
@@ -121,4 +121,5 @@ extension XCUIElement {
         }
         self.typeText(deleteString)
     }
+    
 }

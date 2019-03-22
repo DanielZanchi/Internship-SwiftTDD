@@ -84,8 +84,10 @@ class AddFuelUITests: XCTestCase {
         inputText(textFieldID: "quantityTextField", text: "0")
         XCTAssertEqual(totalAmountTextField?.isEnabled, false)
         XCTAssertEqual(pricePerUnitTextField?.isEnabled, false)
-        XCTAssertEqual("", totalAmountTextField?.value as! String)
-        XCTAssertEqual("", pricePerUnitTextField?.value as! String)
+        if let totalAmountValue = totalAmountTextField?.value as? String, let pricePerUnitValue = pricePerUnitTextField?.value as? String {
+            XCTAssertEqual("", totalAmountValue)
+            XCTAssertEqual("", pricePerUnitValue)
+        }
     }
     
     func testDisabledTextFieldsAndSaveButton() {        

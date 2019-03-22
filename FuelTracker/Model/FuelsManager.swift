@@ -126,7 +126,7 @@ class FuelsManager: FuelsManagerProtocol {
     }
     
     func dropTable() {
-        try! database?.run(fuelsTable.drop())
+        _ = try? database?.run(fuelsTable.drop())
     }
     
 }
