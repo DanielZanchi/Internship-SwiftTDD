@@ -19,8 +19,7 @@ extension FuelRegisterViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {        
-        let cell = tableView.dequeueReusableCell(withIdentifier: FuelTableViewCell.identifier) as! FuelTableViewCell
-        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: FuelTableViewCell.identifier) as? FuelTableViewCell else { return UITableViewCell() }
         
         if let fuel = fuelsManager.getFuels()?[indexPath.row] {
             var distance: Int = 0
@@ -43,7 +42,10 @@ extension FuelRegisterViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { 
-        if let EditViewController = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "AddFuelVC") as? AddFuelViewController {
+        if let EditViewController = UIStoryboard.init(
+            name: "Main",
+            bundle: Bundle.main
+            ).instantiateViewController(withIdentifier: "AddFuelVC") as? AddFuelViewController {
             
             if let fuelToEdit = fuelsManager.getFuels()?[indexPath.row] {
                 EditViewController.fuelToEdit = fuelToEdit

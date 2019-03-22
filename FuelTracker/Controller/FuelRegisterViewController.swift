@@ -15,7 +15,7 @@ class FuelRegisterViewController: UIViewController {
     
     let fuelsManager = FuelsManager(database: Database().myDatabase )
     
-    //MARK: Outlets
+    // MARK: Outlets
     @IBOutlet weak var fuelTableView: UITableView!
     
     override func viewDidLoad() {

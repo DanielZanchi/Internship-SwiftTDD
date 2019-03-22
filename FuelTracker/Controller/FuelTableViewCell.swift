@@ -36,7 +36,5 @@ class FuelTableViewCell: UITableViewCell {
         distanceLabel.text = "\(model.distance!) km"
         consumptionLabel.text = model.consumption.toString(decimals: 2)
     }
-    
-    
 
 }
