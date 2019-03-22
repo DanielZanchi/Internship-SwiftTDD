@@ -57,21 +57,27 @@ class AddFuelUITests: XCTestCase {
         inputText(textFieldID: "mileageTextField", text: "3000")
         inputText(textFieldID: "quantityTextField", text: "50")
         inputText(textFieldID: "totalAmountTextField", text: "100")
-        XCTAssertEqual(pricePerUnitTextField?.value as! String, "2.000")
+        if let pricePerUnitValue = pricePerUnitTextField?.value as? String {
+            XCTAssertEqual(pricePerUnitValue, "2.000")
+        }   
     }
     
     func testPricePerUnitZero() {
         inputText(textFieldID: "mileageTextField", text: "3000")
         inputText(textFieldID: "quantityTextField", text: "50")
         inputText(textFieldID: "totalAmountTextField", text: "0")
-        XCTAssertEqual(pricePerUnitTextField?.value as! String, "0.00")
+        if let pricePerUnitValue = pricePerUnitTextField?.value as? String {
+            XCTAssertEqual(pricePerUnitValue, "0.00")
+        } 
     }
     
     func testTotalAmount() {
         inputText(textFieldID: "mileageTextField", text: "3000")
         inputText(textFieldID: "quantityTextField", text: "50")
         inputText(textFieldID: "priceTextField", text: "2")
-        XCTAssertEqual(totalAmountTextField?.value as! String, "100.00")
+        if let totalAmountValue = totalAmountTextField?.value as? String {
+            XCTAssertEqual(totalAmountValue, "100.00")
+        }
     }
     
     func testQuantityZero() {

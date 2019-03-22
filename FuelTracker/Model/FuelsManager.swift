@@ -47,7 +47,14 @@ class FuelsManager: FuelsManagerProtocol {
     }
     
     func addFuel(dateOfFuel: Date, mileageOnSave: Int, quantityOfFuel: Double, pricePerUnitOfFuel: Double, isTankNotFullFuel: Bool) -> Int64 {
-        let insertFuel = fuelsTable.insert(date <- dateOfFuel, mileage <- mileageOnSave, quantity <- quantityOfFuel, pricePerUnit <- pricePerUnitOfFuel, isTankNotFull <- isTankNotFullFuel)
+        let insertFuel = fuelsTable.insert(
+            date <- dateOfFuel,
+            mileage <- mileageOnSave,
+            quantity <- quantityOfFuel,
+            pricePerUnit <- pricePerUnitOfFuel,
+            isTankNotFull <- isTankNotFullFuel
+        )
+        
         print("INFO: insertFuel created")
         do {
             let id = try database!.run(insertFuel)
@@ -66,7 +73,14 @@ class FuelsManager: FuelsManagerProtocol {
         do {
             if let fuelsList = try database?.prepare(fuelsTable.order(date.desc)) {
                 for fuel in fuelsList {
-                    fuels.append(Fuel(id: fuel[id], date: fuel[date], mileage: fuel[mileage], quantity: fuel[quantity], pricePerUnit: fuel[pricePerUnit], isTankNotFull: fuel[isTankNotFull]))
+                    fuels.append(Fuel(
+                        id: fuel[id],
+                        date: fuel[date],
+                        mileage: fuel[mileage],
+                        quantity: fuel[quantity],
+                        pricePerUnit: fuel[pricePerUnit],
+                        isTankNotFull: fuel[isTankNotFull]
+                    ))
                 }
             } else {
                 print("error")

@@ -99,13 +99,7 @@ class FuelTrackerUITests: XCTestCase {
         
         textField.typeText(text)
     }
-    
-//    func clearTextField(textField: XCUIElement) {
-//        textField.tap()
-//        textField.tap()
-//        app/*@START_MENU_TOKEN@*/.menuItems["Select All"]/*[[".menus.menuItems[\"Select All\"]",".menuItems[\"Select All\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-//        app/*@START_MENU_TOKEN@*/.menuItems["Cut"]/*[[".menus.menuItems[\"Cut\"]",".menuItems[\"Cut\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-//    }
+
 }
 
 extension XCUIElement {
