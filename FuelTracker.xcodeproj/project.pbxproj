@@ -21,6 +21,7 @@
 		30639D5B217BD43E0011ADB2 /* String+DoubleUIntValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30639D5A217BD43E0011ADB2 /* String+DoubleUIntValue.swift */; };
 		30639D5E217BD8C80011ADB2 /* Double+stringValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30639D5D217BD8C80011ADB2 /* Double+stringValue.swift */; };
 		30639D60217DD2A00011ADB2 /* UtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30639D5F217DD2A00011ADB2 /* UtilTests.swift */; };
+		30747A152245027F002800A0 /* DatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30747A142245027F002800A0 /* DatabaseTests.swift */; };
 		3075AD8121762C4E00025C2A /* AddFuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3075AD8021762C4E00025C2A /* AddFuelViewController.swift */; };
 		30A31EEB21D3988700FBDA74 /* AddFuelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A31EEA21D3988700FBDA74 /* AddFuelUITests.swift */; };
 		30A31EED21D398B800FBDA74 /* FuelTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A31EEC21D398B800FBDA74 /* FuelTrackerUITests.swift */; };
@@ -75,6 +76,7 @@
 		30639D5A217BD43E0011ADB2 /* String+DoubleUIntValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DoubleUIntValue.swift"; sourceTree = "<group>"; };
 		30639D5D217BD8C80011ADB2 /* Double+stringValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+stringValue.swift"; sourceTree = "<group>"; };
 		30639D5F217DD2A00011ADB2 /* UtilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilTests.swift; sourceTree = "<group>"; };
+		30747A142245027F002800A0 /* DatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseTests.swift; sourceTree = "<group>"; };
 		3075AD8021762C4E00025C2A /* AddFuelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFuelViewController.swift; sourceTree = "<group>"; };
 		30A31EE021D3985200FBDA74 /* FuelTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuelTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A31EE421D3985200FBDA74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				30C9557C217669C2008BBC51 /* FuelTrackerTests.swift */,
 				30C9557E217669EF008BBC51 /* FuelTests.swift */,
 				304DBF4D21C7C00300265662 /* DatabaseManagerTests.swift */,
+				30747A142245027F002800A0 /* DatabaseTests.swift */,
 				30639D5F217DD2A00011ADB2 /* UtilTests.swift */,
 			);
 			path = FuelTrackerTests;
@@ -532,6 +535,7 @@
 			files = (
 				30C9557D217669C2008BBC51 /* FuelTrackerTests.swift in Sources */,
 				30639D60217DD2A00011ADB2 /* UtilTests.swift in Sources */,
+				30747A152245027F002800A0 /* DatabaseTests.swift in Sources */,
 				30C9557F217669EF008BBC51 /* FuelTests.swift in Sources */,
 				304DBF4E21C7C00300265662 /* DatabaseManagerTests.swift in Sources */,
 			);
