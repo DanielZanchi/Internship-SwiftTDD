@@ -19,9 +19,10 @@ Based on:
 - Dependency Injection
 - SQLite
 - Tests
+- UITests
 
 
 The app lets the user register car fuels giving them statistics on consumption and distance.
 
-## Try it
+## Try? it
 Download the repo, open *FuelTracker.xcworkspace* in Xcode and run it on the simulator.
