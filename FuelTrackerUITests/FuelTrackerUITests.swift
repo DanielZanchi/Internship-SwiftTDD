@@ -56,7 +56,7 @@ class FuelTrackerUITests: XCTestCase {
         app.tables.cells.firstMatch.tap()
             
         let amountTextField = app.textFields["totalAmountTextField"]
-        clearTextField(textField: amountTextField)
+        amountTextField.clearTextField()
         
         inputText(textFieldID: "totalAmountTextField", text: "30")
         
@@ -100,10 +100,31 @@ class FuelTrackerUITests: XCTestCase {
         textField.typeText(text)
     }
     
-    func clearTextField(textField: XCUIElement) {
-        textField.tap()
-        textField.tap()
-        app/*@START_MENU_TOKEN@*/.menuItems["Select All"]/*[[".menus.menuItems[\"Select All\"]",".menuItems[\"Select All\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app/*@START_MENU_TOKEN@*/.menuItems["Cut"]/*[[".menus.menuItems[\"Cut\"]",".menuItems[\"Cut\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+//    func clearTextField(textField: XCUIElement) {
+//        textField.tap()
+//        textField.tap()
+//        app/*@START_MENU_TOKEN@*/.menuItems["Select All"]/*[[".menus.menuItems[\"Select All\"]",".menuItems[\"Select All\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+//        app/*@START_MENU_TOKEN@*/.menuItems["Cut"]/*[[".menus.menuItems[\"Cut\"]",".menuItems[\"Cut\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+//    }
+}
+
+extension XCUIElement {
+    func clearTextField() {
+        self.tap()
+        
+        guard let stringValue = self.value as? String else {
+            return
+        }
+        
+        // workaround for apple bug
+        if let placeholderString = self.placeholderValue, placeholderString == stringValue {
+            return
+        }
+        
+        var deleteString = String()
+        for _ in stringValue {
+            deleteString += XCUIKeyboardKey.delete.rawValue
+        }
+        self.typeText(deleteString)
     }
 }
