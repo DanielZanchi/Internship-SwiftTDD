@@ -114,4 +114,5 @@ class FuelsManager: FuelsManagerProtocol {
     func dropTable() {
         try! database?.run(fuelsTable.drop())
     }
+    
 }

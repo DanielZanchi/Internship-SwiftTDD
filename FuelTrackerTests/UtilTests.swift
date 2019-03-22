@@ -58,4 +58,5 @@ class UtilTests: XCTestCase {
         let date = Date(timeIntervalSince1970: 0)
         XCTAssertEqual("01/01/1970", date.toString(dateFormat: "dd/MM/YYY"))
     }
+    
 }

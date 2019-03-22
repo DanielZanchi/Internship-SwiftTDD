@@ -17,5 +17,5 @@ extension String {
     var intValue: Int {
         return Int(self) ?? 0
     }
+    
 }
-

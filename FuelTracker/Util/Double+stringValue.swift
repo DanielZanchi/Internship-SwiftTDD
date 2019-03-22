@@ -9,6 +9,7 @@
 import Foundation
 
 extension Double {
+    
     // return string value from a double with decimals
     func toString(decimals: UInt) -> String {
         return String(format: "%.\(decimals)f", self)

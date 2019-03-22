@@ -46,8 +46,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
 }
 
-
 extension AppDelegate {
+    
     private func resetIfNeeded() {
         guard CommandLine.arguments.contains("-resetTable") else {
             return
@@ -58,4 +58,5 @@ extension AppDelegate {
         fuelsManager.dropTable()
         fuelsManager.createTable()
     }
+    
 }

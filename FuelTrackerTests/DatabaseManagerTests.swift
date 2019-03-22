@@ -44,7 +44,7 @@ class DatabaseManagerTests: XCTestCase {
         addFuel()
         addFuel()
         
-        //read two fuels
+        // read two fuels
         XCTAssertEqual(fuelsManager.getFuels()?[1].pricePerUnit, 1.5)
     }
     
@@ -104,7 +104,7 @@ class DatabaseManagerTests: XCTestCase {
         XCTAssertEqual(fuelsManager.createTable(), false)
     }
     
-    //Helper
+    // Helper
     @discardableResult private func addFuel() -> Int64 {
         return fuelsManager.addFuel(dateOfFuel: Date(), mileageOnSave: 100, quantityOfFuel: 50, pricePerUnitOfFuel: 1.5, isTankNotFullFuel: false)
     }

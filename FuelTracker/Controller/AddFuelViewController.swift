@@ -127,4 +127,5 @@ class AddFuelViewController: UIViewController {
             partialFuelLabel.text = "No"
         }
     }
+    
 }
