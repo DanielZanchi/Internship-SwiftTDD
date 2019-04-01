@@ -19,11 +19,9 @@ extension FuelRegisterViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {        
-        guard let cell = tableView.dequeueReusableCell(
+        let cell = tableView.dequeueReusableCell(
             withIdentifier: FuelTableViewCell.identifier
-            ) as? FuelTableViewCell else { 
-                return UITableViewCell()
-        }
+            ) as! FuelTableViewCell
         
         if let fuel = fuelsManager.getFuels()?[indexPath.row] {
             var distance: Int = 0

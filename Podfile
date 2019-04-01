@@ -6,7 +6,6 @@ target 'FuelTracker' do
   use_frameworks!
 
   # Pods for FuelTracker
-
   pod 'SQLite.swift', '~> 0.11.5'
 
   target 'FuelTrackerTests' do

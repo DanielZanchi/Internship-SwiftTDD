@@ -26,7 +26,7 @@ class FuelsManager: FuelsManagerProtocol {
         
         createTable()
     }
-
+    
     @discardableResult func createTable() -> Bool {
         let create = self.fuelsTable.create { (table) in
             table.column(id, primaryKey: true)
@@ -61,10 +61,10 @@ class FuelsManager: FuelsManagerProtocol {
             print("INFO: this will not be called, because try fails")
             return id
         } catch {
+            print("INFO: error")
             print(error)
+            return -1
         }
-        print("INFO: should return -1")
-        return -1
     }
     
     func getFuels() -> [Fuel]? {
