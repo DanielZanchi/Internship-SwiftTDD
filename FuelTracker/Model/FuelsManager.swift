@@ -42,8 +42,8 @@ class FuelsManager: FuelsManagerProtocol {
         } catch {
             print("unable to create table")
             print(error)
+            return false
         }
-        return false
     }
     
     func addFuel(dateOfFuel: Date, mileageOnSave: Int, quantityOfFuel: Double, pricePerUnitOfFuel: Double, isTankNotFullFuel: Bool) -> Int64 {
