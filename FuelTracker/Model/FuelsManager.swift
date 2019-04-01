@@ -11,7 +11,6 @@ import SQLite
 class FuelsManager: FuelsManagerProtocol {
     
     private var database: Connection?
-    
     private let fuelsTable = Table("fuels")
     
     let id = Expression<Int64>("id")
@@ -23,7 +22,6 @@ class FuelsManager: FuelsManagerProtocol {
     
     init(database: Connection) {
         self.database = database
-        
         createTable()
     }
     
