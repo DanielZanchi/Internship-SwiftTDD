@@ -105,7 +105,8 @@ class FuelsManager: FuelsManagerProtocol {
     }
     
     func updateFuel(fID: Int64, newFuel: Fuel) -> Bool {
-        let fuel = fuelsTable.filter(id == fID)
+        let fuel = fuelsTable.where(id == fID)
+        print(fuel)
         do {
             let update = fuel.update([
                 date <- newFuel.date, 
@@ -113,9 +114,14 @@ class FuelsManager: FuelsManagerProtocol {
                 quantity <- newFuel.quantity, 
                 pricePerUnit <- newFuel.pricePerUnit
                 ])
-            
-            try database!.run(update)
-            return true
+            let result = try database!.run(update)
+            if result > 0 {
+                return true
+            }
+            else {
+                print("no rows updated")
+                return false
+            }
         } catch {
             print(error)
             return false

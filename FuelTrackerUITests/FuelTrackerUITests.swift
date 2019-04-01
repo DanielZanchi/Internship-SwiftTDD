@@ -52,7 +52,8 @@ class FuelTrackerUITests: XCTestCase {
         addFuel()
         
         XCTAssertFalse(app.staticTexts["30.00 €"].exists)
-        
+        XCTAssert(app.staticTexts["100.00 €"].exists)
+
         app.tables.cells.firstMatch.tap()
             
         let amountTextField = app.textFields["totalAmountTextField"]
@@ -62,7 +63,8 @@ class FuelTrackerUITests: XCTestCase {
         
         app.navigationBars["Edit Fuel"].buttons["Save"].tap()
         
-        XCTAssert(app.staticTexts["30.00 €"].exists) 
+        XCTAssert(app.staticTexts["30.00 €"].exists)
+        XCTAssertFalse(app.staticTexts["100.00 €"].exists)
     }
     
     func testDeleteFuel() {
@@ -78,17 +80,41 @@ class FuelTrackerUITests: XCTestCase {
         XCTAssertEqual(rows, 0)
     }
     
+    func testDistance() {
+        addFuel()
+        addFuel(mileage: 2000, quantity: 50, amount: 100)
+        
+        XCTAssert(app.staticTexts["1000 km"].exists) 
+    }
+    
+    func testConsumption() {
+        addFuel()
+        addFuel(mileage: 2000, quantity: 50, amount: 100)
+        
+        XCTAssert(app.staticTexts["20.00"].exists) 
+    }
+    
+    func testPricePerLiter() {
+        addFuel()
+        XCTAssert(app.staticTexts["2.000 €/L"].exists) 
+    }
+    
+    func testTotalAmount() {
+        addFuel()
+        XCTAssert(app.staticTexts["100.00 €"].exists) 
+    }
+    
     func testEmptyTable() {
         XCTAssertEqual(app.tables.cells.count, 0)
     }
     
     // Helper to input text into a textfield with an identifier
-    func addFuel() {        
+    func addFuel(mileage: Int = 1000, quantity: Int = 50, amount: Int = 100) {        
         app.navigationBars["Fuel Register"].buttons["Add"].tap()
         
-        inputText(textFieldID: "mileageTextField", text: "1000")
-        inputText(textFieldID: "quantityTextField", text: "50")
-        inputText(textFieldID: "totalAmountTextField", text: "100")
+        inputText(textFieldID: "mileageTextField", text: "\(mileage)")
+        inputText(textFieldID: "quantityTextField", text: "\(quantity)")
+        inputText(textFieldID: "totalAmountTextField", text: "\(amount)")
         XCUIApplication().navigationBars["Add Fuel"].buttons["Save"].tap()
     }
     

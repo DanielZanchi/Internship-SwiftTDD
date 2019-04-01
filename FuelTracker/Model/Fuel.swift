@@ -11,10 +11,10 @@ import Foundation
 struct Fuel: Equatable {
     let id: Int64!
     let date: Date!
-    let mileage: Int!
-    let quantity: Double!
-    let pricePerUnit: Double!
-    let isTankNotFull: Bool
+    var mileage: Int!
+    var quantity: Double!
+    var pricePerUnit: Double!
+    var isTankNotFull: Bool
     
     func calculateDistange(fromFuel: Fuel) -> Int {
         return self.mileage - fromFuel.mileage

@@ -97,6 +97,13 @@ class AddFuelViewController: UIViewController {
         
         let database = Database().myDatabase
         let fuelsManager = FuelsManager(database: database)
+        
+        fuelToEdit?.mileage = (mileageTextField.text?.intValue)!
+        fuelToEdit?.quantity = (quantityTextField.text?.doubleValue)!
+        fuelToEdit?.pricePerUnit = (priceTextField.text?.doubleValue)!
+        fuelToEdit?.isTankNotFull = partialFuelSwitch.isOn
+        
+        if !isEditingFuel {
         _ = fuelsManager.addFuel(
             dateOfFuel: date,
             mileageOnSave: mileage,
@@ -104,6 +111,16 @@ class AddFuelViewController: UIViewController {
             pricePerUnitOfFuel: pricePerUnit,
             isTankNotFullFuel: isTankNotFull
         )
+        }
+        else {
+            fuelToEdit?.mileage = (mileageTextField.text?.intValue)!
+            fuelToEdit?.quantity = (quantityTextField.text?.doubleValue)!
+            fuelToEdit?.pricePerUnit = (priceTextField.text?.doubleValue)!
+            fuelToEdit?.isTankNotFull = partialFuelSwitch.isOn
+            
+            let result = fuelsManager.updateFuel(fID: (fuelToEdit?.id)!, newFuel: fuelToEdit!)
+            print(result)
+        }
     }
     
     // MARK: IBActions

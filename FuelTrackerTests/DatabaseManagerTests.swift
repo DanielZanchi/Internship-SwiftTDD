@@ -80,7 +80,7 @@ class DatabaseManagerTests: XCTestCase {
         addFuel()
         addFuel()
         let newFuel = Fuel(id: 3, date: Date(), mileage: 200, quantity: 100, pricePerUnit: 3.0, isTankNotFull: false)
-        XCTAssertEqual(fuelsManager.updateFuel(fID: 3, newFuel: newFuel), false)
+        XCTAssertEqual(fuelsManager.updateFuel(fID: 300, newFuel: newFuel), false)
     }
     
     func testUpdateFuelFail2() {
