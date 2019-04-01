@@ -85,13 +85,12 @@ class FuelsManager: FuelsManagerProtocol {
             } else {
                 print("error")
             }
+            return fuels
         } catch {
             print("error while reading fuels")
             print(error)
             return nil
         }
-        
-        return fuels
     }
     
     func deleteFuel(fID: Int64) -> Bool {
@@ -101,8 +100,8 @@ class FuelsManager: FuelsManagerProtocol {
             return true
         } catch {
             print(error)
+            return false
         }
-        return false
     }
     
     func updateFuel(fID: Int64, newFuel: Fuel) -> Bool {
@@ -115,14 +114,12 @@ class FuelsManager: FuelsManagerProtocol {
                 pricePerUnit <- newFuel.pricePerUnit
                 ])
             
-            if try database!.run(update) > 0 {
-                return true
-            }
+            try database!.run(update)
+            return true
         } catch {
             print(error)
+            return false
         }
-        
-        return false
     }
     
     func dropTable() {
