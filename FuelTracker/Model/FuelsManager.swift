@@ -44,7 +44,7 @@ class FuelsManager: FuelsManagerProtocol {
         }
     }
     
-    func addFuel(dateOfFuel: Date, mileageOnSave: Int, quantityOfFuel: Double, pricePerUnitOfFuel: Double, isTankNotFullFuel: Bool) -> Int64 {
+    @discardableResult func addFuel(dateOfFuel: Date, mileageOnSave: Int, quantityOfFuel: Double, pricePerUnitOfFuel: Double, isTankNotFullFuel: Bool) -> Int64 {
         let insertFuel = fuelsTable.insert(
             date <- dateOfFuel,
             mileage <- mileageOnSave,
@@ -115,8 +115,7 @@ class FuelsManager: FuelsManagerProtocol {
             let result = try database!.run(update)
             if result > 0 {
                 return true
-            }
-            else {
+            } else {
                 print("no rows updated")
                 return false
             }

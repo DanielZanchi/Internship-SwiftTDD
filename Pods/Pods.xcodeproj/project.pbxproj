@@ -7,43 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01461379CD1658035770A08DC7E62FBD /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA8FC57684890F34746A8552D09A4E /* Setter.swift */; };
+		01461379CD1658035770A08DC7E62FBD /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890FBBE559D9C6C586F3104233838F6B /* Setter.swift */; };
 		04913F74C7D6B0740470F2A311941A3C /* Pods-FuelTrackerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B3D0DB20D764178A10448832DDAC64 /* Pods-FuelTrackerUITests-dummy.m */; };
-		06C78877E996FFA30A0AB12A3C3ADF39 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 690363762DF4BDFC05BD0F750AA78019 /* SQLite-Bridging.m */; };
+		06C78877E996FFA30A0AB12A3C3ADF39 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = C36F8780CA8682382E7FA57238C18EC7 /* SQLite-Bridging.m */; };
 		09E4631D343264DF9E13DFD501EDE63A /* Pods-FuelTracker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 852DCA9829E3AA97F7369B541B2E0D2C /* Pods-FuelTracker-dummy.m */; };
-		0A9001A0591DB8744747FE73EB7660EA /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA29985C5428857803D551A6AB2AD5F /* SQLite.swift-dummy.m */; };
+		0A9001A0591DB8744747FE73EB7660EA /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1731C9CDD3F3CADC2EB2022E484711A /* SQLite.swift-dummy.m */; };
 		2B0E641FF0A84C65A8A587DCACFA744F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		38EEB35102A3FEEBF0FF0B0D91AEC385 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC53825AAE5A981376EDDBDB1AD8F53 /* Statement.swift */; };
+		38EEB35102A3FEEBF0FF0B0D91AEC385 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F440FF9B3F1CE47CCBC33DB8FF9DB239 /* Statement.swift */; };
 		423E8850D9F1204BB05C26FFFFE4770C /* Pods-FuelTracker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5E7F19E9070FD5F358DF6F159E62A9D /* Pods-FuelTracker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42B9788CCA273B3A686DBC6C47048384 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4EEDDC7A574480EB0AAADF3C37F9D4 /* Foundation.swift */; };
-		47E62E6349B9FACBA3F0D6B2C6D13E37 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B867EE6F6CF742F7C87E5F45781F67B /* Connection.swift */; };
+		42B9788CCA273B3A686DBC6C47048384 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFE5FC017CB224960BD13FEC922746 /* Foundation.swift */; };
+		47E62E6349B9FACBA3F0D6B2C6D13E37 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900DC25A76CA107FE18E8B229DD6A2F9 /* Connection.swift */; };
 		48B69D495694CB516F1A59283530CC88 /* Pods-FuelTrackerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA648DA95E91FCAD5B63039AC7AE94A0 /* Pods-FuelTrackerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		49EFC9A65607AA8F9281AD0716F2ECB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		4C1714949B9E8CDE36017346A8F03FEB /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643474EE223342D015C7304572957051 /* Operators.swift */; };
-		511092C8100ABEB4891DB287AF6CB42F /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401AC22F9DEDB15D73A802C2FCA686A8 /* CustomFunctions.swift */; };
+		4C1714949B9E8CDE36017346A8F03FEB /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483120450CF6F7D58BB49C6106B9375F /* Operators.swift */; };
+		511092C8100ABEB4891DB287AF6CB42F /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0A2317725FBE67240BB58505899500 /* CustomFunctions.swift */; };
 		578C5F4615CD56E0F0F5E95F6794EE75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		5DA16E09B6799E7587AD3DC4ADC3934F /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511972C964CB8473FFD63B4203BB2380 /* Collation.swift */; };
-		5F1BE4CBFEDF38B8769F8C80FD85F94B /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F7F29D58C96F56A9CAE780EA70E2F6 /* FTS5.swift */; };
-		69FE39E09C8F59997E245EF455013463 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21897015496193FC048FCEBFC403EA6 /* FTS4.swift */; };
-		719C92167B9AB4C21D4E60C0634571C8 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8906310A3615C20A63337A29946D1A7 /* Expression.swift */; };
-		83A3BC5EC7F4CB301DF900563E9D3B3D /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49F885F20234573641D4D302F4A56D6 /* RTree.swift */; };
-		8941DA1E1617AD14116CB40EBB5B85CB /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = F0644D6055980F79F0A8424EFE2843E1 /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8980A67A6CAF27D1F5E6A893A127B86C /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 699BA3382EF9958F1909DB8C125630C1 /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		8CBD1DC020E81D4245A1BEDA75ABC736 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA15DC94A1FCDDF0AA96AC10BE412684 /* Schema.swift */; };
-		8D5CE8DC46DF6D453581411EFD317044 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296640A7777E9977DE4B1B9EF6843F18 /* Query.swift */; };
+		5DA16E09B6799E7587AD3DC4ADC3934F /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FAB0115A9D9732CE950B2F57A5547C /* Collation.swift */; };
+		5F1BE4CBFEDF38B8769F8C80FD85F94B /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72747168DCB581388AE974B2610CB7E6 /* FTS5.swift */; };
+		69FE39E09C8F59997E245EF455013463 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB1812471DEFDA35FE057E2CCCA13B3 /* FTS4.swift */; };
+		719C92167B9AB4C21D4E60C0634571C8 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B521DE267A1FB9128E830DDE06EBA /* Expression.swift */; };
+		83A3BC5EC7F4CB301DF900563E9D3B3D /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = F149B67FB0202CC72EA4E514DB65934D /* RTree.swift */; };
+		8941DA1E1617AD14116CB40EBB5B85CB /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BAB15C465288CB19A0AA425DEE1A9ED /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8980A67A6CAF27D1F5E6A893A127B86C /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = FDDE6C25110E3261284A2AB8148FAEAE /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8CBD1DC020E81D4245A1BEDA75ABC736 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F58D7D5C5F12DA0ECC76AA64664666D /* Schema.swift */; };
+		8D5CE8DC46DF6D453581411EFD317044 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11BEE568085FF584A6AC944E87D4587 /* Query.swift */; };
 		999EDD9F615FE1293E80A06E8476139E /* Pods-FuelTrackerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73987F20D58E4DFF39C38E172895FE1F /* Pods-FuelTrackerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9BC9A5D10EB4B29B2D5B0FBDD96EFE4B /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F23765AB680ADE516757BF8C0A326B /* Errors.swift */; };
-		A513EBB1127F50DF16D69A28D9796694 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = C398E3CF412510CAC0234587FA47D3FE /* Blob.swift */; };
-		A62BBA41F52ED3291038B41EF94F4D06 /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A60E6AD277DE310DF764FA27746EEA7 /* Coding.swift */; };
-		B0C9E5B73975967A418EC62F89677445 /* DateAndTimeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE7D07BE8088B948C613DB52A79C88 /* DateAndTimeFunctions.swift */; };
+		9BC9A5D10EB4B29B2D5B0FBDD96EFE4B /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CD216BA8CD582EB54F556175F4ACE2 /* Errors.swift */; };
+		A513EBB1127F50DF16D69A28D9796694 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CDDB173F6A6E02C4E6003525C51DDB /* Blob.swift */; };
+		A62BBA41F52ED3291038B41EF94F4D06 /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8EFC644A4F20BC910854BC1AEDA021 /* Coding.swift */; };
+		B0C9E5B73975967A418EC62F89677445 /* DateAndTimeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1886BA5F1F1CC22E0A54F608718FE90 /* DateAndTimeFunctions.swift */; };
 		BB393AF56C7D86E479BFB9BAEE67BC4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		BEA5B49A59EA196079FB0E19CB5EB3D3 /* Pods-FuelTrackerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C3609C446DEE702516D7E2E5C799F /* Pods-FuelTrackerTests-dummy.m */; };
-		CBFD08669057A28FE918B82251ADAA46 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34458A4504501396EA2ABF049268549 /* Helpers.swift */; };
-		D2E10A9737B42A39F64F65AB9CD56394 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3875BB2B4B4E5F8B7E138DD67793CD04 /* CoreFunctions.swift */; };
-		DEC3470F96773BCB1D4B6E73FA1F7F7B /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DEC75AD5E005D49277C5B13895ACE94 /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E29A7F37690843F9A1DD762CE6F9FDBD /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = A212B99BB5D936F271049B436CD6A31C /* Value.swift */; };
-		F526CF231BDE3A2A6B5A81B5E80C7C01 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05914528C042257374DC578B405E0AE7 /* AggregateFunctions.swift */; };
-		FD24C20378249E6E9CE7D462DAAE6F43 /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = 42E4F48BB2EAD2714192E87C5E117DE3 /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBFD08669057A28FE918B82251ADAA46 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2BCC4DBBF9D41C282D79CA3E4E2E4B /* Helpers.swift */; };
+		D2E10A9737B42A39F64F65AB9CD56394 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB65A8F23804F40F5A2A415B706BA67 /* CoreFunctions.swift */; };
+		DEC3470F96773BCB1D4B6E73FA1F7F7B /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DDF44AC729E624F48DEA4490A5F66998 /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E29A7F37690843F9A1DD762CE6F9FDBD /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BA59AF7AF703D5954CDE7D6414E2 /* Value.swift */; };
+		F526CF231BDE3A2A6B5A81B5E80C7C01 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE2D0F8371F8D988C5D027177A8579D /* AggregateFunctions.swift */; };
+		FD24C20378249E6E9CE7D462DAAE6F43 /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = 23EAE4F984FF22690765573D52490A4D /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,73 +71,73 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05914528C042257374DC578B405E0AE7 /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
 		137DB4DAAE46B3DBDA61CFE628EBAD95 /* Pods-FuelTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FuelTracker.release.xcconfig"; sourceTree = "<group>"; };
 		159C7CA066DC2E299365692DC10F7100 /* Pods-FuelTrackerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FuelTrackerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		19F7F29D58C96F56A9CAE780EA70E2F6 /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
 		1B56F350193A637CBE2AE1ED12F42446 /* Pods-FuelTrackerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FuelTrackerTests-frameworks.sh"; sourceTree = "<group>"; };
 		1BB8AD3B9E35420E7AF9AE51E2C64A9D /* Pods-FuelTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FuelTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1E791490560AC5CB54AFD03873B9362D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23EAE4F984FF22690765573D52490A4D /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
 		24F90FA506946324765B65FD5518722C /* Pods_FuelTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		296640A7777E9977DE4B1B9EF6843F18 /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
 		2EA341B0F708E393EA9C0C4CA4CD6E4A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FCE7D07BE8088B948C613DB52A79C88 /* DateAndTimeFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateAndTimeFunctions.swift; path = Sources/SQLite/Typed/DateAndTimeFunctions.swift; sourceTree = "<group>"; };
 		36BFC9E49CDF92F9E610E7C1753340A5 /* Pods-FuelTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FuelTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		3875BB2B4B4E5F8B7E138DD67793CD04 /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
-		3A0736159B2EB7BB78FDF176E01AB538 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		396948C9C4556B5F99AB46993DFFB6D3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A9C207FD569D6B1233C2704466E89E3 /* Pods-FuelTrackerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FuelTrackerUITests.modulemap"; sourceTree = "<group>"; };
+		3CE2D0F8371F8D988C5D027177A8579D /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
 		3E9C556B5AC2B59A9474917C8AB9E566 /* Pods-FuelTracker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FuelTracker-acknowledgements.markdown"; sourceTree = "<group>"; };
-		401AC22F9DEDB15D73A802C2FCA686A8 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
-		42E4F48BB2EAD2714192E87C5E117DE3 /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
 		45EBC62DF95FB8BE6160B71CCB08670D /* Pods-FuelTrackerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FuelTrackerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4A60E6AD277DE310DF764FA27746EEA7 /* Coding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coding.swift; path = Sources/SQLite/Typed/Coding.swift; sourceTree = "<group>"; };
-		511972C964CB8473FFD63B4203BB2380 /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
+		483120450CF6F7D58BB49C6106B9375F /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
+		4D2BCC4DBBF9D41C282D79CA3E4E2E4B /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
 		57E7F7017E23782A52A4E08022E37F05 /* Pods-FuelTrackerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FuelTrackerTests-resources.sh"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5B867EE6F6CF742F7C87E5F45781F67B /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
-		5BA29985C5428857803D551A6AB2AD5F /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
-		62F23765AB680ADE516757BF8C0A326B /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/SQLite/Core/Errors.swift; sourceTree = "<group>"; };
-		643474EE223342D015C7304572957051 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
-		690363762DF4BDFC05BD0F750AA78019 /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "Sources/SQLiteObjc/SQLite-Bridging.m"; sourceTree = "<group>"; };
-		699BA3382EF9958F1909DB8C125630C1 /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
+		64FAB0115A9D9732CE950B2F57A5547C /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
 		6B60A1445192FDF093A381FE9B04C0DA /* Pods-FuelTrackerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FuelTrackerUITests-frameworks.sh"; sourceTree = "<group>"; };
 		6BAB745A5B42D90144278EE87DF7601B /* Pods_FuelTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C7357ADE62D42F2D6EAEEE0A076F7D0 /* Pods_FuelTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72747168DCB581388AE974B2610CB7E6 /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
 		73987F20D58E4DFF39C38E172895FE1F /* Pods-FuelTrackerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FuelTrackerUITests-umbrella.h"; sourceTree = "<group>"; };
-		7DEC75AD5E005D49277C5B13895ACE94 /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
+		78976A93899C545BC1F3C39E6B80C085 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
+		7CB65A8F23804F40F5A2A415B706BA67 /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
 		852DCA9829E3AA97F7369B541B2E0D2C /* Pods-FuelTracker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FuelTracker-dummy.m"; sourceTree = "<group>"; };
+		890FBBE559D9C6C586F3104233838F6B /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
+		8BAB15C465288CB19A0AA425DEE1A9ED /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
+		8F58D7D5C5F12DA0ECC76AA64664666D /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
+		8F8EFC644A4F20BC910854BC1AEDA021 /* Coding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coding.swift; path = Sources/SQLite/Typed/Coding.swift; sourceTree = "<group>"; };
 		8FC3C49DF0FA6CD35B6F65A7E38061AF /* Pods-FuelTrackerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FuelTrackerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		900DC25A76CA107FE18E8B229DD6A2F9 /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93CD216BA8CD582EB54F556175F4ACE2 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/SQLite/Core/Errors.swift; sourceTree = "<group>"; };
 		97C366C4A8454E31A00240AD593684A7 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A1B521DE267A1FB9128E830DDE06EBA /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
 		A0B3D0DB20D764178A10448832DDAC64 /* Pods-FuelTrackerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FuelTrackerUITests-dummy.m"; sourceTree = "<group>"; };
-		A212B99BB5D936F271049B436CD6A31C /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
+		A1886BA5F1F1CC22E0A54F608718FE90 /* DateAndTimeFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateAndTimeFunctions.swift; path = Sources/SQLite/Typed/DateAndTimeFunctions.swift; sourceTree = "<group>"; };
+		A4CDDB173F6A6E02C4E6003525C51DDB /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
 		A5E7F19E9070FD5F358DF6F159E62A9D /* Pods-FuelTracker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FuelTracker-umbrella.h"; sourceTree = "<group>"; };
 		A6C1B9C051B721E4A8AEF6E16BEDC296 /* Pods-FuelTrackerUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FuelTrackerUITests-resources.sh"; sourceTree = "<group>"; };
-		AB4EEDDC7A574480EB0AAADF3C37F9D4 /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
-		B34458A4504501396EA2ABF049268549 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
-		B3C51F397F1751108ACE54803C3E8D1A /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
-		B6EBE6A7C071FCB45B7CA2B70CCF88F4 /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
-		B8906310A3615C20A63337A29946D1A7 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
+		ABA7BA59AF7AF703D5954CDE7D6414E2 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
 		BFA082B46EE0E2D10736CD51E65F16F2 /* Pods-FuelTracker-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FuelTracker-resources.sh"; sourceTree = "<group>"; };
-		C0653B4033ACA17E5D41ED1D45012582 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
-		C398E3CF412510CAC0234587FA47D3FE /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
+		C36F8780CA8682382E7FA57238C18EC7 /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "Sources/SQLiteObjc/SQLite-Bridging.m"; sourceTree = "<group>"; };
 		CA648DA95E91FCAD5B63039AC7AE94A0 /* Pods-FuelTrackerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FuelTrackerTests-umbrella.h"; sourceTree = "<group>"; };
 		CEB7E2E6B45919FFAB229E7AB120ADC8 /* Pods-FuelTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FuelTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D4B7C97127C92E99F0A0A95571C9F788 /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
+		DA0A2317725FBE67240BB58505899500 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
 		DA8C3609C446DEE702516D7E2E5C799F /* Pods-FuelTrackerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FuelTrackerTests-dummy.m"; sourceTree = "<group>"; };
-		DCC53825AAE5A981376EDDBDB1AD8F53 /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
-		E21897015496193FC048FCEBFC403EA6 /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
+		DDF44AC729E624F48DEA4490A5F66998 /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
 		E388244BEBBDA70752134B6F94CB500E /* Pods-FuelTracker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FuelTracker-acknowledgements.plist"; sourceTree = "<group>"; };
 		E5A22F482C67C6D5D16299B37CD99BBA /* Pods-FuelTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FuelTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		E76F997C66424D605F7420D6DD073D9B /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
 		E96A5C2951258FB4D0832BA37D38425E /* Pods-FuelTracker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FuelTracker.modulemap"; sourceTree = "<group>"; };
-		EA15DC94A1FCDDF0AA96AC10BE412684 /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
+		EAB1812471DEFDA35FE057E2CCCA13B3 /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
 		EDBA13291D46C25990758E9DF246813A /* Pods-FuelTracker-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FuelTracker-frameworks.sh"; sourceTree = "<group>"; };
-		EDBA8FC57684890F34746A8552D09A4E /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
 		EE5007B3506069939F28F405B8A1E88A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF31DC5185E6794D4F61074F85A6F95A /* Pods-FuelTrackerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FuelTrackerTests.modulemap"; sourceTree = "<group>"; };
-		F0644D6055980F79F0A8424EFE2843E1 /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
+		F11BEE568085FF584A6AC944E87D4587 /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
+		F149B67FB0202CC72EA4E514DB65934D /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
+		F1731C9CDD3F3CADC2EB2022E484711A /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
+		F1CFE5FC017CB224960BD13FEC922746 /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
 		F3E181A80664F8815290A6C466ABCDD4 /* Pods-FuelTrackerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FuelTrackerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F440FF9B3F1CE47CCBC33DB8FF9DB239 /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
 		F491A71A0024D8CB7EE18597F7EF50B2 /* Pods-FuelTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FuelTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
-		F49F885F20234573641D4D302F4A56D6 /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
+		FDDE6C25110E3261284A2AB8148FAEAE /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,14 +194,6 @@
 			path = "Target Support Files/Pods-FuelTracker";
 			sourceTree = "<group>";
 		};
-		42A565AFFAD6D5669C3E9A617B18206F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				65E27D90B57FD680BD9523FA6D120E00 /* SQLite.swift */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,59 +202,36 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		5F2E6A0B9DCCECD05FE52149DCC2A255 /* standard */ = {
+		690E9802A52921790563CE0965E35EDC /* standard */ = {
 			isa = PBXGroup;
 			children = (
-				05914528C042257374DC578B405E0AE7 /* AggregateFunctions.swift */,
-				C398E3CF412510CAC0234587FA47D3FE /* Blob.swift */,
-				4A60E6AD277DE310DF764FA27746EEA7 /* Coding.swift */,
-				511972C964CB8473FFD63B4203BB2380 /* Collation.swift */,
-				5B867EE6F6CF742F7C87E5F45781F67B /* Connection.swift */,
-				3875BB2B4B4E5F8B7E138DD67793CD04 /* CoreFunctions.swift */,
-				401AC22F9DEDB15D73A802C2FCA686A8 /* CustomFunctions.swift */,
-				2FCE7D07BE8088B948C613DB52A79C88 /* DateAndTimeFunctions.swift */,
-				62F23765AB680ADE516757BF8C0A326B /* Errors.swift */,
-				B8906310A3615C20A63337A29946D1A7 /* Expression.swift */,
-				AB4EEDDC7A574480EB0AAADF3C37F9D4 /* Foundation.swift */,
-				699BA3382EF9958F1909DB8C125630C1 /* fts3_tokenizer.h */,
-				E21897015496193FC048FCEBFC403EA6 /* FTS4.swift */,
-				19F7F29D58C96F56A9CAE780EA70E2F6 /* FTS5.swift */,
-				B34458A4504501396EA2ABF049268549 /* Helpers.swift */,
-				643474EE223342D015C7304572957051 /* Operators.swift */,
-				296640A7777E9977DE4B1B9EF6843F18 /* Query.swift */,
-				F49F885F20234573641D4D302F4A56D6 /* RTree.swift */,
-				EA15DC94A1FCDDF0AA96AC10BE412684 /* Schema.swift */,
-				EDBA8FC57684890F34746A8552D09A4E /* Setter.swift */,
-				F0644D6055980F79F0A8424EFE2843E1 /* SQLite.h */,
-				42E4F48BB2EAD2714192E87C5E117DE3 /* SQLite-Bridging.h */,
-				690363762DF4BDFC05BD0F750AA78019 /* SQLite-Bridging.m */,
-				DCC53825AAE5A981376EDDBDB1AD8F53 /* Statement.swift */,
-				A212B99BB5D936F271049B436CD6A31C /* Value.swift */,
+				3CE2D0F8371F8D988C5D027177A8579D /* AggregateFunctions.swift */,
+				A4CDDB173F6A6E02C4E6003525C51DDB /* Blob.swift */,
+				8F8EFC644A4F20BC910854BC1AEDA021 /* Coding.swift */,
+				64FAB0115A9D9732CE950B2F57A5547C /* Collation.swift */,
+				900DC25A76CA107FE18E8B229DD6A2F9 /* Connection.swift */,
+				7CB65A8F23804F40F5A2A415B706BA67 /* CoreFunctions.swift */,
+				DA0A2317725FBE67240BB58505899500 /* CustomFunctions.swift */,
+				A1886BA5F1F1CC22E0A54F608718FE90 /* DateAndTimeFunctions.swift */,
+				93CD216BA8CD582EB54F556175F4ACE2 /* Errors.swift */,
+				9A1B521DE267A1FB9128E830DDE06EBA /* Expression.swift */,
+				F1CFE5FC017CB224960BD13FEC922746 /* Foundation.swift */,
+				FDDE6C25110E3261284A2AB8148FAEAE /* fts3_tokenizer.h */,
+				EAB1812471DEFDA35FE057E2CCCA13B3 /* FTS4.swift */,
+				72747168DCB581388AE974B2610CB7E6 /* FTS5.swift */,
+				4D2BCC4DBBF9D41C282D79CA3E4E2E4B /* Helpers.swift */,
+				483120450CF6F7D58BB49C6106B9375F /* Operators.swift */,
+				F11BEE568085FF584A6AC944E87D4587 /* Query.swift */,
+				F149B67FB0202CC72EA4E514DB65934D /* RTree.swift */,
+				8F58D7D5C5F12DA0ECC76AA64664666D /* Schema.swift */,
+				890FBBE559D9C6C586F3104233838F6B /* Setter.swift */,
+				8BAB15C465288CB19A0AA425DEE1A9ED /* SQLite.h */,
+				23EAE4F984FF22690765573D52490A4D /* SQLite-Bridging.h */,
+				C36F8780CA8682382E7FA57238C18EC7 /* SQLite-Bridging.m */,
+				F440FF9B3F1CE47CCBC33DB8FF9DB239 /* Statement.swift */,
+				ABA7BA59AF7AF703D5954CDE7D6414E2 /* Value.swift */,
 			);
 			name = standard;
-			sourceTree = "<group>";
-		};
-		63423990F66CE86DDB380D6110B06E2A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3A0736159B2EB7BB78FDF176E01AB538 /* Info.plist */,
-				C0653B4033ACA17E5D41ED1D45012582 /* SQLite.swift.modulemap */,
-				B3C51F397F1751108ACE54803C3E8D1A /* SQLite.swift.xcconfig */,
-				5BA29985C5428857803D551A6AB2AD5F /* SQLite.swift-dummy.m */,
-				B6EBE6A7C071FCB45B7CA2B70CCF88F4 /* SQLite.swift-prefix.pch */,
-				7DEC75AD5E005D49277C5B13895ACE94 /* SQLite.swift-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SQLite.swift";
-			sourceTree = "<group>";
-		};
-		65E27D90B57FD680BD9523FA6D120E00 /* SQLite.swift */ = {
-			isa = PBXGroup;
-			children = (
-				5F2E6A0B9DCCECD05FE52149DCC2A255 /* standard */,
-				63423990F66CE86DDB380D6110B06E2A /* Support Files */,
-			);
-			path = SQLite.swift;
 			sourceTree = "<group>";
 		};
 		7105E47B325BFD147627920F1940F17C /* Targets Support Files */ = {
@@ -291,10 +260,17 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				42A565AFFAD6D5669C3E9A617B18206F /* Pods */,
+				FAEC142983F098C790DA86F5305230EE /* Pods */,
 				7CCE254A25D07260378A3CF44430B4C4 /* Products */,
 				7105E47B325BFD147627920F1940F17C /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		BA200C40D505604A811DB78B1289E204 /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SwiftLint;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -323,6 +299,29 @@
 			path = "Target Support Files/Pods-FuelTrackerTests";
 			sourceTree = "<group>";
 		};
+		DD9F07C0EEBA9086F632578605655653 /* SQLite.swift */ = {
+			isa = PBXGroup;
+			children = (
+				690E9802A52921790563CE0965E35EDC /* standard */,
+				F3FDF0C21E4902E4B24BC687C566ABD9 /* Support Files */,
+			);
+			path = SQLite.swift;
+			sourceTree = "<group>";
+		};
+		F3FDF0C21E4902E4B24BC687C566ABD9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				396948C9C4556B5F99AB46993DFFB6D3 /* Info.plist */,
+				78976A93899C545BC1F3C39E6B80C085 /* SQLite.swift.modulemap */,
+				D4B7C97127C92E99F0A0A95571C9F788 /* SQLite.swift.xcconfig */,
+				F1731C9CDD3F3CADC2EB2022E484711A /* SQLite.swift-dummy.m */,
+				E76F997C66424D605F7420D6DD073D9B /* SQLite.swift-prefix.pch */,
+				DDF44AC729E624F48DEA4490A5F66998 /* SQLite.swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SQLite.swift";
+			sourceTree = "<group>";
+		};
 		F949CE57266B9B58B3820260D41DB13E /* Pods-FuelTrackerUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -339,6 +338,15 @@
 			);
 			name = "Pods-FuelTrackerUITests";
 			path = "Target Support Files/Pods-FuelTrackerUITests";
+			sourceTree = "<group>";
+		};
+		FAEC142983F098C790DA86F5305230EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD9F07C0EEBA9086F632578605655653 /* SQLite.swift */,
+				BA200C40D505604A811DB78B1289E204 /* SwiftLint */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -801,7 +809,7 @@
 		};
 		85D20B16124D4E09F2A030D9294DF706 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3C51F397F1751108ACE54803C3E8D1A /* SQLite.swift.xcconfig */;
+			baseConfigurationReference = D4B7C97127C92E99F0A0A95571C9F788 /* SQLite.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -965,7 +973,7 @@
 		};
 		EF10D7D95D176C277A870F2FA59431A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3C51F397F1751108ACE54803C3E8D1A /* SQLite.swift.xcconfig */;
+			baseConfigurationReference = D4B7C97127C92E99F0A0A95571C9F788 /* SQLite.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
