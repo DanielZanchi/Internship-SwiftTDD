@@ -21,10 +21,14 @@ class FuelRegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }  
+    
+    override func loadView() {
+        super.loadView()
         if let fuels = fuelsManager.getFuels() {
             self.fuels = fuels
         }
-    }  
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         fuelTableView.reloadData()
