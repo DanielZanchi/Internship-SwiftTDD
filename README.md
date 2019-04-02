@@ -27,3 +27,7 @@ The app lets the user register car fuels giving them statistics on consumption a
 
 ## Try? it
 Download the repo, open *FuelTracker.xcworkspace* in Xcode and run it on the simulator.
+
+## Preview
+<img src="https://user-images.githubusercontent.com/6886116/55388047-d57d5f80-5532-11e9-8398-13b62e710e13.png" width="300">
+<img src="https://user-images.githubusercontent.com/6886116/55388048-d57d5f80-5532-11e9-994d-92aa64eb6f1a.png" width="300">
