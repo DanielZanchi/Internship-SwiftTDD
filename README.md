@@ -17,7 +17,8 @@ Based on:
 - TDD (Test Driven Development)
 - MVC Design Pattern
 - Dependency Injection
-- SQLite
+- <a href="https://github.com/stephencelis/SQLite.swift">SQLite</a>
+- <a href="https://cocoapods.org">Cocoapods</a>
 - Tests
 - UITests
 
