@@ -91,6 +91,8 @@ class DatabaseManagerTests: XCTestCase {
         XCTAssertEqual(fuelsManager.updateFuel(fID: 1, newFuel: newFuel), false)
     }
     
+    
+    
     func testCreateTableFail() {
         let documentDirectory = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
         if let dir = documentDirectory {

@@ -13,7 +13,7 @@ class FuelRegisterViewController: UIViewController {
     
     private var fuels = [Fuel]()
     
-    let fuelsManager = FuelsManager(database: Database().myDatabase )
+    let fuelsManager = FuelsManager(database: Database().myDatabase)
     
     // MARK: Outlets
     @IBOutlet weak var fuelTableView: UITableView!
@@ -40,4 +40,8 @@ class FuelRegisterViewController: UIViewController {
     @IBAction func unwindToFuelRegister(sender: UIStoryboardSegue) {
     }
     
+    @IBAction func clearAllTapped(_ sender: UIBarButtonItem) {
+        fuelsManager.deleteAllFuels()        
+        fuelTableView.reloadData()
+    }
 }

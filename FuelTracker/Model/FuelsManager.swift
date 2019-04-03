@@ -102,6 +102,16 @@ class FuelsManager: FuelsManagerProtocol {
         }
     }
     
+    @discardableResult func deleteAllFuels() -> Bool {
+        do {
+            try database?.run(fuelsTable.delete())
+            return true
+        } catch {
+            print(error)
+            return false
+        }
+    }
+    
     func updateFuel(fID: Int64, newFuel: Fuel) -> Bool {
         let fuel = fuelsTable.where(id == fID)
         print(fuel)

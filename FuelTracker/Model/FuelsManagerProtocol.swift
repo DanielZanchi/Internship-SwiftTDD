@@ -18,4 +18,6 @@ protocol FuelsManagerProtocol {
     
     func updateFuel(fID: Int64, newFuel: Fuel) -> Bool
     
+    func deleteAllFuels() -> Bool
+    
 }
