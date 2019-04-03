@@ -110,6 +110,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Fuel Register" id="ZvH-Vt-DOf">
+                        <barButtonItem key="leftBarButtonItem" title="Clear All" id="zqh-mz-3Xa"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="EVa-dS-Q4k">
                             <connections>
                                 <segue destination="OCe-mt-ks4" kind="show" id="hoC-WI-RDr"/>

@@ -32,6 +32,10 @@ class FuelTrackerUITests: XCTestCase {
         XCTAssert(fuelRegisterTitle.exists)
     }
     
+    func testAddButtonExists() {
+        XCTAssert(app.navigationBars["Fuel Register"].buttons["Add"].exists)
+    }
+    
     func testAddButton() {
         XCTAssert(app.navigationBars["Fuel Register"].exists)
         app.navigationBars["Fuel Register"].buttons["Add"].tap()
@@ -108,6 +112,23 @@ class FuelTrackerUITests: XCTestCase {
         XCTAssertEqual(app.tables.cells.count, 0)
     }
     
+    func testClearAllButtonExists() {
+        XCTAssert(app.navigationBars["Fuel Register"].buttons["Clear All"].exists)
+    }
+    
+    func testClearAll() {
+        addFuel()
+        addFuel()
+        
+        var rows = app.tables.cells.count
+        XCTAssertEqual(rows, 2)
+        
+        app.navigationBars["Fuel Register"].buttons["Clear All"].tap()
+        
+        rows = app.tables.cells.count
+        XCTAssertEqual(rows, 0)
+    }
+    
     // Helper to input text into a textfield with an identifier
     func addFuel(mileage: Int = 1000, quantity: Int = 50, amount: Int = 100) {        
         app.navigationBars["Fuel Register"].buttons["Add"].tap()
@@ -125,27 +146,4 @@ class FuelTrackerUITests: XCTestCase {
         textField.typeText(text)
     }
 
-}
-
-extension XCUIElement {
-    
-    func clearTextField() {
-        self.tap()
-        
-        guard let stringValue = self.value as? String else {
-            return
-        }
-        
-        // workaround for apple bug
-        if let placeholderString = self.placeholderValue, placeholderString == stringValue {
-            return
-        }
-        
-        var deleteString = String()
-        for _ in stringValue {
-            deleteString += XCUIKeyboardKey.delete.rawValue
-        }
-        self.typeText(deleteString)
-    }
-    
 }

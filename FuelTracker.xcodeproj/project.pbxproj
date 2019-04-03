@@ -16,6 +16,7 @@
 		3020F29A2240062500D2CF28 /* FuelsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3020F2992240062500D2CF28 /* FuelsManager.swift */; };
 		3020F29C224008D600D2CF28 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3020F29B224008D600D2CF28 /* Database.swift */; };
 		3020F29E2240129600D2CF28 /* FuelsManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3020F29D2240129600D2CF28 /* FuelsManagerProtocol.swift */; };
+		302224082254AFAC0073AEAB /* XCUIElement+clearTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302224072254AFAC0073AEAB /* XCUIElement+clearTextField.swift */; };
 		303CAAF421778F8700202E44 /* FuelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303CAAF321778F8700202E44 /* FuelViewModel.swift */; };
 		304DBF4E21C7C00300265662 /* DatabaseManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DBF4D21C7C00300265662 /* DatabaseManagerTests.swift */; };
 		30639D5B217BD43E0011ADB2 /* String+DoubleUIntValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30639D5A217BD43E0011ADB2 /* String+DoubleUIntValue.swift */; };
@@ -70,6 +71,7 @@
 		3020F2992240062500D2CF28 /* FuelsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelsManager.swift; sourceTree = "<group>"; };
 		3020F29B224008D600D2CF28 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		3020F29D2240129600D2CF28 /* FuelsManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelsManagerProtocol.swift; sourceTree = "<group>"; };
+		302224072254AFAC0073AEAB /* XCUIElement+clearTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElement+clearTextField.swift"; sourceTree = "<group>"; };
 		303CAAF321778F8700202E44 /* FuelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelViewModel.swift; sourceTree = "<group>"; };
 		304DBF4D21C7C00300265662 /* DatabaseManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManagerTests.swift; sourceTree = "<group>"; };
 		30639D5A217BD43E0011ADB2 /* String+DoubleUIntValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DoubleUIntValue.swift"; sourceTree = "<group>"; };
@@ -164,6 +166,14 @@
 			path = FuelTracker;
 			sourceTree = "<group>";
 		};
+		302224092254B0170073AEAB /* TestUtil */ = {
+			isa = PBXGroup;
+			children = (
+				302224072254AFAC0073AEAB /* XCUIElement+clearTextField.swift */,
+			);
+			path = TestUtil;
+			sourceTree = "<group>";
+		};
 		303CAAF221778F6900202E44 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +222,7 @@
 				30A31EEC21D398B800FBDA74 /* FuelTrackerUITests.swift */,
 				30A31EEA21D3988700FBDA74 /* AddFuelUITests.swift */,
 				30A31EE421D3985200FBDA74 /* Info.plist */,
+				302224092254B0170073AEAB /* TestUtil */,
 			);
 			path = FuelTrackerUITests;
 			sourceTree = "<group>";
@@ -522,6 +533,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30A31EED21D398B800FBDA74 /* FuelTrackerUITests.swift in Sources */,
+				302224082254AFAC0073AEAB /* XCUIElement+clearTextField.swift in Sources */,
 				30A31EEB21D3988700FBDA74 /* AddFuelUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
