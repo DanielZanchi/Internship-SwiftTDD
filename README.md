@@ -31,4 +31,4 @@ Download the repo, open *FuelTracker.xcworkspace* in Xcode and run it on the sim
 ## Preview
 Fuels             |  Add Fuel
 :-------------------------:|:-------------------------:
-![](https://user-images.githubusercontent.com/6886116/55388047-d57d5f80-5532-11e9-8398-13b62e710e13.png)  |  ![](https://user-images.githubusercontent.com/6886116/55388048-d57d5f80-5532-11e9-994d-92aa64eb6f1a.png)
+![](https://user-images.githubusercontent.com/6886116/55505300-1a98b300-5653-11e9-9387-ee018d8682c3.png)  |  ![](https://user-images.githubusercontent.com/6886116/55505301-1a98b300-5653-11e9-80ef-ae245640ecfb.png)
