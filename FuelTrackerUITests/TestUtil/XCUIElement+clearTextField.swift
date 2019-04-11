@@ -13,17 +13,8 @@ extension XCUIElement {
     func clearTextField() {
         self.tap()
         
-        guard let stringValue = self.value as? String else {
-            return
-        }
-        
-        // workaround for apple bug
-        if let placeholderString = self.placeholderValue, placeholderString == stringValue {
-            return
-        }
-        
         var deleteString = String()
-        for _ in stringValue {
+        for _ in self.value as! String {
             deleteString += XCUIKeyboardKey.delete.rawValue
         }
         self.typeText(deleteString)
