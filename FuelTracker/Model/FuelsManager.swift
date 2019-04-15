@@ -53,13 +53,10 @@ class FuelsManager: FuelsManagerProtocol {
             isTankNotFull <- isTankNotFullFuel
         )
         
-        print("INFO: insertFuel created")
         do {
             let id = try database!.run(insertFuel)
-            print("INFO: this will not be called, because try fails")
             return id
         } catch {
-            print("INFO: error")
             print(error)
             return -1
         }
@@ -91,7 +88,7 @@ class FuelsManager: FuelsManagerProtocol {
         }
     }
     
-    func deleteFuel(fID: Int64) -> Bool {
+    func deleteFuel(withID fID: Int64) -> Bool {
         do {
             let fuel = fuelsTable.filter(id == fID)
             try database?.run(fuel.delete())
@@ -112,7 +109,7 @@ class FuelsManager: FuelsManagerProtocol {
         }
     }
     
-    func updateFuel(fID: Int64, newFuel: Fuel) -> Bool {
+    func updateFuel(withID fID: Int64, toFuel newFuel: Fuel) -> Bool {
         let fuel = fuelsTable.where(id == fID)
         print(fuel)
         do {

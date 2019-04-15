@@ -117,7 +117,8 @@ class AddFuelViewController: UIViewController {
             fuelToEdit?.pricePerUnit = (priceTextField.text?.doubleValue)!
             fuelToEdit?.isTankNotFull = partialFuelSwitch.isOn
             
-            let result = fuelsManager.updateFuel(fID: (fuelToEdit?.id)!, newFuel: fuelToEdit!)
+            guard let id = fuelToEdit?.id else { return }
+            let result = fuelsManager.updateFuel(withID: id, toFuel: fuelToEdit!)
             print(result)
         }
     }

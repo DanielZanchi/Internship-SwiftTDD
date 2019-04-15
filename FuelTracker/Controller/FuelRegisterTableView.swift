@@ -61,7 +61,7 @@ extension FuelRegisterViewController: UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             if let fuelToDelete = fuelsManager.getFuels()?[indexPath.row] {
-                if fuelsManager.deleteFuel(fID: fuelToDelete.id) {
+                if fuelsManager.deleteFuel(withID: fuelToDelete.id) {
                     tableView.deleteRows(at: [indexPath], with: .automatic)
                     tableView.reloadData()
                 }

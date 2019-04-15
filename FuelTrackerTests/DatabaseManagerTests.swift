@@ -61,26 +61,26 @@ class DatabaseManagerTests: XCTestCase {
     
     func testDeleteFuel() {
         addFuel()
-        XCTAssertEqual(fuelsManager.deleteFuel(fID: 1), true)
+        XCTAssertEqual(fuelsManager.deleteFuel(withID: 1), true)
     }
     
     func testDeleteFuelFail() {
         addFuel()
         fuelsManager.dropTable()
-        XCTAssertEqual(fuelsManager.deleteFuel(fID: 10), false)
+        XCTAssertEqual(fuelsManager.deleteFuel(withID: 10), false)
     }
     
     func testUpdateFuel() {
         addFuel()
         let newFuel = Fuel(id: 1, date: Date(), mileage: 200, quantity: 100, pricePerUnit: 3.0, isTankNotFull: false)
-        XCTAssertEqual(fuelsManager.updateFuel(fID: 1, newFuel: newFuel), true)
+        XCTAssertEqual(fuelsManager.updateFuel(withID: 1, toFuel: newFuel), true)
     }
     
     func testUpdateFuelFail() {
         addFuel()
         addFuel()
         let newFuel = Fuel(id: 3, date: Date(), mileage: 200, quantity: 100, pricePerUnit: 3.0, isTankNotFull: false)
-        XCTAssertEqual(fuelsManager.updateFuel(fID: 300, newFuel: newFuel), false)
+        XCTAssertEqual(fuelsManager.updateFuel(withID: 300, toFuel: newFuel), false)
     }
     
     func testUpdateFuelFail2() {
@@ -88,7 +88,7 @@ class DatabaseManagerTests: XCTestCase {
         fuelsManager.dropTable()
         
         let newFuel = Fuel(id: 1, date: Date(), mileage: 200, quantity: 100, pricePerUnit: 3.0, isTankNotFull: false)
-        XCTAssertEqual(fuelsManager.updateFuel(fID: 1, newFuel: newFuel), false)
+        XCTAssertEqual(fuelsManager.updateFuel(withID: 1, toFuel: newFuel), false)
     }
     
     func testDeleteAll() {
