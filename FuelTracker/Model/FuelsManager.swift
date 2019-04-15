@@ -58,7 +58,8 @@ class FuelsManager: FuelsManagerProtocol {
             let id = try database!.run(insertFuel)
             return id
         } catch {
-            print(error)
+            SwiftyBeaver.info("Unable to add Fuel")
+            SwiftyBeaver.warning(error)
             return -1
         }
     }
@@ -79,12 +80,12 @@ class FuelsManager: FuelsManagerProtocol {
                     ))
                 }
             } else {
-                print("error")
+                SwiftyBeaver.info("Unable to read fuels")
             }
             return fuels
         } catch {
-            print("error while reading fuels")
-            print(error)
+            SwiftyBeaver.info("Unable to read fuels")
+            SwiftyBeaver.warning(error)
             return nil
         }
     }
@@ -95,7 +96,8 @@ class FuelsManager: FuelsManagerProtocol {
             try database?.run(fuel.delete())
             return true
         } catch {
-            print(error)
+            SwiftyBeaver.info("Unable to delete fuel with ID: \(fID)")
+            SwiftyBeaver.warning(error)
             return false
         }
     }
@@ -105,7 +107,8 @@ class FuelsManager: FuelsManagerProtocol {
             try database?.run(fuelsTable.delete())
             return true
         } catch {
-            print(error)
+            SwiftyBeaver.info("Unable to delete fuels")
+            SwiftyBeaver.warning(error)
             return false
         }
     }
@@ -127,7 +130,8 @@ class FuelsManager: FuelsManagerProtocol {
                 return false
             }
         } catch {
-            print(error)
+            SwiftyBeaver.info("Unable to update fuel with ID: \(fID)")
+            SwiftyBeaver.warning(error)            
             return false
         }
     }
