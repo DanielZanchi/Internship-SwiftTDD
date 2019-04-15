@@ -118,7 +118,7 @@ class DatabaseManagerTests: XCTestCase {
     
     // Helper
     @discardableResult private func addFuel() -> Int64 {
-        return fuelsManager.addFuel(dateOfFuel: Date(), mileageOnSave: 100, quantityOfFuel: 50, pricePerUnitOfFuel: 1.5, isTankNotFullFuel: false)
+        return fuelsManager.addFuel(dateOfFuel: Date(), mileage: 100, quantity: 50, pricePerUnit: 1.5, isTankNotFull: false)
     }
     
 }
