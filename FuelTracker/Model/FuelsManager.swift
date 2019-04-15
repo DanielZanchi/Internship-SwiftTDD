@@ -37,6 +37,7 @@ class FuelsManager: FuelsManagerProtocol {
         }
         do {
             try database?.run(create)
+            SwiftyBeaver.info("Table successfully created")
             return true
         } catch {
             SwiftyBeaver.info("Unable to create table")
@@ -56,6 +57,7 @@ class FuelsManager: FuelsManagerProtocol {
         
         do {
             let id = try database!.run(insertFuel)
+            SwiftyBeaver.info("Fuel successfully created with ID: \(id)")
             return id
         } catch {
             SwiftyBeaver.warning("Unable to add Fuel")

@@ -22,13 +22,13 @@ class FuelRegisterViewController: UIViewController {
         super.viewDidLoad()
         
         fuelsManager = FuelsManager(database: Database().myDatabase)
-        
-        if let fuels = fuelsManager.getFuels() {
-            self.fuels = fuels
-        }
     }  
     
     override func viewWillAppear(_ animated: Bool) {
+        if let fuels = fuelsManager.getFuels() {
+            self.fuels = fuels
+        }
+
         fuelTableView.reloadData()
     }
     
@@ -39,7 +39,12 @@ class FuelRegisterViewController: UIViewController {
     }
     
     @IBAction func clearAllTapped(_ sender: UIBarButtonItem) {
-        fuelsManager.deleteAllFuels()        
+        fuelsManager.deleteAllFuels()  
+        
+        if let fuels = fuelsManager.getFuels() {
+            self.fuels = fuels
+        }      
+        
         fuelTableView.reloadData()
     }
 }
