@@ -126,7 +126,7 @@ class FuelsManager: FuelsManagerProtocol {
                 ])
             let result = try database!.run(update)
             if result > 0 {
-                SwiftyBeaver.info(The fuel got updated!)
+                SwiftyBeaver.info("The fuel got updated!")
                 return true
             } else {
                 return false
