@@ -47,11 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //    func applicationWillTerminate(_ application: UIApplication) {
 //        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 //    }
-    
-}
-
-extension AppDelegate {
-    
+        
     private func resetIfNeeded() {
         guard CommandLine.arguments.contains("-resetTable") else {
             return
@@ -65,7 +61,10 @@ extension AppDelegate {
     
     private func setupSwiftyBeaver() {
         let console = ConsoleDestination()
+        let file = FileDestination()
+        
         SwiftyBeaver.addDestination(console)
+        SwiftyBeaver.addDestination(file)
     }
     
 }
