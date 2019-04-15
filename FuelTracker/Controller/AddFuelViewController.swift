@@ -106,10 +106,10 @@ class AddFuelViewController: UIViewController {
         if !isEditingFuel {
             fuelsManager.addFuel(
                 dateOfFuel: date,
-                mileageOnSave: mileage,
-                quantityOfFuel: quantity,
-                pricePerUnitOfFuel: pricePerUnit,
-                isTankNotFullFuel: isTankNotFull
+                mileage: mileage,
+                quantity: quantity,
+                pricePerUnit: pricePerUnit,
+                isTankNotFull: isTankNotFull
             )
         } else {
             fuelToEdit?.mileage = (mileageTextField.text?.intValue)!
