@@ -2,21 +2,25 @@ PODS:
   - SQLite.swift (0.11.5):
     - SQLite.swift/standard (= 0.11.5)
   - SQLite.swift/standard (0.11.5)
-  - SwiftLint (0.29.1)
+  - SwiftLint (0.31.0)
+  - SwiftyBeaver (1.7.0)
 
 DEPENDENCIES:
   - SQLite.swift (~> 0.11.5)
   - SwiftLint
+  - SwiftyBeaver
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - SQLite.swift
     - SwiftLint
+    - SwiftyBeaver
 
 SPEC CHECKSUMS:
   SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
-  SwiftLint: 6772320e40b52049053a518c17db9b0634a0b45a
+  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
+  SwiftyBeaver: 4cc0080d2e23f980652e28978db11a5c9da39165
 
-PODFILE CHECKSUM: 14f3fc90e05608339b0318300390d8a81b09523a
+PODFILE CHECKSUM: 7b790aace51eac738cdef6bc1b552112136f18b6
 
 COCOAPODS: 1.5.3
