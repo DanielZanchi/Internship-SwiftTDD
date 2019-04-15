@@ -20,4 +20,5 @@ protocol FuelsManagerProtocol {
     
     func deleteAllFuels() -> Bool
     
+    
 }
