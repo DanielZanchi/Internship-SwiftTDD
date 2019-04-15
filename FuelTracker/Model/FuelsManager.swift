@@ -58,8 +58,8 @@ class FuelsManager: FuelsManagerProtocol {
             let id = try database!.run(insertFuel)
             return id
         } catch {
-            SwiftyBeaver.info("Unable to add Fuel")
-            SwiftyBeaver.warning(error)
+            SwiftyBeaver.warning("Unable to add Fuel")
+            SwiftyBeaver.error(error)
             return -1
         }
     }
@@ -80,13 +80,13 @@ class FuelsManager: FuelsManagerProtocol {
                     ))
                 }
             } else {
-                SwiftyBeaver.info("Unable to read fuels")
+                SwiftyBeaver.warning("Unable to read fuels")
             }
-            SwiftyBeaver.verbose("There are \(fuels.count) fuels")
+            SwiftyBeaver.info("There are \(fuels.count) fuels")
             return fuels
         } catch {
-            SwiftyBeaver.info("Unable to read fuels")
-            SwiftyBeaver.warning(error)
+            SwiftyBeaver.warning("Unable to read fuels")
+            SwiftyBeaver.error(error)
             return nil
         }
     }
@@ -97,8 +97,8 @@ class FuelsManager: FuelsManagerProtocol {
             try database?.run(fuel.delete())
             return true
         } catch {
-            SwiftyBeaver.info("Unable to delete fuel with ID: \(fID)")
-            SwiftyBeaver.warning(error)
+            SwiftyBeaver.warning("Unable to delete fuel with ID: \(fID)")
+            SwiftyBeaver.error(error)
             return false
         }
     }
@@ -106,10 +106,11 @@ class FuelsManager: FuelsManagerProtocol {
     @discardableResult func deleteAllFuels() -> Bool {
         do {
             try database?.run(fuelsTable.delete())
+            SwiftyBeaver.info("All fuels deleted")
             return true
         } catch {
-            SwiftyBeaver.info("Unable to delete fuels")
-            SwiftyBeaver.warning(error)
+            SwiftyBeaver.warning("Unable to delete fuels")
+            SwiftyBeaver.error(error)
             return false
         }
     }
@@ -125,13 +126,14 @@ class FuelsManager: FuelsManagerProtocol {
                 ])
             let result = try database!.run(update)
             if result > 0 {
+                SwiftyBeaver.info(The fuel got updated!)
                 return true
             } else {
                 return false
             }
         } catch {
-            SwiftyBeaver.info("Unable to update fuel with ID: \(fID)")
-            SwiftyBeaver.warning(error)            
+            SwiftyBeaver.warning("Unable to update fuel with ID: \(fID)")
+            SwiftyBeaver.error(error)            
             return false
         }
     }
