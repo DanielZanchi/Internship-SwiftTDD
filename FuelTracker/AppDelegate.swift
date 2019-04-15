@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyBeaver
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         resetIfNeeded()
+        
+        setupSwiftyBeaver()
+        SwiftyBeaver.info("Starting SwifyBeaver Logging!")
         
         return true
     }
@@ -57,6 +61,11 @@ extension AppDelegate {
         let fuelsManager = FuelsManager(database: database)
         fuelsManager.dropTable()
         fuelsManager.createTable()
+    }
+    
+    private func setupSwiftyBeaver() {
+        let console = ConsoleDestination()
+        SwiftyBeaver.addDestination(console)
     }
     
 }

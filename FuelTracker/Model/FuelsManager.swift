@@ -7,6 +7,7 @@
 //
 
 import SQLite
+import SwiftyBeaver
 
 class FuelsManager: FuelsManagerProtocol {
     
@@ -38,8 +39,8 @@ class FuelsManager: FuelsManagerProtocol {
             try database?.run(create)
             return true
         } catch {
-            print("unable to create table")
-            print(error)
+            SwiftyBeaver.info("Unable to create table")
+            SwiftyBeaver.warning(error)
             return false
         }
     }

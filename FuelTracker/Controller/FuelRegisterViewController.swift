@@ -13,7 +13,7 @@ class FuelRegisterViewController: UIViewController {
     
     private var fuels = [Fuel]()
     
-    let fuelsManager = FuelsManager(database: Database().myDatabase)
+    var fuelsManager: FuelsManager!
     
     // MARK: Outlets
     @IBOutlet weak var fuelTableView: UITableView!
@@ -21,14 +21,12 @@ class FuelRegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    }  
-    
-    override func loadView() {
-        super.loadView()
+        fuelsManager = FuelsManager(database: Database().myDatabase)
+        
         if let fuels = fuelsManager.getFuels() {
             self.fuels = fuels
         }
-    }
+    }  
     
     override func viewWillAppear(_ animated: Bool) {
         fuelTableView.reloadData()
