@@ -12,33 +12,25 @@ extension FuelRegisterViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         var rows = 0
-        if let fuels = fuelsManager.getFuels() {
-            rows = fuels.count
-        }
+        rows = self.fuels.count
         return rows
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {        
-        let cell = tableView.dequeueReusableCell(
-            withIdentifier: FuelTableViewCell.identifier
-            ) as! FuelTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: FuelTableViewCell.identifier) as! FuelTableViewCell
         
-        if let fuel = fuelsManager.getFuels()?[indexPath.row] {
-            var distance: Int = 0
-            var consumption: Double = 0.00
-            
-            if let fuelsCount = fuelsManager.getFuels()?.count, fuel.isTankNotFull == false {
-                if (indexPath.row + 1) < fuelsCount {
-                    if let oldFuel = fuelsManager.getFuels()?[indexPath.row + 1] {
-                        distance = fuel.calculateDistange(fromFuel: oldFuel)
-                        consumption = fuel.calculateConsumption(afterDistance: distance)
-                    }
-                }
-            } 
-            
-            let fuelView = FuelViewModel(fuel: fuel, distance: distance, consumption: consumption)
-            cell.setup(model: fuelView)
-        }
+        let fuel = self.fuels[indexPath.row]
+        var distance: Int = 0
+        var consumption: Double = 0.00
+        
+        if fuel.isTankNotFull == false && fuels.count > (indexPath.row + 1) {
+            let oldFuel = self.fuels[indexPath.row + 1]
+            distance = fuel.calculateDistange(fromFuel: oldFuel)
+            consumption = fuel.calculateConsumption(afterDistance: distance)
+        } 
+        
+        let fuelView = FuelViewModel(fuel: fuel, distance: distance, consumption: consumption)
+        cell.setup(model: fuelView)
         
         return cell
     }
@@ -49,22 +41,21 @@ extension FuelRegisterViewController: UITableViewDelegate, UITableViewDataSource
             bundle: Bundle.main
             ).instantiateViewController(withIdentifier: "AddFuelVC") as? AddFuelViewController {
             
-            if let fuelToEdit = fuelsManager.getFuels()?[indexPath.row] {
-                editViewController.fuelToEdit = fuelToEdit
-                editViewController.isEditingFuel = true
-                
-                self.navigationController?.pushViewController(editViewController, animated: true)
-            }
+            let fuelToEdit = self.fuels[indexPath.row] 
+            editViewController.fuelToEdit = fuelToEdit
+            editViewController.isEditingFuel = true
+            
+            self.navigationController?.pushViewController(editViewController, animated: true)
+            
         }
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            if let fuelToDelete = fuelsManager.getFuels()?[indexPath.row] {
-                if fuelsManager.deleteFuel(withID: fuelToDelete.id) {
-                    tableView.deleteRows(at: [indexPath], with: .automatic)
-                    tableView.reloadData()
-                }
+            let fuelToDelete = self.fuels[indexPath.row] 
+            if fuelsManager.deleteFuel(withID: fuelToDelete.id) {
+                tableView.deleteRows(at: [indexPath], with: .automatic)
+                tableView.reloadData()
             }
         }
     }

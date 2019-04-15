@@ -112,7 +112,6 @@ class DatabaseManagerTests: XCTestCase {
             try? t.write(to: fileURL, atomically: false, encoding: String.Encoding.utf8)
         }
         
-        print("DATABASE \(fuelsManager.createTable())")
         XCTAssertEqual(fuelsManager.createTable(), false)
     }
     

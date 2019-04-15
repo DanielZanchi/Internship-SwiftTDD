@@ -82,6 +82,7 @@ class FuelsManager: FuelsManagerProtocol {
             } else {
                 SwiftyBeaver.info("Unable to read fuels")
             }
+            SwiftyBeaver.verbose("There are \(fuels.count) fuels")
             return fuels
         } catch {
             SwiftyBeaver.info("Unable to read fuels")
@@ -115,7 +116,6 @@ class FuelsManager: FuelsManagerProtocol {
     
     func updateFuel(withID fID: Int64, toFuel newFuel: Fuel) -> Bool {
         let fuel = fuelsTable.where(id == fID)
-        print(fuel)
         do {
             let update = fuel.update([
                 date <- newFuel.date, 

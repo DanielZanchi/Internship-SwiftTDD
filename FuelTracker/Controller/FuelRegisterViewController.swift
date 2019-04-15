@@ -11,7 +11,7 @@ import SQLite
 
 class FuelRegisterViewController: UIViewController {
     
-    private var fuels = [Fuel]()
+    var fuels = [Fuel]()
     
     var fuelsManager: FuelsManager!
     

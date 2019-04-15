@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyBeaver
 
 class AddFuelViewController: UIViewController {
     
@@ -119,7 +120,7 @@ class AddFuelViewController: UIViewController {
             
             guard let id = fuelToEdit?.id else { return }
             let result = fuelsManager.updateFuel(withID: id, toFuel: fuelToEdit!)
-            print(result)
+            SwiftyBeaver.info("Fuel created: \(result)")
         }
     }
     
