@@ -7,7 +7,6 @@ target 'FuelTracker' do
   
   # Pods for FuelTracker
   pod 'SQLite.swift', '0.11.5'
-#  pod 'SwiftLint'
   pod 'SwiftyBeaver'
   
   target 'FuelTrackerTests' do
