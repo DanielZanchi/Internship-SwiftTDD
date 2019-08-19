@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_FuelTrackerUITestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_FuelTrackerUITestsVersionString[];
+FOUNDATION_EXPORT double Pods_FuelTracker_FuelTrackerUITestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_FuelTracker_FuelTrackerUITestsVersionString[];
 

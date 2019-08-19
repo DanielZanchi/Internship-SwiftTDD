@@ -33,8 +33,8 @@
 		30F6159921C91FD000399E4C /* FuelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F6159821C91FD000399E4C /* FuelTableViewCell.swift */; };
 		30F6159B21C9250300399E4C /* Date+toString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F6159A21C9250300399E4C /* Date+toString.swift */; };
 		30F6159D21C92B1800399E4C /* UITableViewCell+identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F6159C21C92B1800399E4C /* UITableViewCell+identifier.swift */; };
-		5821B28899D4210FA2299968 /* Pods_FuelTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E820E10A81B312F0ACB23338 /* Pods_FuelTrackerUITests.framework */; };
 		A9CC79132D4A1CD9BAD78D3F /* Pods_FuelTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182658C8A7F459701C00F9C7 /* Pods_FuelTrackerTests.framework */; };
+		C3BECE8A465AF8FF5FB1AA7B /* Pods_FuelTracker_FuelTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DF27DF7624C9A175718976 /* Pods_FuelTracker_FuelTrackerUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,7 +96,6 @@
 		79135A41ED022EF335929725 /* Pods-FuelTracker-FuelTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTracker-FuelTrackerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuelTracker-FuelTrackerUITests/Pods-FuelTracker-FuelTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		96DB7E24E499947C23F35854 /* Pods-FuelTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuelTracker/Pods-FuelTracker.release.xcconfig"; sourceTree = "<group>"; };
 		D5612A10231CD53C66E3F9D6 /* Pods-FuelTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTrackerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuelTrackerUITests/Pods-FuelTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		E820E10A81B312F0ACB23338 /* Pods_FuelTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4FA3050D23F86D11B684725 /* Pods-FuelTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTrackerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuelTrackerTests/Pods-FuelTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5821B28899D4210FA2299968 /* Pods_FuelTrackerUITests.framework in Frameworks */,
+				C3BECE8A465AF8FF5FB1AA7B /* Pods_FuelTracker_FuelTrackerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +259,6 @@
 				20602C65F0652F3E3A8DACFE /* Pods_FuelTracker.framework */,
 				18DF27DF7624C9A175718976 /* Pods_FuelTracker_FuelTrackerUITests.framework */,
 				182658C8A7F459701C00F9C7 /* Pods_FuelTrackerTests.framework */,
-				E820E10A81B312F0ACB23338 /* Pods_FuelTrackerUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -296,6 +294,7 @@
 				30A31EDC21D3985200FBDA74 /* Sources */,
 				30A31EDD21D3985200FBDA74 /* Frameworks */,
 				30A31EDE21D3985200FBDA74 /* Resources */,
+				6E8EF862E3841EE150D376A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -476,11 +475,28 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FuelTrackerUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-FuelTracker-FuelTrackerUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E8EF862E3841EE150D376A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FuelTracker-FuelTrackerUITests/Pods-FuelTracker-FuelTrackerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FuelTracker-FuelTrackerUITests/Pods-FuelTracker-FuelTrackerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FuelTracker-FuelTrackerUITests/Pods-FuelTracker-FuelTrackerUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B8DC43D21DBA60AC6F65441E /* [CP] Embed Pods Frameworks */ = {
@@ -741,7 +757,7 @@
 		};
 		30A31EE821D3985200FBDA74 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5612A10231CD53C66E3F9D6 /* Pods-FuelTrackerUITests.debug.xcconfig */;
+			baseConfigurationReference = 79135A41ED022EF335929725 /* Pods-FuelTracker-FuelTrackerUITests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -764,7 +780,7 @@
 		};
 		30A31EE921D3985200FBDA74 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10CD7072C8B6805D6C86404B /* Pods-FuelTrackerUITests.release.xcconfig */;
+			baseConfigurationReference = 21A84D9F8A35D98758850BE9 /* Pods-FuelTracker-FuelTrackerUITests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "";
 				CODE_SIGN_STYLE = Automatic;
