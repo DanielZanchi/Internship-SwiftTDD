@@ -7,7 +7,7 @@ target 'FuelTracker' do
 
   # Pods for FuelTracker
   pod 'SQLite.swift', '0.11.5'
-#  pod 'SwiftLint', '~> 0.27'
+  pod 'SwiftLint', '~> 0.27'
   pod 'SwiftyBeaver'
 
   target 'FuelTrackerTests' do
@@ -16,7 +16,7 @@ target 'FuelTracker' do
   end
 
   target 'FuelTrackerUITests' do
-    inherit! :search_paths
+    inherit! :complete
     # Pods for testing
   end
 

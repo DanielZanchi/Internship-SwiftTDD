@@ -33,7 +33,7 @@
 		30F6159B21C9250300399E4C /* Date+toString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F6159A21C9250300399E4C /* Date+toString.swift */; };
 		30F6159D21C92B1800399E4C /* UITableViewCell+identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F6159C21C92B1800399E4C /* UITableViewCell+identifier.swift */; };
 		38C65EBABB12A7D19B883E4B /* Pods_FuelTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60E4CA4F4FF6DE804EA9367 /* Pods_FuelTracker.framework */; };
-		429FD30AD6061877604F10B0 /* Pods_FuelTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E544EC500A327C975EEE393 /* Pods_FuelTrackerUITests.framework */; };
+		76DD3174DBEF66566B379C0B /* Pods_FuelTracker_FuelTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256E55A7D17F1E271EFC8C69 /* Pods_FuelTracker_FuelTrackerUITests.framework */; };
 		DCF3DB7948C7B1294165BFB8 /* Pods_FuelTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CFE218376A253D43FA18F7 /* Pods_FuelTrackerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		256E55A7D17F1E271EFC8C69 /* Pods_FuelTracker_FuelTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelTracker_FuelTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3007B9E72175EA31002C4BEB /* FuelTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuelTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3007B9EA2175EA31002C4BEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3007B9EC2175EA31002C4BEB /* FuelRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelRegisterViewController.swift; sourceTree = "<group>"; };
@@ -86,14 +87,15 @@
 		30F6159821C91FD000399E4C /* FuelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelTableViewCell.swift; sourceTree = "<group>"; };
 		30F6159A21C9250300399E4C /* Date+toString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+toString.swift"; sourceTree = "<group>"; };
 		30F6159C21C92B1800399E4C /* UITableViewCell+identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+identifier.swift"; sourceTree = "<group>"; };
-		4E544EC500A327C975EEE393 /* Pods_FuelTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E8A60E2EC91DD176AE86DF2 /* Pods-FuelTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-FuelTrackerUITests/Pods-FuelTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		776467462742F8279DC7AAF8 /* Pods-FuelTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTracker.debug.xcconfig"; path = "Target Support Files/Pods-FuelTracker/Pods-FuelTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		7EF0A48D50FA0173867D868F /* Pods-FuelTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTrackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-FuelTrackerUITests/Pods-FuelTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		91F70BDEC2C197A9D8B22101 /* Pods-FuelTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTrackerTests.release.xcconfig"; path = "Target Support Files/Pods-FuelTrackerTests/Pods-FuelTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		AB840EE27EF93C2094E84EA0 /* Pods-FuelTracker-FuelTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTracker-FuelTrackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-FuelTracker-FuelTrackerUITests/Pods-FuelTracker-FuelTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B3CFE218376A253D43FA18F7 /* Pods_FuelTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47D0EBE6DDFE70DC55D5556 /* Pods-FuelTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTracker.release.xcconfig"; path = "Target Support Files/Pods-FuelTracker/Pods-FuelTracker.release.xcconfig"; sourceTree = "<group>"; };
 		B76B26FD4A0FEAD6586D351B /* Pods-FuelTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-FuelTrackerTests/Pods-FuelTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D21C234A5024E9B0B2FDE0FF /* Pods-FuelTracker-FuelTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTracker-FuelTrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-FuelTracker-FuelTrackerUITests/Pods-FuelTracker-FuelTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D60E4CA4F4FF6DE804EA9367 /* Pods_FuelTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -110,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				429FD30AD6061877604F10B0 /* Pods_FuelTrackerUITests.framework in Frameworks */,
+				76DD3174DBEF66566B379C0B /* Pods_FuelTracker_FuelTrackerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +132,7 @@
 			children = (
 				D60E4CA4F4FF6DE804EA9367 /* Pods_FuelTracker.framework */,
 				B3CFE218376A253D43FA18F7 /* Pods_FuelTrackerTests.framework */,
-				4E544EC500A327C975EEE393 /* Pods_FuelTrackerUITests.framework */,
+				256E55A7D17F1E271EFC8C69 /* Pods_FuelTracker_FuelTrackerUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -255,6 +257,8 @@
 				91F70BDEC2C197A9D8B22101 /* Pods-FuelTrackerTests.release.xcconfig */,
 				7EF0A48D50FA0173867D868F /* Pods-FuelTrackerUITests.debug.xcconfig */,
 				6E8A60E2EC91DD176AE86DF2 /* Pods-FuelTrackerUITests.release.xcconfig */,
+				AB840EE27EF93C2094E84EA0 /* Pods-FuelTracker-FuelTrackerUITests.debug.xcconfig */,
+				D21C234A5024E9B0B2FDE0FF /* Pods-FuelTracker-FuelTrackerUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -290,6 +294,7 @@
 				30A31EDC21D3985200FBDA74 /* Sources */,
 				30A31EDD21D3985200FBDA74 /* Frameworks */,
 				30A31EDE21D3985200FBDA74 /* Resources */,
+				0863343F778C16358F94B821 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -394,6 +399,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0863343F778C16358F94B821 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FuelTracker-FuelTrackerUITests/Pods-FuelTracker-FuelTrackerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FuelTracker-FuelTrackerUITests/Pods-FuelTracker-FuelTrackerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FuelTracker-FuelTrackerUITests/Pods-FuelTracker-FuelTrackerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		0D2C54CF0932041B5E24D9CB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -443,7 +465,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FuelTrackerUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-FuelTracker-FuelTrackerUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -735,7 +757,7 @@
 		};
 		30A31EE821D3985200FBDA74 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EF0A48D50FA0173867D868F /* Pods-FuelTrackerUITests.debug.xcconfig */;
+			baseConfigurationReference = AB840EE27EF93C2094E84EA0 /* Pods-FuelTracker-FuelTrackerUITests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -758,7 +780,7 @@
 		};
 		30A31EE921D3985200FBDA74 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E8A60E2EC91DD176AE86DF2 /* Pods-FuelTrackerUITests.release.xcconfig */;
+			baseConfigurationReference = D21C234A5024E9B0B2FDE0FF /* Pods-FuelTracker-FuelTrackerUITests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "";
 				CODE_SIGN_STYLE = Automatic;
