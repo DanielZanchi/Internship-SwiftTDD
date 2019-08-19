@@ -55,7 +55,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10CD7072C8B6805D6C86404B /* Pods-FuelTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTrackerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuelTrackerUITests/Pods-FuelTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		182658C8A7F459701C00F9C7 /* Pods_FuelTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18DF27DF7624C9A175718976 /* Pods_FuelTracker_FuelTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelTracker_FuelTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19DBE75C23EC7EA1B6A86DBF /* Pods-FuelTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuelTracker/Pods-FuelTracker.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,7 +94,6 @@
 		44764592B224738B3D8392E9 /* Pods-FuelTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTrackerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuelTrackerTests/Pods-FuelTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
 		79135A41ED022EF335929725 /* Pods-FuelTracker-FuelTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTracker-FuelTrackerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuelTracker-FuelTrackerUITests/Pods-FuelTracker-FuelTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		96DB7E24E499947C23F35854 /* Pods-FuelTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuelTracker/Pods-FuelTracker.release.xcconfig"; sourceTree = "<group>"; };
-		D5612A10231CD53C66E3F9D6 /* Pods-FuelTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTrackerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuelTrackerUITests/Pods-FuelTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F4FA3050D23F86D11B684725 /* Pods-FuelTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelTrackerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuelTrackerTests/Pods-FuelTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -247,8 +245,6 @@
 				44764592B224738B3D8392E9 /* Pods-FuelTrackerTests.release.xcconfig */,
 				79135A41ED022EF335929725 /* Pods-FuelTracker-FuelTrackerUITests.debug.xcconfig */,
 				21A84D9F8A35D98758850BE9 /* Pods-FuelTracker-FuelTrackerUITests.release.xcconfig */,
-				D5612A10231CD53C66E3F9D6 /* Pods-FuelTrackerUITests.debug.xcconfig */,
-				10CD7072C8B6805D6C86404B /* Pods-FuelTrackerUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
