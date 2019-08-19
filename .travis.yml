@@ -2,11 +2,9 @@ language: swift
 osx_image: xcode10
 
 env:
-  global:
   - WORKSPACE=FuelTracker.xcworkspace
   - APP_SCHEME="FuelTracker"
   - DESTINATION="OS=12.0,name=iPhone XS"
-  - SCHEME="$APP_SCHEME"
 
 script:
   - set -o pipefail
