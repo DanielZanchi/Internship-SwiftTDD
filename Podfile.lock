@@ -7,7 +7,7 @@ PODS:
 
 DEPENDENCIES:
   - SQLite.swift (= 0.11.5)
-  - SwiftLint
+  - SwiftLint (~> 0.27)
   - SwiftyBeaver
 
 SPEC REPOS:
@@ -21,6 +21,6 @@ SPEC CHECKSUMS:
   SwiftLint: 79d48a17c6565dc286c37efb8322c7b450f95c67
   SwiftyBeaver: 4cc0080d2e23f980652e28978db11a5c9da39165
 
-PODFILE CHECKSUM: ea41236d9a6d8d8b76aac62b7acb12a4123cf877
+PODFILE CHECKSUM: a25d80a07decd5651af0737e4c0d8e5dcd17841b
 
 COCOAPODS: 1.7.5
