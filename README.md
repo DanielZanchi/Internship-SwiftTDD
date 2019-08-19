@@ -18,7 +18,7 @@ Based on:
 - MVC Design Pattern
 - Dependency Injection
 - <a href="https://github.com/stephencelis/SQLite.swift">SQLite</a>
-- <a href="https://cocoapods.org">Cocoapods</a> (Pods: <a href="https://github.com/stephencelis/SQLite.swift">SQLite.swift</a>, <a href="https://github.com/realm/SwiftLint">SwiftLint</a>, <a href="https://github.com/SwiftyBeaver/SwiftyBeaver">SwiftyBeaver</a>)
+- <a href="https://cocoapods.org">Cocoapods</a> (Pods: <a href="https://github.com/stephencelis/SQLite.swift">SQLite.swift</a>, <a href="https://github.com/SwiftyBeaver/SwiftyBeaver">SwiftyBeaver</a>)
 - Tests
 - UITests
 
