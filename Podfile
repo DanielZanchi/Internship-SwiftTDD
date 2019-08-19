@@ -17,7 +17,7 @@ target 'FuelTracker' do
     end
     
     target 'FuelTrackerUITests' do
-        inherit! :search_paths
+        inherit! :complete
         # Pods for testing
     end
     
