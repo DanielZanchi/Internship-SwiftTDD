@@ -2,6 +2,7 @@ language: swift
 osx_image: xcode10
 podfile: Podfile
 cache: cocoapods
+xcode_destination: platform=iOS Simulator,OS=12.0,name=iPhone XS
 
 before_install:
  - gem install cocoapods
