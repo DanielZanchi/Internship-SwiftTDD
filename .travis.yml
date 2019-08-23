@@ -2,7 +2,6 @@ language: swift
 osx_image: xcode10
 podfile: Podfile
 cache: cocoapods
-xcode_workspace: FuelTracker.xcworkspace
 xcode_destination: platform=iOS Simulator,OS=12.0,name=iPhone XS
 
 before_install:
@@ -10,7 +9,7 @@ before_install:
 
 script:
   - set -o pipefail
-  - travis_retry xcodebuild -scheme "FuelTracker" -enableCodeCoverage YES clean test | xcpretty
+  - travis_retry xcodebuild -workspace "FuelTracker.xcworkspace" -scheme "FuelTracker" -enableCodeCoverage YES clean test | xcpretty
 
 after_success:
   - bash <(curl -s https://codecov.io/bash) -J 'FuelTracker'
