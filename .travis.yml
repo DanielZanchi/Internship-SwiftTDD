@@ -12,4 +12,4 @@ script:
   - travis_retry xcodebuild -workspace "$WORKSPACE" -scheme "$APP_SCHEME" -destination "$DESTINATION" -enableCodeCoverage YES test | xcpretty
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash) 'FuelTracker'
+  - bash <(curl -s https://codecov.io/bash) -J 'FuelTracker'
