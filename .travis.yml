@@ -1,5 +1,7 @@
 language: swift
 osx_image: xcode10
+podfile: Podfile
+cache: cocoapods
 
 env:
   global:
