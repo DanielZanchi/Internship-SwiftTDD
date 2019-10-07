@@ -154,6 +154,7 @@
 				303CAAF221778F6900202E44 /* Model */,
 				303CAAF521778F8B00202E44 /* ViewModel */,
 				303CAAF82177991800202E44 /* Controller */,
+				3035489B234B63500070E9B0 /* View */,
 				30639D5C217BD4480011ADB2 /* Util */,
 				3007B9EE2175EA31002C4BEB /* Main.storyboard */,
 				3007B9F12175EA34002C4BEB /* Assets.xcassets */,
@@ -169,6 +170,14 @@
 				302224072254AFAC0073AEAB /* XCUIElement+clearTextField.swift */,
 			);
 			path = TestUtil;
+			sourceTree = "<group>";
+		};
+		3035489B234B63500070E9B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30F6159821C91FD000399E4C /* FuelTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		303CAAF221778F6900202E44 /* Model */ = {
@@ -196,7 +205,6 @@
 				3007B9EC2175EA31002C4BEB /* FuelRegisterViewController.swift */,
 				30CE8E982242438500944DAB /* FuelRegisterTableView.swift */,
 				3075AD8021762C4E00025C2A /* AddFuelViewController.swift */,
-				30F6159821C91FD000399E4C /* FuelTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
