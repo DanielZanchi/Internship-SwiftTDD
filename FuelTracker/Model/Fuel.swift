@@ -23,5 +23,4 @@ struct Fuel: Equatable {
     func calculateConsumption(afterDistance: Int) -> Double {
         return Double(afterDistance) / self.quantity
     }
-    
 }
