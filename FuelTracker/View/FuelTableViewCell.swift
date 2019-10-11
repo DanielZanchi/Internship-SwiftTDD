@@ -18,16 +18,12 @@ class FuelTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
-    /// Sets the view of the cell, indicating the Fuel, the distance from the last fuel and the consumption
     func setup(model: FuelViewModel) {
         dateLabel.text = model.date
         pricePerUnitLabel.text = ("\(model.pricePerUnit!) €/L")
