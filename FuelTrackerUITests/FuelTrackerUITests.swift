@@ -28,7 +28,7 @@ class FuelTrackerUITests: XCTestCase {
     
     func testTitle() {
         let fuelRegisterNavigationBar = app.navigationBars["Fuel Register"]
-        let fuelRegisterTitle = fuelRegisterNavigationBar.otherElements["Fuel Register"]
+        let fuelRegisterTitle = fuelRegisterNavigationBar.staticTexts["Fuel Register"]
         XCTAssert(fuelRegisterTitle.exists)
     }
     
