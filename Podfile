@@ -1,5 +1,4 @@
 platform :ios, '12.0'
-osx_image: 'xcode11.2'
 
 target 'FuelTracker' do
   use_frameworks!
