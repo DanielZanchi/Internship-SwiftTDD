@@ -1,5 +1,5 @@
 language: swift
-osx_image: xcode11.2
+osx_image: xcode11.1
 podfile: Podfile
 cache: cocoapods
 
@@ -10,7 +10,7 @@ env:
   global:
   - WORKSPACE=FuelTracker.xcworkspace
   - APP_SCHEME="FuelTracker"
-  - DESTINATION="OS=13,name=iPhone 8"
+  - DESTINATION="OS=13.1,name=iPhone 8"
 
 script:
   - set -o pipefail

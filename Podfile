@@ -1,4 +1,4 @@
-platform :ios, '13.0'
+platform :ios, '13.1'
 
 target 'FuelTracker' do
   use_frameworks!
