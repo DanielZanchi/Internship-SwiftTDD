@@ -22,7 +22,7 @@ class FuelRegisterViewController: UIViewController {
         super.viewDidLoad()
         
         fuelsManager = FuelsManager(database: Database().myDatabase)
-    }  
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         if let fuels = fuelsManager.getFuels() {
