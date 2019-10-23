@@ -20,7 +20,12 @@ class DatabaseTests: XCTestCase {
         super.tearDown()
     }
     
-    func testDatabaseCreation() {
+    func testDatabaseNotNil() {
+        let myDatabase = Database().myDatabase
+        XCTAssertNotNil(myDatabase)
+    }
+    
+    func testDatabaseType() {
         let myDatabase = Database().myDatabase
         XCTAssert((myDatabase as Any) is Connection)
     }
