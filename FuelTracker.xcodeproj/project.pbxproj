@@ -341,16 +341,16 @@
 				TargetAttributes = {
 					3007B9E62175EA31002C4BEB = {
 						CreatedOnToolsVersion = 10.0;
-						LastSwiftMigration = 1030;
+						LastSwiftMigration = 1110;
 					};
 					30A31EDF21D3985200FBDA74 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1030;
+						LastSwiftMigration = 1110;
 						TestTargetID = 3007B9E62175EA31002C4BEB;
 					};
 					30C9557021766991008BBC51 = {
 						CreatedOnToolsVersion = 10.0;
-						LastSwiftMigration = 1030;
+						LastSwiftMigration = 1110;
 						TestTargetID = 3007B9E62175EA31002C4BEB;
 					};
 				};

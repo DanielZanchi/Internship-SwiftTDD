@@ -14,7 +14,7 @@ struct Fuel: Equatable {
     var mileage: Int!
     var quantity: Double!
     var pricePerUnit: Double!
-    var isTankNotFull: Bool
+    var isTankNotFull: Bool!
     
     func calculateDistange(fromFuel: Fuel) -> Int {
         return self.mileage - fromFuel.mileage

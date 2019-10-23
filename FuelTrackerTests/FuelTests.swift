@@ -34,14 +34,98 @@ class FuelTests: XCTestCase {
         XCTAssertNotNil(myFuel)
     }
     
-    func testID() {
+    func testIDNotNil() {
+        XCTAssertNotNil(myFuel.id)
+    }
+    
+    func testIDType() {
+        XCTAssert(myFuel.id as Any is Int64)
+    }
+    
+    func testIDValue() {
         XCTAssertEqual(myFuel.id, 1234)
     }
     
-    func testDistance() {
+    func testDateNotNil() {
+        XCTAssertNotNil(myFuel.date)
+    }
+    
+    func testDateType() {
+        XCTAssert(myFuel.date as Any is Date)
+    }
+    
+    func testDateValue() {
+        XCTAssertEqual(myFuel.date, Date(timeIntervalSince1970: 0))
+    }
+    
+    func testMileageNotNil() {
+        XCTAssertNotNil(myFuel.mileage)
+    }
+    
+    func testMileageType() {
+        XCTAssert(myFuel.mileage as Any is Int)
+    }
+    
+    func testMileageValue() {
+        XCTAssertEqual(myFuel.mileage, 3450)
+    }
+    
+    func testQuantityNotNil() {
+        XCTAssertNotNil(myFuel.quantity)
+    }
+    
+    func testQuantityType() {
+        XCTAssert(myFuel.quantity as Any is Double)
+    }
+    
+    func testQuantityValue() {
+        XCTAssertEqual(myFuel.quantity, 100)
+    }
+    
+    func testPricePerUnitNotNil() {
+        XCTAssertNotNil(myFuel.pricePerUnit)
+    }
+    
+    func testPricePerUnitType() {
+        XCTAssert(myFuel.pricePerUnit as Any is Double)
+    }
+    
+    func testPricePerUnitValue() {
+        XCTAssertEqual(myFuel.pricePerUnit, 2)
+    }
+    
+    func testIsTankNotFuelNotNil() {
+        XCTAssertNotNil(myFuel.isTankNotFull)
+    }
+    
+    func testIsTankNotFuelType() {
+        XCTAssert(myFuel.isTankNotFull as Any is Bool)
+    }
+    
+    func testIsTankNotFuelValue() {
+        XCTAssertEqual(myFuel.isTankNotFull, false)
+    }
+    
+    func testDistanceNotNl() {
+        XCTAssertNotNil(myFuel.calculateDistange(fromFuel: myFuel))
+    }
+    
+    func testDistanceType() {
+        XCTAssert(myFuel.calculateDistange(fromFuel: myFuel) as Any is Int)
+    }
+    
+    func testDistanceValue() {
         let fuel1 = Fuel(id: 1, date: Date(), mileage: 0, quantity: 50, pricePerUnit: 1.5, isTankNotFull: false)
         let fuel2 = Fuel(id: 2, date: Date(), mileage: 100, quantity: 50, pricePerUnit: 1.5, isTankNotFull: false)
         XCTAssertEqual(fuel2.calculateDistange(fromFuel: fuel1), 100)
+    }
+    
+    func testConsumptionNotNil() {
+        XCTAssertNotNil(myFuel.calculateConsumption(afterDistance: 0))
+    }
+    
+    func testConsumptionType() {
+        XCTAssert(myFuel.calculateConsumption(afterDistance: 0) as Any is Double)
     }
     
     func testConsumption() {
