@@ -19,39 +19,65 @@ class UtilTests: XCTestCase {
         super.tearDown()
     }
     
+    func testStringToDoubleNotNil() {
+        let string: String = "321.22"
+        XCTAssertNotNil(string.doubleValue)
+    }
+    
+    func testStringToDoubleType() {
+        let string: String = "321.22"
+        XCTAssert(string.doubleValue as Any is Double)
+    }
+    
     func testStringToDouble() {
-        var string: String = "314.255" 
+        let string: String = "314.255"
         XCTAssertEqual(string.doubleValue, 314.255)
-        string = String()
-        XCTAssertEqual(string.doubleValue, 0.0)
+    }
+    
+    func testStringToUIntNotNil() {
+        XCTAssertNotNil("312.222".intValue)
     }
     
     func testStringToUInt() {
-        var string: String = "314" 
+        let string: String = "314"
         XCTAssertEqual(string.intValue, 314)
-        string = String()
-        XCTAssertEqual(string.intValue, 0)
     }
     
-    func testDoubleToString() {
-        var double: Double = 314.256
+    func testDoubleToStringNotNil() {
+        let double: Double = 321.22
+        XCTAssertNotNil(double.toString(decimals: 0))
+    }
+    
+    func testDoubleToStringThreeDec() {
+        let double: Double = 314.256
         XCTAssertEqual(double.toString(decimals: 3), "314.256")
-        double = 314.259
-        XCTAssertEqual(double.toString(decimals: 2), "314.26")
-        double = Double()
-        XCTAssertEqual(double.toString(decimals: 0), "0")
     }
     
-    func testDisabledTextFieldColor() {
+    func testDoubleToStringOneDec() {
+        let double: Double = 314.256
+        XCTAssertEqual(double.toString(decimals: 1), "314.3")
+    }
+    
+    func testDisabledTextFieldColorEnabled() {
         let textField = UITextField()
         textField.isEnabled = true
         XCTAssertEqual(textField.backgroundColor, UIColor.white)
         textField.isEnabled = false
         XCTAssertEqual(textField.backgroundColor, UIColor(red: 201/255, green: 193/255, blue: 195/255, alpha: 1.0))
     }
-    
+        
     func testCellIdentifier() {
         XCTAssertEqual("FuelTableViewCell", FuelTableViewCell.identifier)
+    }
+    
+    func testDateToStringNotNil() {
+        let date = Date(timeIntervalSince1970: 0)
+        XCTAssertNotNil(date)
+    }
+    
+    func testDateToStringType() {
+        let date = Date(timeIntervalSince1970: 0)
+        XCTAssert(date.toString(dateFormat: "dd/MM/YYY") as Any is String)
     }
     
     func testDateToString() {

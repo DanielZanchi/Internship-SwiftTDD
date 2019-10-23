@@ -30,7 +30,7 @@ class FuelTests: XCTestCase {
         myFuel = nil
     }
 
-    func testFuel() {
+    func testFuelNotNil() {
         XCTAssertNotNil(myFuel)
     }
     
