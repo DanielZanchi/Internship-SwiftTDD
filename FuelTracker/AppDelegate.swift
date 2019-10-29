@@ -16,7 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        resetIfNeeded()
+        if CommandLine.arguments.contains("-resetTable") {
+            resetTable()
+        }
         
         setupSwiftyBeaver()
         SwiftyBeaver.info("Starting SwifyBeaver Logging!")
@@ -24,11 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
         
-    private func resetIfNeeded() {
-        guard CommandLine.arguments.contains("-resetTable") else {
-            return
-        }
-        
+    private func resetTable() {
         let database = Database().myDatabase
         let fuelsManager = FuelsManager(database: database)
         fuelsManager.dropTable()

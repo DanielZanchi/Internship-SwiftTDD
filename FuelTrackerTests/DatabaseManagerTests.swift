@@ -24,14 +24,15 @@ class DatabaseManagerTests: XCTestCase {
     
     override func tearDown() {
         super.tearDown()
+        fuelsManager = nil
     }
     
-    func testAddFuel() {
+    func testAddFuelReturnType() {
+        XCTAssert(addFuel() as Any is Int64)
+    }
+    
+    func testAddFuelReturnId() {
         XCTAssertEqual(addFuel(), 1)
-    }
-    
-    func testDropTableFail() {
-        fuelsManager.dropTable()
     }
     
     func testAddFuelFail() {
@@ -57,6 +58,10 @@ class DatabaseManagerTests: XCTestCase {
         
         // read two fuels
         XCTAssertEqual(fuelsManager.getFuels(), nil)
+    }
+    
+    func testDropTable() {
+        fuelsManager.dropTable()
     }
     
     func testDeleteFuel() {
