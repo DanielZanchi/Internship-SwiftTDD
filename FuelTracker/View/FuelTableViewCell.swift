@@ -26,8 +26,8 @@ class FuelTableViewCell: UITableViewCell {
     
     func setup(model: FuelViewModel) {
         dateLabel.text = model.date
-        pricePerUnitLabel.text = model.pricePerUnit + "€/L"
-        priceLabel.text = model.price + "€"
+        pricePerUnitLabel.text = model.pricePerUnit + " €/L"
+        priceLabel.text = model.price + " €"
         distanceLabel.text = model.distance + " km"
         consumptionLabel.text = model.consumption
     }
