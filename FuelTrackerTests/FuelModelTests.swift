@@ -50,18 +50,6 @@ class FuelModelTests: XCTestCase {
         XCTAssertEqual("100.00", myFuelViewModel.quantity)
     }
     
-    func testMileageNotNil() {
-        XCTAssertNotNil(myFuelViewModel.mileage)
-    }
-    
-    func testMileageType() {
-        XCTAssert(myFuelViewModel.mileage as Any is Int)
-    }
-    
-    func testMileageValue() {
-        XCTAssertEqual(3450, myFuelViewModel.mileage)
-    }
-    
     func testPricePerUnitNotNil() {
         XCTAssertNotNil(myFuelViewModel.pricePerUnit)
     }
@@ -97,29 +85,29 @@ class FuelModelTests: XCTestCase {
     func testDateValue() {
         XCTAssertEqual("01/01/1970", myFuelViewModel.date)
     }
-    
+
     func testDistanceNotNil() {
         XCTAssertNotNil(myFuelViewModel.distance)
     }
-    
+
     func testDistanceType() {
-        XCTAssert(myFuelViewModel.distance as Any is Int)
+        XCTAssert(myFuelViewModel.distance as Any is String)
     }
-    
+
     func testDistanceValue() {
-        XCTAssertEqual(myFuelViewModel.distance, 500)
+        XCTAssertEqual(myFuelViewModel.distance, "500")
     }
-    
+
     func testConsumptionNotNil() {
         XCTAssertNotNil(myFuelViewModel.consumption)
     }
     
     func testConsumptionType() {
-        XCTAssert(myFuelViewModel.consumption as Any is Double)
+        XCTAssert(myFuelViewModel.consumption as Any is String)
     }
     
     func testConsumptionValue() {
-        XCTAssertEqual(myFuelViewModel.consumption, 18)
+        XCTAssertEqual(myFuelViewModel.consumption, "18.00")
     }
     
 }

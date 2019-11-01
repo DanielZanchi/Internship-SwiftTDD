@@ -39,7 +39,7 @@ class FuelRegisterViewController: UIViewController {
     }
     
     @IBAction func clearAllTapped(_ sender: UIBarButtonItem) {
-        fuelsManager.deleteAllFuels()  
+//        fuelsManager.deleteAllFuels()  
         
         if let fuels = fuelsManager.getFuels() {
             self.fuels = fuels
