@@ -11,11 +11,16 @@ import Foundation
 extension String {
     
     var doubleValue: Double {
-        return Double(self) ?? 0
+        let stringWithPoint = self.replaceCommaWithPoint
+        return Double(stringWithPoint) ?? 0
     }
     
     var intValue: Int {
         return Int(self) ?? 0
+    }
+    
+    var replaceCommaWithPoint: String {
+        return String(self.map { $0 == "," ? "." : $0 })
     }
     
 }

@@ -34,6 +34,16 @@ class UtilTests: XCTestCase {
         XCTAssertEqual(string.doubleValue, 314.255)
     }
     
+    func testStringWithCommaToDouble() {
+        let string: String = "314,255"
+        XCTAssertEqual(string.doubleValue, 314.255)
+    }
+    
+    func testReplaceCommaWithPoint() {
+        let stringWithComma: String = "10,2"
+        XCTAssertEqual(stringWithComma.replaceCommaWithPoint, "10.2")
+    }
+    
     func testStringToUIntNotNil() {
         XCTAssertNotNil("312.222".intValue)
     }
