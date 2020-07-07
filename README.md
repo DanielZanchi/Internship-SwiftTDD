@@ -15,7 +15,7 @@ An iOS app, developed with:
 
 Based on:
 - TDD (Test Driven Development)
-- MVC Design Pattern
+- MVVM Design Pattern
 - Dependency Injection
 - <a href="https://github.com/stephencelis/SQLite.swift">SQLite</a>
 - <a href="https://cocoapods.org">Cocoapods</a> (Pods: <a href="https://github.com/stephencelis/SQLite.swift">SQLite.swift</a>, <a href="https://github.com/SwiftyBeaver/SwiftyBeaver">SwiftyBeaver</a>)
